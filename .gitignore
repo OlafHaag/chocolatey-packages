@@ -1,0 +1,7 @@
+/jobs.db
+*.nupkg
+*.log
+*.log.full
+Thumbs.db
+
+automatic/_output/
