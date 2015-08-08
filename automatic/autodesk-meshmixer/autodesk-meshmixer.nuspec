@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>{{PackageName}}</id>
+    <title>Autodesk Meshmixer</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Autodesk, Inc.</authors>
+    <owners>Vaquero</owners>
+    <summary>Meshmixer is the ultimate tool for 3D mashups and remixes. Mash, mix, sculpt, stamp or paint your own 3D designs, or start from over 10,000 models in the Gallery. Now includes direct 3D print support.</summary>
+    <description>
+##Mesh and Mix
+
+Design your own creations by combining two or more models with a few simple steps. It’s as easy as “cut-and-paste”.
+
+##Pattern
+
+Create beautiful overlay textures using a variety of simple grid and pattern options.
+
+##Sculpt
+
+Mold and refine surfaces real-time like virtual clay.
+
+#3D printing with Meshmixer
+Printing your 3D model has never been easier with the latest release of Meshmixer.
+
+##Seamless digital-to-physical experience
+Starting from any 123D software, 3D model in the Gallery, or any major 3D model file Format*, you can preview, refine and prepare your models to print with confidence.
+
+*.stl, .obj, .amf, .ply, .wrl
+
+##Supports any desktop 3D printer
+Print directly from Meshmixer to your  [Makerbot](http://www.makerbot.com/)
+** or [Type A Machines](http://www.typeamachines.com/). Meshmixer is also compatible with Stratasys, and has the option to configure your own desktop printer.
+
+** Windows 8.1 only
+
+##Hassle-free 3D printing services
+You don’t need to own a 3D printer to create amazing 3D-printed objects. Leave the 3D printing to our trusted partners: [i.materialise](http://i.materialise.com/), [Sculpteo](http://www.sculpteo.com/) and [Shapeways](http://www.shapeways.com/). Pick from dozens of different materials, colors and finishes, and preview your shopping cart right in Meshmixer.
+
+Tune in to [Meshmixer 101](https://tinyurl.com/nkfm84a), a series of YouTube instructional videos, to learn the basics.
+
+Autodesk Meshmixer is licenced under the 2016 Platform and Design Suites License and Services Agreement (including Autodesk Android Mobile Apps) (Platform and Design Suites LSA).
+
+Meshmixer will install to its default installation folder (e.g. C:\Program Files\Autodesk\Meshmixer).
+
+#### Package Parameters
+The following package parameter can be set:
+
+* `-ia /D=` - this is for the installation path. (e.g. `cinst autodesk-meshmixer -ia '/D=E:\SomeDirectory\somebody\Meshmixer'`)
+    </description>
+    <projectUrl>http://www.123dapp.com/meshmixer</projectUrl>
+    <tags>123D meshmixer autodesk modeling 3d surface solid print</tags>
+    <copyright>© Autodesk, Inc. All Rights Reserved.</copyright>
+    <licenseUrl>http://download.autodesk.com/us/FY16/Suites/LSA/en-US/lsa.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- "UTF-8" test -->
