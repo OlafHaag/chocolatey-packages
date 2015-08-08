@@ -11,12 +11,17 @@
 For people who want to make things themselves, Autodesk 123D is free software integrated with content and fabrication services. Free products and services are subject to the Autodesk, Inc, terms of use that accompany them.
 
 Autodesk 123D Design is licenced under the 2016 Platform & Design Suites License and Services Agreement (including Autodesk Android Mobile Apps) (Platform and Design Suites LSA).
+
+#### Package Parameters
+The following package parameter can be set:
+
+ * `-ia /D=` - this is for the installation path. (e.g. `cinst autodesk-123d-design -ia '/D=E:\SomeDirectory\somebody\123D-Design'`)
     </description>
     <projectUrl>http://www.123dapp.com/design</projectUrl>
     <tags>123D Design autodesk modeling 3d surface solid</tags>
     <copyright>© 2015 Autodesk, Inc. All Rights Reserved.</copyright>
     <licenseUrl>http://download.autodesk.com/us/FY16/Suites/LSA/en-US/lsa.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/autodesk-123d-design.png</iconUrl>-->
     <releaseNotes></releaseNotes>
   </metadata>
