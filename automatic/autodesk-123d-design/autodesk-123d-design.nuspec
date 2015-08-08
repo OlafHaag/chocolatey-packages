@@ -17,7 +17,7 @@ Autodesk 123D Design is licenced under the 2016 Platform and Design Suites Licen
 #### Package Parameters
 The following package parameter can be set:
 
- * `-ia /D=` - this is for the installation path. (e.g. `cinst autodesk-123d-design -ia '/D=E:\SomeDirectory\somebody\123D-Design'`)
+ * `-ia /D=` - this is for the installation path. (e.g. with cmd: `cinst autodesk-123d-design -ia '/D="E:\Some Directory\somebody\123D-Design"`)
     </description>
     <projectUrl>http://www.123dapp.com/design</projectUrl>
     <tags>123D Design autodesk modeling 3d surface solid</tags>

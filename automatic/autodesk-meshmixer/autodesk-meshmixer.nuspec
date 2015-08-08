@@ -46,7 +46,7 @@ Meshmixer will install to its default installation folder (e.g. C:\Program Files
 #### Package Parameters
 The following package parameter can be set:
 
-* `-ia /D=` - this is for the installation path. (e.g. `cinst autodesk-meshmixer -ia '/D=E:\SomeDirectory\somebody\Meshmixer'`)
+* `-ia /D=` - this is for the installation path. (e.g. with cmd: `cinst autodesk-meshmixer -ia /D="E:\Some Directory\somebody\Meshmixer"`)
     </description>
     <projectUrl>http://www.123dapp.com/meshmixer</projectUrl>
     <tags>123D meshmixer autodesk modeling 3d surface solid print</tags>
