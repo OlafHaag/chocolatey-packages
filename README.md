@@ -6,4 +6,4 @@ I'm new to his, so bare with me.
 #### Package Parameters
 The following package parameter can be set:
 
- * -ia `/D=` - this is for the installation path. (e.g. cinst autodesk-123d-design -ia '/D=E:\SomeDirectory\somebody\123D-Design')
+ * `-ia /D=` - this is for the installation path. (e.g. `cinst autodesk-123d-design -ia '/D=E:\SomeDirectory\somebody\123D-Design'`)
