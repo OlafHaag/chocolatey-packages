@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>{{PackageName}}</id>
@@ -18,6 +19,10 @@ Autodesk 123D Design is licenced under the 2016 Platform and Design Suites Licen
 The following package parameter can be set:
 
  * `-ia /D=` - this is for the installation path. (e.g. with cmd: `cinst autodesk-123d-design -ia '/D="E:\Some Directory\somebody\123D-Design"`)
+
+ **Please Note**: This is an automatically updated package. If you find it is
+ out of date by more than a day or two, please contact the maintainer(s) and
+ let them know the package is no longer updating correctly.
     </description>
     <projectUrl>http://www.123dapp.com/design</projectUrl>
     <tags>123D Design autodesk modeling 3d surface solid</tags>
@@ -30,4 +35,3 @@ The following package parameter can be set:
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- "UTF-8" test -->
