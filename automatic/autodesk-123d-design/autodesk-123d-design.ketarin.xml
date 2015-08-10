@@ -67,7 +67,7 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\123D_Design_R1.6_WIN32_1.6.41.exe</PreviousLocation>
+    <PreviousLocation></PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
