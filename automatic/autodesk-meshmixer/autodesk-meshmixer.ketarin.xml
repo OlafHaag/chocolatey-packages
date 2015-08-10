@@ -67,7 +67,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=html.*v)([0-9]+([p][0-9])+)(?=.*\.exe)</Regex>
+            <Regex>(?&lt;=http.*v)([0-9]+([p][0-9])+)(?=.*\.exe)</Regex>
             <Url>http://www.123dapp.com/meshmixer</Url>
             <Name>versionreplace</Name>
           </UrlVariable>
@@ -81,7 +81,7 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Autodesk_Meshmixer_v2p9p1_Win32.exe</PreviousLocation>
+    <PreviousLocation></PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
