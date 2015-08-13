@@ -16,7 +16,7 @@
     <ExclusiveDownload>false</ExclusiveDownload>
     <HttpReferer />
     <SetupInstructions />
-    <Name><placeholder name="Name" /></Name>
+    <Name><placeholder name="Package Name" /></Name>
     <Variables>
       <item>
         <key>
@@ -26,7 +26,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Url><placeholder name="Url with version information" /></Url>
+            <Url><placeholder name="Url with version information" value="http://" /></Url>
             <Regex><placeholder name="RegEx finding version information" /></Regex>
             <StartText />
             <EndText />
@@ -43,8 +43,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Url><placeholder name="Url with x32 download" /></Url>
-            <Regex><placeholder name="RegEx finding x32 download" /></Regex>
+            <Url><placeholder name="Url with x32 download" value="http://" /></Url>
+            <Regex><placeholder name="RegEx finding x32 download" value="(http[^']*\.exe)" /></Regex>
             <StartText />
             <EndText />
             <TextualContent />
@@ -60,8 +60,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Url><placeholder name="Url with x64 download" /></Url>
-            <Regex><placeholder name="RegEx finding x64 download" /></Regex>
+            <Url><placeholder name="Url with x64 download" value="http://"/></Url>
+            <Regex><placeholder name="RegEx finding x64 download" value="(http[^']*64[^']*\.exe)" /></Regex>
             <StartText />
             <EndText />
             <TextualContent />
@@ -82,7 +82,7 @@ REM /disablepush</ExecutePreCommand>
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated>2015-08-08T23:00:05.0713902+02:00</LastUpdated>
-    <TargetPath><placeholder name="Download folder" /></TargetPath>
+    <TargetPath><placeholder name="Download folder" value="C:\Chocolatey\_work\"/></TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
   </ApplicationJob>
 </Jobs>
