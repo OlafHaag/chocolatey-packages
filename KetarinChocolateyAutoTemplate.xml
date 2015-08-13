@@ -71,8 +71,7 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p autohotkey /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"
-REM /disablepush</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
