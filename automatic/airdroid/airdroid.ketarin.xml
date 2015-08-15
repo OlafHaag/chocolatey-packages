@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob Guid="e87002b5-f725-4082-9385-f20a6460d800" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <WebsiteUrl/>
+    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserNotes/>
+    <LastFileSize>12390499</LastFileSize>
+    <LastFileDate>2015-08-13T18:39:49.0566677</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadDate xsi:nil="true"/>
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator/>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer/>
+    <SetupInstructions/>
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>Version ([0-9.]+)</Regex>
+            <Url>https://www.airdroid.com/de/download.html</Url>
+            <TextualContent/>
+          <Name>version</Name>
+        </UrlVariable>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>nopush</string>
+      </key>
+      <value>
+        <UrlVariable>
+          <RegexRightToLeft>false</RegexRightToLeft>
+          <VariableType>Textual</VariableType>
+          <Regex/>
+          <TextualContent>--nopush</TextualContent>
+          <Name>nopush</Name>
+        </UrlVariable>
+      </value>
+    </item>
+  </Variables>
+  <ExecuteCommand/>
+  <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+  <ExecuteCommandType>Batch</ExecuteCommandType>
+  <ExecutePreCommandType>Batch</ExecutePreCommandType>
+  <Category/>
+  <SourceType>FixedUrl</SourceType>
+  <PreviousLocation></PreviousLocation>
+  <DeletePreviousFile>true</DeletePreviousFile>
+  <Enabled>true</Enabled>
+  <FileHippoId/>
+  <LastUpdated>2015-08-13T18:39:49.0566677</LastUpdated>
+  <TargetPath>C:\Chocolatey\_work\</TargetPath>
+  <FixedDownloadUrl>https://s3.amazonaws.com/dl.airdroid.com/AirDroid_Desktop_Client_{version}.exe</FixedDownloadUrl>
+  <Name>airdroid</Name>
+</ApplicationJob>
+</Jobs>

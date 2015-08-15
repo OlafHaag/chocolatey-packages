@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>{{PackageName}}</id>
+    <title>Airdroid</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Sand Studio</authors>
+    <owners>Vaquero</owners>
+    <summary>AirDroid makes your multi-screen life easier and more focused by helping you access and manage your phone from any computer, anywhere. You can send SMS, view app notifications, transfer files and fully control your phone on computer with AirDroid.</summary>
+    <description>
+AirDroid is a free and fast Android device manager app that allows you to access Android phone/tablet from computer remotely and securely. Manage SMS, files, photos and videos, WhatsApp, Line, WeChat and more on computer.
+
+Things you can do with AirDroid from computer:
+(Feature availability may vary by client platforms - Windows, Mac or Web)
+- SMS: send and receive individual or group messages.
+- Files: transfer files between Android and computer from any network.
+- Notification Mirror: Mirror phone notifications from any allowed apps to computer.
+- AirMirror (beta): Complete control of Android, and use any apps, like WhatsApp, WeChat and Line. (requires root, AirDroid Windows and Mac only)
+- Contacts: View and edit all the contacts.
+- Photos: Transfer photos between Android and computer.
+- Music and Videos: Play and manage music and videos on Android and transfer them between Android and computer.
+- Ringtones: Set music as ringtone and export ringtones.
+- Screenshot: View the real time screen of Android devices, take static screenshots. (requires root)
+- Apps: Import and export .apk files.
+- Camera: See through the lens of both front and back cameras.
+- URL: Push url to Android and open it with default web browser.
+- Clipboard: Share clipboard content between Android and computer.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+Also, this package does not include hotfixes (4th version digit), since these are not listet on the website. But the installed software itself will notify you about those.
+    </description>
+    <projectUrl>https://www.airdroid.com/</projectUrl>
+    <docsUrl>http://help.airdroid.com/</docsUrl>
+    <tags>airdroid android phone remote</tags>
+    <copyright>© 2015 Sand Studio</copyright>
+    <licenseUrl>https://www.airdroid.com/en/legal/eula.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <!--<iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/airdroid.png</iconUrl>-->
+    <releaseNotes>https://www.airdroid.com/en/download.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
