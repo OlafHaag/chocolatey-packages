@@ -1,21 +1,21 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7765388c-19c0-4c10-af62-042613fbac32">
-    <WebsiteUrl />
+  <ApplicationJob Guid="7765388c-19c0-4c10-af62-042613fbac32" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <WebsiteUrl/>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes />
+    <UserNotes/>
     <LastFileSize>293717392</LastFileSize>
     <LastFileDate>2014-11-20T06:33:14+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
-    <DownloadDate xsi:nil="true" />
+    <DownloadDate xsi:nil="true"/>
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
+    <VariableChangeIndicator/>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer />
-    <SetupInstructions />
+    <HttpReferer/>
+    <SetupInstructions/>
     <Variables>
       <item>
         <key>
@@ -59,18 +59,31 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>nopush</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex/>
+            <TextualContent>--nopush</TextualContent>
+            <Name>nopush</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
-    <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p autohotkey /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"
-REM /disablepush</ExecutePreCommand>
+    <ExecuteCommand/>
+    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category />
+    <Category/>
     <SourceType>FixedUrl</SourceType>
     <PreviousLocation></PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId />
+    <FileHippoId/>
     <LastUpdated>2015-08-08T14:56:18.5682138+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
