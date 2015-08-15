@@ -1,22 +1,22 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
-    <WebsiteUrl />
+  <ApplicationJob Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <WebsiteUrl/>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes />
+    <UserNotes/>
     <LastFileSize>384846</LastFileSize>
     <LastFileDate>2015-06-24T00:06:55+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
-    <DownloadDate xsi:nil="true" />
+    <DownloadDate xsi:nil="true"/>
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
+    <VariableChangeIndicator/>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer />
-    <SetupInstructions />
-    <Name><placeholder name="Package Name" /></Name>
+    <HttpReferer/>
+    <SetupInstructions/>
+    <Name><placeholder name="Package Name"/></Name>
     <Variables>
       <item>
         <key>
@@ -26,11 +26,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Url><placeholder name="Url with version information" value="http://" /></Url>
-            <Regex><placeholder name="RegEx finding version information" /></Regex>
-            <StartText />
-            <EndText />
-            <TextualContent />
+            <Url><placeholder name="Url with version information" value="http://"/></Url>
+            <Regex><placeholder name="RegEx finding version information"/></Regex>
+            <StartText/>
+            <EndText/>
+            <TextualContent/>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -43,11 +43,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Url><placeholder name="Url with x32 download" value="http://" /></Url>
-            <Regex><placeholder name="RegEx finding x32 download" value="(http[^']*\.exe)" /></Regex>
-            <StartText />
-            <EndText />
-            <TextualContent />
+            <Url><placeholder name="Url with x32 download" value="http://"/></Url>
+            <Regex><placeholder name="RegEx finding x32 download" value="(http[^']*\.exe)"/></Regex>
+            <StartText/>
+            <EndText/>
+            <TextualContent/>
             <Name>url</Name>
           </UrlVariable>
         </value>
@@ -61,25 +61,39 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Url><placeholder name="Url with x64 download" value="http://"/></Url>
-            <Regex><placeholder name="RegEx finding x64 download" value="(http[^']*64[^']*\.exe)" /></Regex>
-            <StartText />
-            <EndText />
-            <TextualContent />
+            <Regex><placeholder name="RegEx finding x64 download" value="(http[^']*64[^']*\.exe)"/></Regex>
+            <StartText/>
+            <EndText/>
+            <TextualContent/>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>nopush</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex/>
+            <TextualContent><placeholder name="Push package to feed? (empty if yes)" value="--nopush"/></TextualContent>
+            <Name>nopush</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
-    <ExecuteCommand />
-    <ExecutePreCommand />
+    <ExecuteCommand/>
+    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category />
+    <Category/>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation />
+    <PreviousLocation/>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId />
+    <FileHippoId/>
     <LastUpdated>2015-08-08T23:00:05.0713902+02:00</LastUpdated>
     <TargetPath><placeholder name="Download folder" value="C:\Chocolatey\_work\"/></TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
