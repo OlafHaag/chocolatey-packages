@@ -41,7 +41,7 @@
           <RegexRightToLeft>false</RegexRightToLeft>
           <VariableType>Textual</VariableType>
           <Regex/>
-          <TextualContent>--nopush</TextualContent>
+          <TextualContent></TextualContent>
           <Name>nopush</Name>
         </UrlVariable>
       </value>
