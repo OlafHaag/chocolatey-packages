@@ -47,7 +47,7 @@ Meshmixer will install to its default installation folder (e.g. C:\Program Files
 #### Package Parameters
 The following package parameter can be set:
 
-* `-ia /D=` - this is for the installation path. (e.g. with cmd: `cinst autodesk-meshmixer -ia /D="E:\Some Directory\somebody\Meshmixer"`)
+* `-ia /D=` - this is for the installation path. (e.g. with cmd: `choco install autodesk-meshmixer -ia /D="E:\Some Directory\somebody\Meshmixer"`)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
