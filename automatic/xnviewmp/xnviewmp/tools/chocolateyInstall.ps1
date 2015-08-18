@@ -1,1 +1,0 @@
-﻿#Install-VirtualPackage 'xnviewmp.portable' 'xnviewmp.install'
