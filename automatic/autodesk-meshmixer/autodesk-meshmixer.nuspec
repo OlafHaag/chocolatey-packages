@@ -49,9 +49,7 @@ The following package parameter can be set:
 
 * `-ia /D=` - this is for the installation path. (e.g. with cmd: `choco install autodesk-meshmixer -ia /D="E:\Some Directory\somebody\Meshmixer"`)
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <projectUrl>http://www.123dapp.com/meshmixer</projectUrl>
     <tags>123D meshmixer autodesk modeling 3d surface solid print</tags>

@@ -20,9 +20,7 @@ The following package parameter can be set:
 
  * `-ia /D=` - this is for the installation path. (e.g. with cmd: `choco install autodesk-123d-design -ia '/D="E:\Some Directory\somebody\123D-Design"`)
 
- **Please Note**: This is an automatically updated package. If you find it is
- out of date by more than a day or two, please contact the maintainer(s) and
- let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <projectUrl>http://www.123dapp.com/design</projectUrl>
     <tags>123D Design autodesk modeling 3d surface solid</tags>

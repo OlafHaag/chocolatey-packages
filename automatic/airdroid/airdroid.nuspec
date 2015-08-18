@@ -32,9 +32,8 @@ The following package parameter can be set:
 
 * `-ia /D=` - this is for the installation path. (e.g. with cmd: `choco install autodesk-meshmixer -ia /D="E:\Some Directory\somebody\airdroid"`)
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+
 Also, this package does not include hotfixes (4th version digit), since these are not listet on the website. But the installed software itself will notify you about those.
     </description>
     <projectUrl>https://www.airdroid.com/</projectUrl>
