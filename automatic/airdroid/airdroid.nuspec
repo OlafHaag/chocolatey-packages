@@ -30,7 +30,7 @@ Things you can do with AirDroid from computer:
 #### Package Parameters
 The following package parameter can be set:
 
-* `-ia /D=` - this is for the installation path. (e.g. with cmd: `choco install autodesk-meshmixer -ia /D="E:\Some Directory\somebody\airdroid"`)
+* `-ia /D=` - this is for the installation path. (e.g. with cmd: `choco install airdroid -ia /D="E:\Some Directory\somebody\airdroid"`)
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 
