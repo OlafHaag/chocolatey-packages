@@ -49,7 +49,7 @@ The following package parameter can be set:
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.xnview.com/assets/img/app-xnviewmp-512.png</iconUrl>
     <dependencies>
-      <dependency id="vcredist2008" version="9.0.21022.8" />
+      <dependency id="vcredist2008" version="[9.0.21022.8]" />
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
