@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>{{PackageName}}</id>
+    <title>Drawpile</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Calle Laakkonen</authors>
+    <owners>Vaquero</owners>
+    <summary>Drawpile is a Free software collaborative drawing program that allows multiple users to sketch on the same canvas simultaneously.</summary>
+    <description>
+Drawpile is a networked drawing program that allows multiple people to sketch on the same image simultaneously. It is developed as a Free/Libre Open Source project and is available at no cost.
+
+The goal of the project is to produce a simple, easy to use multiplatform collaboration tool. Drawpile supports the OpenRaster file format and thus works well with other Free painting applications such as Mypaint, Krita and GIMP.
+
+#Brushes and layers
+Brush parameters can be adjusted quickly from the tool box. Five tool slots allow you to prepare brush presets and switch between them quickly. Drawpile supports pressure sensitive Wacom tablets, but can also simulate pen pressure based on stroke distance and velocity.
+
+Multiple layers are supported. Layer parameters, such as transparency and blending mode, are adjustable and individual layers can be locked to prevent users from drawing on them or exclusive access can be granted to select users.
+
+#Recording and playback
+A drawing session can be recorded for later playback. Skipping ahead and backwards is possible, and interesting positions can be bookmarked for quick access. A recording can also be filtered to remove undone actions, pauses or individual events.
+
+#Online sessions
+Drawpile has a built-in server for easily hosting sessions. For more advanced usage, a dedicated server is also available. The dedicated server can host multiple sessions, as well as persistent sessions that can be rejoined even after all users have left.
+
+#Animation
+Drawpile also has basic support for creating simple animations, with features such as onionskin layer view mode, animation preview window and animated GIF export.
+
+# Package Parameters
+The following package parameter can be set:
+
+* `-ia /DIR="x:\dirname"` - Overrides the default install directory. A fully qualified pathname must be specified.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+    </description>
+    <projectUrl>http://drawpile.net/</projectUrl>
+    <tags>drawpile drawing collaboration collaborative paint graphics</tags>
+    <copyright>Calle Laakkonen</copyright>
+    <licenseUrl>https://github.com/callaa/Drawpile/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/callaa/Drawpile/master/desktop/drawpile-64x64.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="{{PackageVersion}}" />
+    </dependencies>-->
+    <releaseNotes>http://drawpile.net/news/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
