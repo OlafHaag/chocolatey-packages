@@ -56,9 +56,11 @@ The following package parameter can be set:
     <copyright>© Autodesk, Inc. All Rights Reserved.</copyright>
     <licenseUrl>http://download.autodesk.com/us/FY16/Suites/LSA/en-US/lsa.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/TomOne/various/05103fe90f844ffe2349b108382c886d715d8ab7/meshmixer.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>
+  <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/autodesk-meshmixer</packageSourceUrl>
 </package>
