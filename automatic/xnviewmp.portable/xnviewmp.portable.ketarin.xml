@@ -42,8 +42,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex>([^"]*XnViewMP[^"]*[win]+[^64]\.zip)</Regex>
-            <Url>http://download.xnview.com/</Url>
+            <Regex></Regex>
+            <Url></Url>
             <StartText />
             <EndText />
             <TextualContent>http://download.xnview.com/{file}</TextualContent>
@@ -59,8 +59,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex>([^"]*XnViewMP[^"]*[64]\.zip)</Regex>
-            <Url>http://download.xnview.com/</Url>
+            <Regex></Regex>
+            <Url></Url>
             <StartText />
             <EndText />
             <TextualContent>http://download.xnview.com/{filex64}</TextualContent>
