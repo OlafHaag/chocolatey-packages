@@ -1,0 +1,102 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="a3697fbb-3617-4e5b-a23c-7769e63ae8ee">
+    <WebsiteUrl />
+    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserNotes />
+    <LastFileSize>271992080</LastFileSize>
+    <LastFileDate>2015-12-04T02:01:13+01:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>&lt;!-- KNIME ([0-9.]*) --&gt;</Regex>
+            <Url>http://www.knime.org/download-knime-analytics-platform-sdk</Url>
+            <StartText />
+            <EndText />
+            <TextualContent />
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <Url />
+            <StartText />
+            <EndText />
+            <TextualContent>https://download.knime.org/analytics-platform/win/KNIME Full {version}.0 Installer (32bit).exe</TextualContent>
+            <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <Url />
+            <StartText />
+            <EndText />
+            <TextualContent>https://download.knime.org/analytics-platform/win/KNIME Full {version}.0 Installer (64bit).exe</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>nopush</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>--nopush</TextualContent>
+            <Name>nopush</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2016-01-13T11:17:44.2065253+01:00</LastUpdated>
+    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>{url}</FixedDownloadUrl>
+    <Name>knime.install.full</Name>
+  </ApplicationJob>
+</Jobs>

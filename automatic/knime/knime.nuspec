@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>{{PackageName}}</id>
+    <title>KNIME</title>
+    <version>{{PackageVersion}}</version>
+    <authors></authors>
+    <owners>Vaquero</owners>
+    <summary>KNIME® Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures.</summary>
+    <description>
+        #Powerful Analytics:
+
+        - **Reliable and Trusted**: Hardened in the field since 2008 with 18 software releases and thousands of dedicated users.
+        - **Scalable**: Effortlessly toggle between single computer, streaming, and big data executions. Integrate new capabilities on top of, alongside, or within your existing infrastructure.
+        - **Room to Grow**: Extend the capabilities with our commercial extensions for collaboration, performance, and productivity when you’re ready to take your analytics to the next step.
+
+        #Data and Tool Blending:
+
+        - **Data Blending**: simple text files, databases, documents, images, networks, and even Hadoop based data can all be combined within the same visual workflow.
+        - **Tool Blending**: Python, R, SQL, and Java scripting nodes enable legacy code and expertise to be reused, graphically documented, and shared among data scientists.
+        - **Visual**: Easy-to-learn graphical interface means that coding is optional and work is visually documented.
+
+        #Open Platform:
+
+        - **Unrestricted Open Source**: Our latest complete code released twice per year under GPLv3 license, supported on major operating systems. The only restriction is your creativity.
+        - **Open Platform**: Your innovation is amplified by bringing our massive world-wide community of data scientists to your most difficult analytics problems.
+        - **Portable**: Industry-leading PMML support allows effortless model portability and deployment.
+
+        #Over 1,000 Modules and Growing
+
+        - Support for all major file formats and databases
+        - Data Blending and Transformation
+        - Math and Statistical Functions
+        - Advanced Predictive Algorithms, including Weka support
+        Workflow Control
+        - Integrated capabilities for Python, R, SQL, Java, JSON, and XML
+        - Interactive Data Views and Reporting
+        - Many more, including time series, image processing, network analysis, chemistry
+
+        Please have a look at the [KNIME Analytics Platform product sheet](http://www.knime.org/files/Marketing/Datasheets/KNIME_Analytics_Platform_PDS.pdf) for details.
+
+        The KNIME Analytics Platform incorporates hundreds of processing nodes for data I/O, preprocessing and cleansing, modeling, analysis and data mining as well as various interactive views, such as scatter plots, parallel coordinates and others. It integrates all of the analysis modules of the well known [Weka](http://www.cs.waikato.ac.nz/ml/weka/) data mining environment and additional plugins allow R-scripts to be run, offering access to a vast library of statistical routines.
+
+        KNIME is based on the [Eclipse](http://www.eclipse.org/) platform and, through its modular API, easily extensible. When desired, custom nodes and types can be implemented in KNIME within hours thus extending KNIME to comprehend and provide first-tier support for highly domain-specific data. This modularity and extensibility enables KNIME to be employed in commercial production environments as well as teaching and research prototyping settings.
+
+        KNIME is released under a dual licensing scheme. The open source license (GPL) allows KNIME to be downloaded, distributed, and used freely. See [license arrangements](http://www.knime.org/downloads/full-license) for complete details.
+    </description>
+    <projectUrl>http://www.knime.org/knime</projectUrl>
+    <tags>knime data analysis analytics statistics data-mining admin</tags>
+    <copyright>NIME.COM AG</copyright>
+    <licenseUrl>http://www.knime.org/downloads/full-license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/Knime-logo-120px.png</iconUrl>
+    <dependencies>
+      <dependency id="{{PackageName}}.install" version="[{{PackageVersion}}]" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+    <docsUrl>http://tech.knime.org/documentation</docsUrl>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/knime</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

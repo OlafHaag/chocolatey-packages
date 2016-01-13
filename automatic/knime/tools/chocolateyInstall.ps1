@@ -1,0 +1,1 @@
+﻿#Install-VirtualPackage 'knime.portable' 'knime.install'
