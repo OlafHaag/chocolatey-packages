@@ -10,7 +10,7 @@
     <summary>KNIME® Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures.</summary>
     <description>
         This package comes with all the free extensions available.
-        
+
         #Powerful Analytics:
 
         - **Reliable and Trusted**: Hardened in the field since 2008 with 18 software releases and thousands of dedicated users.
@@ -54,7 +54,7 @@
     <licenseUrl>http://www.knime.org/downloads/full-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/Knime-logo-120px.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/automatic/icons/Knime-logo-120px.png</iconUrl>
     <releaseNotes></releaseNotes>
     <docsUrl>http://tech.knime.org/documentation</docsUrl>
     <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/knime.install.full</packageSourceUrl>
