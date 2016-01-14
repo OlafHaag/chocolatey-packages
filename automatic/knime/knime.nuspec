@@ -5,7 +5,7 @@
     <id>{{PackageName}}</id>
     <title>KNIME</title>
     <version>{{PackageVersion}}</version>
-    <authors></authors>
+    <authors>KNIME.COM AG</authors>
     <owners>Vaquero</owners>
     <summary>KNIME® Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures.</summary>
     <description>
@@ -48,7 +48,7 @@
     </description>
     <projectUrl>http://www.knime.org/knime</projectUrl>
     <tags>knime data analysis analytics statistics data-mining admin</tags>
-    <copyright>NIME.COM AG</copyright>
+    <copyright>KNIME.COM AG</copyright>
     <licenseUrl>http://www.knime.org/downloads/full-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
