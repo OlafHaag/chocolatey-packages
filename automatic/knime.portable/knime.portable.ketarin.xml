@@ -15,7 +15,7 @@
     <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
-    <ExclusiveDownload>false</ExclusiveDownload>
+    <ExclusiveDownload>true</ExclusiveDownload>
     <HttpReferer />
     <SetupInstructions />
     <Variables>
