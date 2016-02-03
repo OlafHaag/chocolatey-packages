@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
@@ -38,12 +38,13 @@ Also, this package does not include hotfixes (4th version digit), since these ar
     </description>
     <projectUrl>https://www.airdroid.com/</projectUrl>
     <docsUrl>http://help.airdroid.com/</docsUrl>
-    <tags>airdroid android phone remote</tags>
+    <tags>airdroid android phone remote admin</tags>
     <copyright>© 2015 Sand Studio</copyright>
     <licenseUrl>https://www.airdroid.com/en/legal/eula.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/airdroid.png</iconUrl>-->
+    <iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/automatic/icons/airdroid.png</iconUrl>
     <releaseNotes>https://www.airdroid.com/en/download.html</releaseNotes>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/airdroid</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
