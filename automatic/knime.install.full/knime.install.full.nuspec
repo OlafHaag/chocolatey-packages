@@ -3,33 +3,33 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>{{PackageName}}</id>
-    <title>KNIME</title>
+    <title>KNIME (Full Install)</title>
     <version>{{PackageVersion}}</version>
     <authors>KNIME.COM AG</authors>
     <owners>Vaquero</owners>
     <summary>KNIME® Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures.</summary>
     <description>
-This package comes with all the free extensions available.
+This installation comes with all the free extensions available. Its size is >1GB!
 
-#Powerful Analytics:
+## Powerful Analytics:
 
 - **Reliable and Trusted**: Hardened in the field since 2008 with 18 software releases and thousands of dedicated users.
 - **Scalable**: Effortlessly toggle between single computer, streaming, and big data executions. Integrate new capabilities on top of, alongside, or within your existing infrastructure.
 - **Room to Grow**: Extend the capabilities with our commercial extensions for collaboration, performance, and productivity when you’re ready to take your analytics to the next step.
 
-#Data and Tool Blending:
+## Data and Tool Blending:
 
 - **Data Blending**: simple text files, databases, documents, images, networks, and even Hadoop based data can all be combined within the same visual workflow.
 - **Tool Blending**: Python, R, SQL, and Java scripting nodes enable legacy code and expertise to be reused, graphically documented, and shared among data scientists.
 - **Visual**: Easy-to-learn graphical interface means that coding is optional and work is visually documented.
 
-#Open Platform:
+## Open Platform:
 
 - **Unrestricted Open Source**: Our latest complete code released twice per year under GPLv3 license, supported on major operating systems. The only restriction is your creativity.
 - **Open Platform**: Your innovation is amplified by bringing our massive world-wide community of data scientists to your most difficult analytics problems.
 - **Portable**: Industry-leading PMML support allows effortless model portability and deployment.
 
-#Over 1,000 Modules and Growing
+## Over 1,000 Modules and Growing
 
 - Support for all major file formats and databases
 - Data Blending and Transformation
