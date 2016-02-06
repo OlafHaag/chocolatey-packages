@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>srwareiron</id>
+    <title>__REPLACE__</title>
+    <version>{{PackageVersion}}</version>
+    <authors>__REPLACE__</authors>
+    <owners>Vaquero</owners>
+    <summary>__REPLACE__</summary>
+    <description>__REPLACE__</description>
+    <projectUrl>__REPLACE__</projectUrl>
+    <tags>srwareiron</tags>
+    <copyright></copyright>
+    <licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <!--<iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/srwareiron.png</iconUrl>-->
+    <dependencies>
+      <dependency id="srwareiron.install" version="[{{PackageVersion}}]" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
