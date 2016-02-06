@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>srwareiron</id>
-    <title>__REPLACE__</title>
+    <id>{{PackageName}}</id>
     <version>{{PackageVersion}}</version>
-    <authors>__REPLACE__</authors>
-    <owners>Vaquero</owners>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__</description>
-    <projectUrl>__REPLACE__</projectUrl>
-    <tags>srwareiron</tags>
-    <copyright></copyright>
-    <licenseUrl>__REPLACE__</licenseUrl>
+    <title>SRWare Iron</title>
+    <authors>SRWare</authors>
+    <licenseUrl>http://www.srware.net/en/software_srware_iron.php</licenseUrl>
+    <projectUrl>http://www.srware.net/en/software_srware_iron.php</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/e4a49519947c3cff55c17a0b08266c56b0613e64/icons/srwareiron.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <!--<iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/srwareiron.png</iconUrl>-->
+    <description>
+SRWare Iron is a freeware web browser implementation of the Chromium source code by SRWare of Germany.
+
+Iron is issued by SRWare under an “all rights reserved” license, indicating that it is made from a combination of proprietary and free software, although in download page SRWare claims “Iron is free and OpenSource.” *(from Wikipedia, the free encyclopedia)*
+    </description>
+    <summary>SRWare Iron is a freeware web browser implementation of the Chromium source code by SRWare of Germany.</summary>
     <dependencies>
-      <dependency id="srwareiron.install" version="[{{PackageVersion}}]" />
+      <dependency id="{{PackageName}}.install" version="[{{PackageVersion}}]" />
     </dependencies>
-    <releaseNotes></releaseNotes>
+    <releaseNotes />
+    <copyright />
+    <tags>SRWareIron browser privacy admin</tags>
+    <packageSourceUrl>https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/automatic/SRWareIron</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- “UTF-8” test -->
