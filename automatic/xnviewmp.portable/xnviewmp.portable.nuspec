@@ -44,6 +44,7 @@ If you intend to use XnView in a company, you must purchase a [license.](http://
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.xnview.com/assets/img/app-xnviewmp-512.png</iconUrl>
     <releaseNotes></releaseNotes>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/xnviewmp.portable</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
