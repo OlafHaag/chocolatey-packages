@@ -7,7 +7,6 @@
     <title>SRWare Iron (Install)</title>
     <authors>SRWare</authors>
     <owners>Vaquero</owners>
-    <licenseUrl></licenseUrl>
     <projectUrl>http://www.srware.net/en/software_srware_iron.php</projectUrl>
     <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/e4a49519947c3cff55c17a0b08266c56b0613e64/icons/srwareiron.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
