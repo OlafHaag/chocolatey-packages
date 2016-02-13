@@ -6,7 +6,7 @@ $validExitCodes = @(0) #please insert other valid exit codes here, exit codes fo
 $unfolder = "XnViewMP" #Name of the folder here. No slashs.
 $unfile = "unins000.exe" #Put the name of the uninstall file (with the extension) here. Example: unins000.exe
 
- 
+
 try {
   $64Bit = 0
   if (Test-Path "${Env:ProgramFiles(x86)}\$unfile") {
@@ -24,10 +24,3 @@ try {
   } else {
     Remove-Item "${Env:ProgramFiles}\$unfolder" -recurse -Force
   }
-
-  # the following is all part of error handling
-  # Write-ChocolateySuccess "$packageName"
-} catch {
-  Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-  throw
-}
