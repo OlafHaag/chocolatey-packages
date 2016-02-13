@@ -52,7 +52,7 @@ The following package parameter can be set:
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <projectUrl>http://www.123dapp.com/meshmixer</projectUrl>
-    <tags>123D meshmixer autodesk modeling 3d surface solid print</tags>
+    <tags>123D meshmixer autodesk modeling 3d surface solid print admin</tags>
     <copyright>© Autodesk, Inc. All Rights Reserved.</copyright>
     <licenseUrl>http://download.autodesk.com/us/FY16/Suites/LSA/en-US/lsa.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
