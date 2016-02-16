@@ -36,7 +36,7 @@ The following package parameter can be set:
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <projectUrl>http://drawpile.net/</projectUrl>
-    <tags>drawpile drawing collaboration collaborative paint graphics</tags>
+    <tags>drawpile drawing collaboration collaborative paint graphics admin</tags>
     <copyright>Calle Laakkonen</copyright>
     <licenseUrl>https://github.com/callaa/Drawpile/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -45,6 +45,7 @@ The following package parameter can be set:
       <dependency id="" version="{{PackageVersion}}" />
     </dependencies>-->
     <releaseNotes>http://drawpile.net/news/</releaseNotes>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/drawpile</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
