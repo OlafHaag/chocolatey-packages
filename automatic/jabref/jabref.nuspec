@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>{{PackageName}}</id>
+    <title>JabRef</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Oren Patashnik and Leslie Lamport</authors>
+    <owners>Vaquero</owners>
+    <summary>JabRef is an open source bibliography reference manager. The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format. JabRef runs on the Java VM (version 1.8 or newer).</summary>
+    <description>
+JabRef is a graphical Java application for editing BibTeX and Biblatex databases. JabRef lets you organize your entries into overlapping logical groups, and with a single click limit your view to a single group or an intersection or union of several groups. You can customize the entry information shown in the main window, and sort by any of the standard BibTeX fields. JabRef can autogenerate BibTeX keys for your entries. JabRef also lets you easily link to PDF or web sources for your reference entries.
+
+JabRef can import from and export to several formats, and you can customize export filters. JabRef can be run as a command line application to convert from any import format to any export format.
+
+To set the installation directory, use: `choco install jabref -ia "-dir ""d:\myapps\JabRef"""`
+    </description>
+    <projectUrl>http://www.jabref.org/</projectUrl>
+    <tags>jabref bibtex latex bibliography reference database admin</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/JabRef/jabref/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <docsUrl>http://help.jabref.org/</docsUrl>
+    <projectSourceUrl>https://github.com/JabRef/jabref/</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/JabRef/jabref/issues</bugTrackerUrl>
+    <mailingListUrl>https://lists.sourceforge.net/lists/listinfo/jabref-users</mailingListUrl>
+    <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/automatic/icons/jabref-48px.png</iconUrl>
+    <dependencies>
+      <dependency id="javaruntime" version="6.0.30" />
+    </dependencies>
+    <releaseNotes>https://github.com/JabRef/jabref/blob/v{{PackageVersion}}/CHANGELOG.md</releaseNotes>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/jabref</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
