@@ -1,8 +1,12 @@
 $packageName = '{{PackageName}}'
-$installerType = 'EXE'
+$installerType = 'exe'
+$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /Components=Iron'
 $url = '{{DownloadUrl}}'
 $url64 = '{{DownloadUrlx64}}'
-$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /Components=Iron'
 $validExitCodes = @(0)
-
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
+Install-ChocolateyPackage -PackageName "$packageName" `
+                          -FileType "$installerType" `
+                          -SilentArgs "$silentArgs" `
+                          -Url "$url" `
+                          -Url64bit "$url64" `
+                          -ValidExitCodes $validExitCodes
