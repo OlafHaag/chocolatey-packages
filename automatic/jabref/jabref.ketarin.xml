@@ -48,7 +48,7 @@
             <Url />
             <StartText />
             <EndText />
-            <TextualContent>http://netcologne.dl.sourceforge.net/project/jabref/v{version}/JabRef_windows_{version_dl}.exe</TextualContent>
+            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows_{version_dl}.exe</TextualContent>
             <Name>url</Name>
           </UrlVariable>
         </value>
@@ -65,7 +65,7 @@
             <Url />
             <StartText />
             <EndText />
-            <TextualContent>http://netcologne.dl.sourceforge.net/project/jabref/v{version}/JabRef_windows-x64_{version_dl}.exe</TextualContent>
+            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows-x64_{version_dl}.exe</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
