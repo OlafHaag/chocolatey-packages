@@ -108,7 +108,7 @@
     <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId />
+    <FileHippoId>http://filehippo.com/de/download_jabref/</FileHippoId>
     <LastUpdated>2015-08-08T23:00:05.0713902</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
