@@ -6,7 +6,7 @@
     <id>{{PackageName}}</id>
     <title>JabRef</title>
     <version>{{PackageVersion}}</version>
-    <authors>Oren Patashnik and Leslie Lamport</authors>
+    <authors>The JabRef team</authors>
     <owners>Vaquero</owners>
     <summary>JabRef is an open source bibliography reference manager. The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format. JabRef runs on the Java VM (version 1.8 or newer).</summary>
     <description>
