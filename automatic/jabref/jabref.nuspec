@@ -16,16 +16,16 @@ JabRef can import from and export to several formats, and you can customize expo
 
 To set the installation directory, use: `choco install jabref -ia "-dir ""d:\myapps\JabRef"""`
     </description>
-    <projectUrl>http://www.jabref.org/</projectUrl>
+    <projectUrl>https://www.jabref.org/</projectUrl>
     <tags>jabref bibtex latex bibliography reference database admin</tags>
     <copyright></copyright>
     <licenseUrl>https://github.com/JabRef/jabref/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <docsUrl>http://help.jabref.org/</docsUrl>
+    <docsUrl>https://help.jabref.org/</docsUrl>
     <projectSourceUrl>https://github.com/JabRef/jabref/</projectSourceUrl>
     <bugTrackerUrl>https://github.com/JabRef/jabref/issues</bugTrackerUrl>
-    <mailingListUrl>https://lists.sourceforge.net/lists/listinfo/jabref-users</mailingListUrl>
+    <mailingListUrl>https://discourse.jabref.org/</mailingListUrl>
     <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/automatic/icons/jabref-48px.png</iconUrl>
     <dependencies>
       <dependency id="javaruntime" version="8.0.73" />
