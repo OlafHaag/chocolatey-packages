@@ -1,16 +1,18 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b8be6b2c-59aa-4237-8584-9434b5215449">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="188c0ba8-ff2e-4b29-a94e-27fd27e6c827">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>54370528</LastFileSize>
-    <LastFileDate>2015-06-24T00:06:55+02:00</LastFileDate>
+    <LastFileSize>71321025</LastFileSize>
+    <LastFileDate>2016-08-08T22:32:48.1076055</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
+    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <HashVariable />
+    <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
@@ -24,24 +26,12 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Url>http://www.123dapp.com/meshmixer</Url>
-            <TextualContent>{versionreplace:replace:p:.}</TextualContent>
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Meshmixer[^"]*64[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/meshmixer</Url>
-            <Name>url64</Name>
+            <Regex>[\d\.]+(?= Stable for Windows)</Regex>
+            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <StartText>New Iron-Version: </StartText>
+            <EndText> Stable for Windows</EndText>
+            <Name>version</Name>
           </UrlVariable>
         </value>
       </item>
@@ -52,24 +42,24 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Meshmixer[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/meshmixer</Url>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://www.srware.net/downloads/IronPortable.zip</TextualContent>
             <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>versionreplace</string>
+          <string>url64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=http.*v)([0-9]+([p][0-9])+)(?=.*\.exe)</Regex>
-            <Url>http://www.123dapp.com/meshmixer</Url>
-            <Name>versionreplace</Name>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://www.srware.net/downloads/IronPortable64.zip</TextualContent>
+            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -81,26 +71,26 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex/>
-            <TextualContent></TextualContent>
+            <Regex />
+            <TextualContent />
             <Name>nopush</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-08-08T23:00:05.0713902+02:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <LastUpdated>2016-08-08T22:32:48.1076055</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>autodesk-meshmixer</Name>
+    <Name>srwareiron.portable</Name>
   </ApplicationJob>
 </Jobs>

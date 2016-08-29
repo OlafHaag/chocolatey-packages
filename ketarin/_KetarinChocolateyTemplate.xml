@@ -1,16 +1,16 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="188c0ba8-ff2e-4b29-a94e-27fd27e6c827">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <WebsiteUrl />
-    <UserAgent />
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>46595568</LastFileSize>
-    <LastFileDate>2016-02-06T18:05:45+01:00</LastFileDate>
+    <LastFileSize>0</LastFileSize>
+    <LastFileDate xsi:nil="true" />
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
-    <DownloadDate xsi:nil="true" />
+    <DownloadBeta>Default</DownloadBeta>
+
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <VariableChangeIndicator />
     <HashVariable />
     <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
@@ -27,10 +27,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>[\d\.]+(?= Stable for Windows)</Regex>
-            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
-            <StartText>New Iron-Version: </StartText>
-            <EndText> Stable for Windows</EndText>
+            <Regex>Last program version.*?([\d\.]+)</Regex>
+            <Url><placeholder name="Url to search for new version" /></Url>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -44,8 +42,22 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://www.srware.net/downloads/IronPortable.zip</TextualContent>
+            <TextualContent>{getUrl}</TextualContent>
             <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url><placeholder name="Url to search for new version" /></Url>
+            <Name>getUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -58,38 +70,39 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://www.srware.net/downloads/IronPortable64.zip</TextualContent>
+            <TextualContent>{getUrl64}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
+          <string>getUrl64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>--nopush</TextualContent>
-            <Name>nopush</Name>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url><placeholder name="Url to search for new version" /></Url>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
+
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-02-06T19:47:31.6416276+01:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>srwareiron.portable</Name>
+    <Name><placeholder name="Name of the package (should match the folder under automatic and the nuspec file)." /></Name>
   </ApplicationJob>
 </Jobs>

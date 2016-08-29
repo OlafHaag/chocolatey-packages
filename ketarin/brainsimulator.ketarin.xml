@@ -1,21 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob Guid="7fe4391a-b054-4331-9dde-75ce41bd0bc5" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <WebsiteUrl/>
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes/>
-    <LastFileSize>139752448</LastFileSize>
-    <LastFileDate>2015-08-31T15:08:25+02:00</LastFileDate>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7fe4391a-b054-4331-9dde-75ce41bd0bc5">
+    <WebsiteUrl />
+    <UserAgent>chocolatey command line</UserAgent>
+    <UserNotes />
+    <LastFileSize>182714368</LastFileSize>
+    <LastFileDate>2016-05-14T00:35:21.3706477</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
-    <DownloadDate xsi:nil="true"/>
+    <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator/>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer/>
-    <SetupInstructions/>
+    <HttpReferer />
+    <SetupInstructions />
     <Variables>
       <item>
         <key>
@@ -25,10 +27,10 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex/>
-            <Url/>
-            <StartText/>
-            <EndText/>
+            <Regex />
+            <Url />
+            <StartText />
+            <EndText />
             <TextualContent>{versionreplace:replace:-:.}</TextualContent>
             <Name>version</Name>
           </UrlVariable>
@@ -42,11 +44,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^']*BrainSimulatorInstaller[^']*\.msi)</Regex>
+            <Regex>(http://mirror.goodai.com/download/brainsimulator/BrainSimulatorInstaller[^']*\.msi)</Regex>
             <Url>http://www.goodai.com/?_escaped_fragment_=brain-simulator/c81c</Url>
-            <StartText/>
-            <EndText/>
-            <TextualContent/>
+            <StartText />
+            <EndText />
+            <TextualContent />
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -59,8 +61,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex/>
-            <TextualContent>--nopush</TextualContent>
+            <Regex />
+            <TextualContent />
             <Name>nopush</Name>
           </UrlVariable>
         </value>
@@ -80,18 +82,18 @@
         </value>
       </item>
     </Variables>
-    <ExecuteCommand/>
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecuteCommand />
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category/>
+    <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId/>
-    <LastUpdated>2015-09-20T17:08:38.6466924+02:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FileHippoId />
+    <LastUpdated>2016-05-14T00:35:21.3706477</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
     <FixedDownloadUrl>{url64}</FixedDownloadUrl>
     <Name>brainsimulator</Name>
   </ApplicationJob>

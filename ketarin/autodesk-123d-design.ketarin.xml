@@ -1,16 +1,18 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="9d869a5f-ad25-4e80-a822-0722d0f27a25">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7765388c-19c0-4c10-af62-042613fbac32">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>11043017</LastFileSize>
-    <LastFileDate>2015-09-13T16:37:37+02:00</LastFileDate>
+    <LastFileSize>316653600</LastFileSize>
+    <LastFileDate>2016-03-16T22:25:25.3804081</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
@@ -25,12 +27,23 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>([0-9.]*)-setup.exe</Regex>
-            <Url>http://drawpile.net/download/</Url>
-            <StartText />
-            <EndText />
-            <TextualContent />
+            <Regex>(?&lt;=http.*)[0-9.]{3,}(?=.exe)</Regex>
+            <Url>http://www.123dapp.com/design</Url>
             <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(http[^"]*Design[^"]*64[^"]*\.exe)</Regex>
+            <Url>http://www.123dapp.com/design</Url>
+            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -42,11 +55,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>([a-z-/]*[0-9.]*-setup.exe)</Regex>
-            <Url>http://drawpile.net/download/</Url>
-            <StartText />
-            <EndText />
-            <TextualContent />
+            <Regex>(http[^"]*Design[^"]*\.exe)</Regex>
+            <Url>http://www.123dapp.com/design</Url>
             <Name>url</Name>
           </UrlVariable>
         </value>
@@ -60,25 +70,25 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent></TextualContent>
+            <TextualContent />
             <Name>nopush</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-10-29T21:34:57.6051469+01:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://drawpile.net{url}</FixedDownloadUrl>
-    <Name>drawpile</Name>
+    <LastUpdated>2016-03-16T22:25:25.3804081</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <FixedDownloadUrl>{url}</FixedDownloadUrl>
+    <Name>autodesk-123d-design</Name>
   </ApplicationJob>
 </Jobs>

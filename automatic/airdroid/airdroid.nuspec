@@ -42,7 +42,7 @@ Also, this package does not include hotfixes (4th version digit), since these ar
     <copyright>© 2015 Sand Studio</copyright>
     <licenseUrl>https://www.airdroid.com/en/legal/eula.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/automatic/icons/airdroid.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/airdroid.png</iconUrl>
     <releaseNotes>https://www.airdroid.com/en/download.html</releaseNotes>
     <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/airdroid</packageSourceUrl>
   </metadata>

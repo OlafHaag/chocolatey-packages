@@ -1,21 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob Guid="8c78a757-2521-4af6-8d36-64609b9bc49a" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <WebsiteUrl/>
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes/>
-    <LastFileSize>2740109</LastFileSize>
-    <LastFileDate>2015-08-10T23:57:10.5445108</LastFileDate>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="8c78a757-2521-4af6-8d36-64609b9bc49a">
+    <WebsiteUrl />
+    <UserAgent>chocolatey command line</UserAgent>
+    <UserNotes />
+    <LastFileSize>31346773</LastFileSize>
+    <LastFileDate>2016-08-28T22:31:03.9222892</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
-    <DownloadDate xsi:nil="true"/>
+    <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator/>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer/>
-    <SetupInstructions/>
+    <HttpReferer />
+    <SetupInstructions />
     <Variables>
       <item>
         <key>
@@ -25,10 +27,10 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex/>
+            <Regex />
             <Url>http://access.osvr.com/binary/osvr-core</Url>
-            <StartText/>
-            <EndText/>
+            <StartText />
+            <EndText />
             <TextualContent>{versionreplace:regexreplace:([0-9].[0-9])[^a-z0-9]*([0-9]+)[^a-z0-9]*[a-z0-9]*.*build([0-9]*):$1.$2.$3}</TextualContent>
             <Name>version</Name>
           </UrlVariable>
@@ -44,9 +46,9 @@
             <VariableType>RegularExpression</VariableType>
             <Regex>(http[^']*OSVR-Core[^']*32Bit[^']*\.7z)</Regex>
             <Url>http://access.osvr.com/binary/osvr-core</Url>
-            <StartText/>
-            <EndText/>
-            <TextualContent/>
+            <StartText />
+            <EndText />
+            <TextualContent />
             <Name>url</Name>
           </UrlVariable>
         </value>
@@ -61,9 +63,9 @@
             <VariableType>RegularExpression</VariableType>
             <Regex>(http[^']*OSVR-Core[^']*64Bit[^']*\.7z)</Regex>
             <Url>http://access.osvr.com/binary/osvr-core</Url>
-            <StartText/>
-            <EndText/>
-            <TextualContent/>
+            <StartText />
+            <EndText />
+            <TextualContent />
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -90,25 +92,25 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex/>
+            <Regex />
             <TextualContent>--nopush</TextualContent>
             <Name>nopush</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
-    <ExecuteCommand/>
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecuteCommand />
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category/>
+    <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>true</Enabled>
-    <FileHippoId/>
-    <LastUpdated>2015-08-10T23:57:10.5445108</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <Enabled>false</Enabled>
+    <FileHippoId />
+    <LastUpdated>2016-08-28T22:31:03.9222892</LastUpdated>
+    <TargetPath>F:\Users\latch\Downloads\CG_Tools\OSVR\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>osvr-core</Name>
   </ApplicationJob>

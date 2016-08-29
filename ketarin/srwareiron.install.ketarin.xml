@@ -1,21 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob Guid="7765388c-19c0-4c10-af62-042613fbac32" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <WebsiteUrl/>
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes/>
-    <LastFileSize>293717392</LastFileSize>
-    <LastFileDate>2014-11-20T06:33:14+01:00</LastFileDate>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="daad11de-ea9b-4864-ad79-87f151a3587c">
+    <WebsiteUrl />
+    <UserAgent>chocolatey command line</UserAgent>
+    <UserNotes />
+    <LastFileSize>50063352</LastFileSize>
+    <LastFileDate>2016-08-08T22:33:30.4109005</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
-    <DownloadDate xsi:nil="true"/>
+    <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator/>
+    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <HashVariable />
+    <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer/>
-    <SetupInstructions/>
+    <HttpReferer />
+    <SetupInstructions />
     <Variables>
       <item>
         <key>
@@ -25,23 +27,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=http.*)[0-9.]{3,}(?=.exe)</Regex>
-            <Url>http://www.123dapp.com/design</Url>
+            <Regex>[\d\.]+(?= Stable for Windows)</Regex>
+            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <StartText>New Iron-Version: </StartText>
+            <EndText> Stable for Windows</EndText>
             <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Design[^"]*64[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/design</Url>
-            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -52,10 +42,24 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Design[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/design</Url>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://www.srware.net/downloads/srware_iron.exe</TextualContent>
             <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://www.srware.net/downloads/srware_iron64.exe</TextualContent>
+            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -67,26 +71,26 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex/>
-            <TextualContent></TextualContent>
+            <Regex />
+            <TextualContent />
             <Name>nopush</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
-    <ExecuteCommand/>
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecuteCommand />
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category/>
+    <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId/>
-    <LastUpdated>2015-08-08T14:56:18.5682138+02:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FileHippoId />
+    <LastUpdated>2016-08-08T22:33:30.4109005</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>autodesk-123d-design</Name>
+    <Name>srwareiron.install</Name>
   </ApplicationJob>
 </Jobs>

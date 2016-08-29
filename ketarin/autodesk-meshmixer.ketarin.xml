@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="03a1f6c2-49c2-43e4-9ae6-140bfa62e238">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b8be6b2c-59aa-4237-8584-9434b5215449">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>271992080</LastFileSize>
-    <LastFileDate>2015-12-04T02:01:13+01:00</LastFileDate>
+    <LastFileSize>72281520</LastFileSize>
+    <LastFileDate>2016-02-14T00:12:36.3788377</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,30 +26,15 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>&lt;!-- KNIME ([0-9.]*) --&gt;</Regex>
-            <Url>http://www.knime.org/download-knime-analytics-platform-sdk</Url>
-            <StartText />
-            <EndText />
-            <TextualContent />
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <Url />
-            <StartText />
-            <EndText />
-            <TextualContent>https://download.knime.org/analytics-platform/win/KNIME {version}.0 Installer (32bit).exe</TextualContent>
-            <Name>url</Name>
+            <Regex>(?&lt;=html.*)v[0-9]+[p][0-9]+[p][0-9](?=.*\.exe)</Regex>
+            <Url>http://www.123dapp.com/meshmixer</Url>
+            <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
+  &lt;TR&gt;
+    &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
+            <EndText>&lt;BR&gt;</EndText>
+            <TextualContent>{versionreplace:replace:p:.}</TextualContent>
+            <Name>version</Name>
           </UrlVariable>
         </value>
       </item>
@@ -60,13 +45,40 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <Url />
-            <StartText />
-            <EndText />
-            <TextualContent>https://download.knime.org/analytics-platform/win/KNIME {version}.0 Installer (64bit).exe</TextualContent>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(http[^"]*Meshmixer[^"]*64[^"]*\.exe)</Regex>
+            <Url>http://www.123dapp.com/meshmixer</Url>
+            <TextualContent>""</TextualContent>
             <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(http[^"]*Meshmixer[^"]*\.exe)</Regex>
+            <Url>http://www.123dapp.com/meshmixer</Url>
+            <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>versionreplace</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=http.*v)([0-9]+([p][0-9])+)(?=.*\.exe)</Regex>
+            <Url>http://www.123dapp.com/meshmixer</Url>
+            <TextualContent />
+            <Name>versionreplace</Name>
           </UrlVariable>
         </value>
       </item>
@@ -86,19 +98,18 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup "{nopush}" /p knime /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"
-chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-01-13T11:17:44.2065253+01:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <LastUpdated>2016-02-14T00:12:36.3788377</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>knime.install</Name>
+    <Name>autodesk-meshmixer</Name>
   </ApplicationJob>
 </Jobs>

@@ -2,6 +2,14 @@ $packageName = '{{PackageName}}'
 $installerType = 'EXE'
 $url = '{{DownloadUrl}}'
 $silentArgs = '/S'
+$url = '{{DownloadUrl}}'
+$checksum = '{{Checksum}}'
+$checksumType = 'sha256'
 $validExitCodes = @(0)
-
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url"  -validExitCodes $validExitCodes
+Install-ChocolateyPackage -PackageName "$packageName" `
+                          -FileType "$installerType" `
+                          -SilentArgs "$silentArgs" `
+                          -Url "$url" `
+                          -ValidExitCodes "$validExitCodes" `
+                          -Checksum "$checksum" `
+                          -ChecksumType "$checksumType"

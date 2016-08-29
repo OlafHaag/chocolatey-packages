@@ -1,16 +1,16 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="daad11de-ea9b-4864-ad79-87f151a3587c">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="03a1f6c2-49c2-43e4-9ae6-140bfa62e238">
     <WebsiteUrl />
-    <UserAgent />
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>46595568</LastFileSize>
-    <LastFileDate>2016-02-06T18:05:45+01:00</LastFileDate>
+    <LastFileSize>269423624</LastFileSize>
+    <LastFileDate>2016-04-10T22:37:10.5074065</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <VariableChangeIndicator />
     <HashVariable />
     <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
@@ -27,10 +27,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>[\d\.]+(?= Stable for Windows)</Regex>
-            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
-            <StartText>New Iron-Version: </StartText>
-            <EndText> Stable for Windows</EndText>
+            <Regex>KNIME version ([0-9.]*)</Regex>
+            <Url>http://www.knime.org/download-knime-analytics-platform-sdk</Url>
+            <StartText />
+            <EndText />
+            <TextualContent />
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -43,8 +44,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>http://www.srware.net/downloads/srware_iron.exe</TextualContent>
+            <Regex>(http[^']*\.exe)</Regex>
+            <Url>https://download.knime.org/analytics-platform/win/KNIME 3.1.0 Installer (32bit).exe</Url>
+            <StartText />
+            <EndText />
+            <TextualContent>https://download.knime.org/analytics-platform/win/KNIME {version} Installer (32bit).exe</TextualContent>
             <Name>url</Name>
           </UrlVariable>
         </value>
@@ -57,8 +61,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>http://www.srware.net/downloads/srware_iron64.exe</TextualContent>
+            <Regex>(http[^']*64[^']*\.exe)</Regex>
+            <Url>http://www.knime.org/downloads/overview?quicktabs_knimed=1#quicktabs-knimed</Url>
+            <StartText />
+            <EndText />
+            <TextualContent>https://download.knime.org/analytics-platform/win/KNIME {version} Installer (64bit).exe</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -72,25 +79,25 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>--nopush</TextualContent>
+            <TextualContent />
             <Name>nopush</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-02-06T19:47:31.6416276+01:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <LastUpdated>2016-04-10T22:37:10.5074065</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>srwareiron.install</Name>
+    <Name>knime.install</Name>
   </ApplicationJob>
 </Jobs>

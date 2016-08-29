@@ -54,7 +54,7 @@ KNIME is released under a dual licensing scheme. The open source license (GPL) a
     <licenseUrl>http://www.knime.org/downloads/full-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/automatic/icons/Knime-logo-120px.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/Knime-logo-120px.png</iconUrl>
     <releaseNotes></releaseNotes>
     <docsUrl>http://tech.knime.org/documentation</docsUrl>
     <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/knime.install.full</packageSourceUrl>

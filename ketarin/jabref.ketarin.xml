@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b5ba1dab-d8bf-46b5-aed9-62f34fee956e">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="03f45d5e-4b7a-4290-ac5f-fbee71e6e63d">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>271992080</LastFileSize>
-    <LastFileDate>2015-12-04T02:01:13+01:00</LastFileDate>
+    <LastFileSize>26668032</LastFileSize>
+    <LastFileDate>2016-08-28T22:30:38.5648307</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -15,7 +15,7 @@
     <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
-    <ExclusiveDownload>true</ExclusiveDownload>
+    <ExclusiveDownload>false</ExclusiveDownload>
     <HttpReferer />
     <SetupInstructions />
     <Variables>
@@ -27,11 +27,11 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>&lt;!-- KNIME ([0-9.]*) --&gt;</Regex>
-            <Url>http://www.knime.org/download-knime-analytics-platform-sdk</Url>
+            <Regex>JabRef Version ([0-9.]*)</Regex>
+            <Url>https://github.com/JabRef/jabref/releases/latest</Url>
             <StartText />
             <EndText />
-            <TextualContent />
+            <TextualContent>3.3</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -48,7 +48,7 @@
             <Url />
             <StartText />
             <EndText />
-            <TextualContent>https://download.knime.org/analytics-platform/win/knime_{version}.0.win32.win32.x86.zip</TextualContent>
+            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows_{version_dl}.exe</TextualContent>
             <Name>url</Name>
           </UrlVariable>
         </value>
@@ -65,7 +65,7 @@
             <Url />
             <StartText />
             <EndText />
-            <TextualContent>https://download.knime.org/analytics-platform/win/knime_{version}.0.win32.win32.x86_64.zip</TextualContent>
+            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows-x64_{version_dl}.exe</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -79,25 +79,39 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>--nopush</TextualContent>
+            <TextualContent />
             <Name>nopush</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>version_dl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{version:replace:.:_}</TextualContent>
+            <Name>version_dl</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup "{nopush}" /p {appname} /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation></PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId />
-    <LastUpdated>2016-01-13T11:17:44.2065253+01:00</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FileHippoId>de:jabref</FileHippoId>
+    <LastUpdated>2016-08-28T22:30:38.5648307</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>knime.portable</Name>
+    <Name>jabref</Name>
   </ApplicationJob>
 </Jobs>
