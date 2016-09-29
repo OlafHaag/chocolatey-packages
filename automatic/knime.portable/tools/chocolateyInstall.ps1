@@ -8,7 +8,7 @@ $checksum64 = '{{Checksumx64}}'
 $checksumType64 = 'sha256'
 Install-ChocolateyZipPackage -PackageName "$packageName" `
                              -Url "$url" `
-                             -UnzipLocation "$installDir"
+                             -UnzipLocation "$installDir" `
                              -Url64bit "$url64" `
                              -Checksum "$checksum" `
                              -ChecksumType "$checksumType" `
