@@ -46,7 +46,7 @@ KNIME is based on the [Eclipse](http://www.eclipse.org/) platform and, through i
 KNIME is released under a dual licensing scheme. The open source license (GPL) allows KNIME to be downloaded, distributed, and used freely. See [license arrangements](http://www.knime.org/downloads/full-license) for complete details.
     </description>
     <projectUrl>http://www.knime.org/knime</projectUrl>
-    <tags>knime data analysis analytics statistics data-mining admin</tags>
+    <tags>knime data analysis analytics statistics data-mining</tags>
     <copyright>KNIME.COM AG</copyright>
     <licenseUrl>http://www.knime.org/downloads/full-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
