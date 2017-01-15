@@ -18,8 +18,8 @@ On this platform, a researcher can experiment with existing AI modules (e.g. ima
 
 AI agents designed in Brain Simulator operate on sensory input in a simulated world, interpret and change their environment, and can communicate with each other.
 
-###Open-Source for Non-Commercial Use
-**Brain Simulator and its products, including AI modules and brains, are available to the public under an open-source, non-commercial license.** For commercial use of Brain Simulator or its products, contact GoodAI at info@goodai.com. We believe that collaboration is indispensable in the quest for general AI. With this open platform, we want to encourage cooperation within the scientific community and beyond. We will continuously improve our platform based on our research advancements and user feedback.
+###Open-Source
+GoodAI Brain Simulator, its source code, binaries, assets, modules and project files are licensed under the Apache License, Version 2.0, and may be used only for non-evil purposes.
 
 ###Technical Parameters
 Brain Simulator is currently being developed in C# with AI modules and architectures simulated on CUDA. We plan to make the project multi-platform (Windows, Linux, Mac, etc.), cloud-based, and cluster-based (multi-GPU/CPU).
@@ -27,18 +27,21 @@ Brain Simulator is currently being developed in C# with AI modules and architect
 **Using Brain Simulator currently requires 64-bit Windows 7, 8, 8.1 or 10, .NET 4.5, and an nVIDIA graphics card with CUDA support (compute capability of 2.0 or higher).**
 Please keep in mind that Brain Simulator is still in the PROTOTYPE STAGE OF DEVELOPMENT. GoodAI will continuously improve the platform based on its own research advancement and user feedback.
     </description>
-    <projectUrl>http://www.goodai.com/#!brain-simulator/c81c</projectUrl>
+    <projectUrl>http://www.goodai.com/brain-simulator</projectUrl>
     <tags>brainsimulator brain simulator GoodAI AI neurosience machine learning admin</tags>
-    <copyright>Copyright © 2015 KEEN SWH LTD.
-
-GoodAI® and Brain Simulator™ are trademarks of KEEN SWH LTD.</copyright>
-    <licenseUrl>http://www.goodai.com/#!brain-simulator-eula/c19no</licenseUrl>
+    <copyright>GoodAI Brain Simulator
+Copyright © 2014–2016, Keen Software House a. s.</copyright>
+    <licenseUrl>http://www.goodai.com/brain-simulator-eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/brainsimulator.png</iconUrl>-->
+    <docsUrl>http://docs.goodai.com/brainsimulator/index.html</docsUrl>
+    <projectSourceUrl>https://github.com/GoodAI/BrainSimulator</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/GoodAI/BrainSimulator/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.rawgit.com/GoodAI/BrainSimulator/2bd87b62/Sources/Platform/BrainSimulator/res/brainSim.ico</iconUrl>
     <!--<dependencies>
       <dependency id="" version="{{PackageVersion}}" />
     </dependencies>-->
-    <releaseNotes>http://docs.goodai.com/brainsimulator/changelog/#brain-simulator-01</releaseNotes>
+    <releaseNotes>http://docs.goodai.com/brainsimulator/changelog/</releaseNotes>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/brainsimulator</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
