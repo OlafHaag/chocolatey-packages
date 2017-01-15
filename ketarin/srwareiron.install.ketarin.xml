@@ -1,16 +1,16 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="daad11de-ea9b-4864-ad79-87f151a3587c">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="958cf783-8bbe-4ecf-ac71-c61911b0b8e9">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>50063352</LastFileSize>
-    <LastFileDate>2016-08-08T22:33:30.4109005</LastFileDate>
+    <LastFileSize>51169544</LastFileSize>
+    <LastFileDate>2017-01-15T22:00:23.6038685</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <VariableChangeIndicator />
     <HashVariable />
     <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
@@ -29,8 +29,6 @@
             <VariableType>RegularExpression</VariableType>
             <Regex>[\d\.]+(?= Stable for Windows)</Regex>
             <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
-            <StartText>New Iron-Version: </StartText>
-            <EndText> Stable for Windows</EndText>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -44,8 +42,23 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://www.srware.net/downloads/srware_iron.exe</TextualContent>
+            <TextualContent>{getUrl}</TextualContent>
             <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <TextualContent>http://www.srware.net/downloads/srware_iron.exe</TextualContent>
+            <Name>getUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -58,22 +71,23 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://www.srware.net/downloads/srware_iron64.exe</TextualContent>
+            <TextualContent>{getUrl64}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
+          <string>getUrl64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent />
-            <Name>nopush</Name>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <TextualContent>http://www.srware.net/downloads/srware_iron64.exe</TextualContent>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -84,12 +98,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation />
+    <PreviousLocation>D:\ChocoDownloads\srwareiron.install_55.0.2900.1.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-08-08T22:33:30.4109005</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <LastUpdated>2017-01-15T22:00:23.6038685</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>srwareiron.install</Name>
   </ApplicationJob>

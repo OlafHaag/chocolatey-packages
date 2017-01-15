@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b8be6b2c-59aa-4237-8584-9434b5215449">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="936b9b6b-cee1-4908-8780-39e102f0e8d4">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
     <LastFileSize>72281520</LastFileSize>
-    <LastFileDate>2016-02-14T00:12:36.3788377</LastFileDate>
+    <LastFileDate>2017-01-14T21:41:00.0796019</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -27,29 +27,10 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex>(?&lt;=html.*)v[0-9]+[p][0-9]+[p][0-9](?=.*\.exe)</Regex>
-            <Url>http://www.123dapp.com/meshmixer</Url>
-            <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
-  &lt;TR&gt;
-    &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
-            <EndText>&lt;BR&gt;</EndText>
+            <Regex />
+            <Url />
             <TextualContent>{versionreplace:replace:p:.}</TextualContent>
             <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Meshmixer[^"]*64[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/meshmixer</Url>
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -60,10 +41,52 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Meshmixer[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/meshmixer</Url>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{getUrl}</TextualContent>
             <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+Win32\.exe</Regex>
+            <Url>http://meshmixer.com/download.html</Url>
+            <Name>getUrl</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{getUrl64}</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+Win64\.exe</Regex>
+            <Url>http://meshmixer.com/download.html</Url>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -76,23 +99,8 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Regex>(?&lt;=http.*v)([0-9]+([p][0-9])+)(?=.*\.exe)</Regex>
-            <Url>http://www.123dapp.com/meshmixer</Url>
-            <TextualContent />
+            <Url>http://meshmixer.com/download.html</Url>
             <Name>versionreplace</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>nopush</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>--nopush</TextualContent>
-            <Name>nopush</Name>
           </UrlVariable>
         </value>
       </item>
@@ -103,12 +111,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation />
+    <PreviousLocation>D:\ChocoDownloads\autodesk-meshmixer_3.0.exe\Autodesk_Meshmixer_v3p0_Win32.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-02-14T00:12:36.3788377</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <LastUpdated>2017-01-14T21:41:00.0796019</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>autodesk-meshmixer</Name>
   </ApplicationJob>

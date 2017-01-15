@@ -1,13 +1,13 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7765388c-19c0-4c10-af62-042613fbac32">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="04da2edc-11d9-4004-87bf-68e96c860b66">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>316653600</LastFileSize>
-    <LastFileDate>2016-03-16T22:25:25.3804081</LastFileDate>
+    <LastFileSize>0</LastFileSize>
+    <LastFileDate xsi:nil="true" />
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
@@ -27,23 +27,9 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=http.*)[0-9.]{3,}(?=.exe)</Regex>
+            <Regex>(?:123D_Design_R.*)((\d.){3,})(?:.exe)</Regex>
             <Url>http://www.123dapp.com/design</Url>
             <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Design[^"]*64[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/design</Url>
-            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -54,24 +40,52 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http[^"]*Design[^"]*\.exe)</Regex>
-            <Url>http://www.123dapp.com/design</Url>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{getUrl}</TextualContent>
             <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(http[^"]*Design[^"]*32[^"]*\.exe)</Regex>
+            <Url>http://www.123dapp.com/design</Url>
+            <Name>getUrl</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent />
-            <Name>nopush</Name>
+            <TextualContent>{getUrl64}</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(http[^"]*Design[^"]*64[^"]*\.exe)</Regex>
+            <Url>http://www.123dapp.com/design</Url>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -86,8 +100,8 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-03-16T22:25:25.3804081</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <LastUpdated xsi:nil="true" />
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>autodesk-123d-design</Name>
   </ApplicationJob>

@@ -1,13 +1,13 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="9d869a5f-ad25-4e80-a822-0722d0f27a25">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="555d05bc-09fa-429c-ba1b-a4fe3ccdabd0">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>14378880</LastFileSize>
-    <LastFileDate>2016-08-08T22:31:16.545725</LastFileDate>
+    <LastFileSize>14488563</LastFileSize>
+    <LastFileDate>2017-01-15T21:04:43.1179212</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
@@ -29,9 +29,6 @@
             <VariableType>RegularExpression</VariableType>
             <Regex>([0-9.]*)-setup.exe</Regex>
             <Url>http://drawpile.net/download/</Url>
-            <StartText />
-            <EndText />
-            <TextualContent />
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -44,40 +41,23 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex>([a-z-/]*[0-9.]*-setup.exe)</Regex>
-            <Url>http://drawpile.net/download/</Url>
-            <StartText />
-            <EndText />
-            <TextualContent>http://drawpile.net{geturl}</TextualContent>
+            <Regex />
+            <TextualContent>https://drawpile.net{getUrl}</TextualContent>
             <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent />
-            <Name>nopush</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>geturl</string>
+          <string>getUrl</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>([a-z-/]*[0-9.]*-setup.exe)</Regex>
-            <Url>http://drawpile.net/download/</Url>
-            <Name>geturl</Name>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://drawpile.net/download/</Url>
+            <Name>getUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -88,12 +68,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation />
+    <PreviousLocation>D:\ChocoDownloads\drawpile_1.0.6.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-08-08T22:31:16.545725</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <LastUpdated>2017-01-15T21:04:43.1179212</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>drawpile</Name>
   </ApplicationJob>

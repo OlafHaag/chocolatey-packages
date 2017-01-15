@@ -1,13 +1,13 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="03f45d5e-4b7a-4290-ac5f-fbee71e6e63d">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="4767682c-b4de-46e5-a18f-12472ccc4024">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>26668032</LastFileSize>
-    <LastFileDate>2016-08-28T22:30:38.5648307</LastFileDate>
+    <LastFileSize>36566360</LastFileSize>
+    <LastFileDate>2017-01-15T21:22:48.2378279</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
@@ -29,9 +29,6 @@
             <VariableType>RegularExpression</VariableType>
             <Regex>JabRef Version ([0-9.]*)</Regex>
             <Url>https://github.com/JabRef/jabref/releases/latest</Url>
-            <StartText />
-            <EndText />
-            <TextualContent>3.3</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -45,11 +42,23 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <Url />
-            <StartText />
-            <EndText />
-            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows_{version_dl}.exe</TextualContent>
+            <TextualContent>{getUrl}</TextualContent>
             <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://github.com/JabRef/jabref/releases/latest</Url>
+            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows_{version_dl}.exe</TextualContent>
+            <Name>getUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -62,25 +71,23 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <Url />
-            <StartText />
-            <EndText />
-            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows-x64_{version_dl}.exe</TextualContent>
+            <TextualContent>{getUrl64}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
+          <string>getUrl64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent />
-            <Name>nopush</Name>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://github.com/JabRef/jabref/releases/latest</Url>
+            <TextualContent>https://github.com/JabRef/jabref/releases/download/v{version}/JabRef_windows-x64_{version_dl}.exe</TextualContent>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -105,12 +112,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation />
+    <PreviousLocation>D:\ChocoDownloads\jabref_3.8.1.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId>de:jabref</FileHippoId>
-    <LastUpdated>2016-08-28T22:30:38.5648307</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <FileHippoId />
+    <LastUpdated>2017-01-15T21:22:48.2378279</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>jabref</Name>
   </ApplicationJob>

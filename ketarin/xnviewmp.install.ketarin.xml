@@ -1,13 +1,13 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="f02006e4-3c0c-4f7c-accf-36f9588f6047">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="48e08b23-0af3-4ec5-99ab-ad6910f83ee8">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>33224528</LastFileSize>
-    <LastFileDate>2016-06-28T17:55:44+02:00</LastFileDate>
+    <LastFileSize>0</LastFileSize>
+    <LastFileDate xsi:nil="true" />
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
@@ -29,9 +29,6 @@
             <VariableType>RegularExpression</VariableType>
             <Regex>Version.([.0-9]+)</Regex>
             <Url>http://www.xnview.com/en/xnviewmp/</Url>
-            <StartText />
-            <EndText />
-            <TextualContent>0.79.1</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -44,12 +41,23 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex>([^"]*XnViewMP[^"]*[^64]\.exe)</Regex>
-            <Url>http://download.xnview.com/</Url>
-            <StartText />
-            <EndText />
-            <TextualContent>http://download.xnview.com/{file}</TextualContent>
+            <Regex />
+            <TextualContent>{getUrl}</TextualContent>
             <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+[^64]\.exe</Regex>
+            <Url>http://www.xnview.com/en/xnviewmp/</Url>
+            <Name>getUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -61,96 +69,23 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex>([^"]*XnViewMP[^"]*[64]\.exe)</Regex>
-            <Url>http://download.xnview.com/</Url>
-            <StartText />
-            <EndText />
-            <TextualContent>http://download.xnview.com/{filex64}</TextualContent>
+            <Regex />
+            <TextualContent>{getUrl64}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>--nopush</TextualContent>
-            <Name>nopush</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>file</string>
+          <string>getUrl64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>([^"]*XnViewMP-win*[^64]\.exe)</Regex>
-            <Url>http://download.xnview.com/</Url>
-            <Name>file</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>filex64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>([^"]*XnViewMP-win[^"]*[64]\.exe)</Regex>
-            <Url>http://download.xnview.com/</Url>
-            <Name>filex64</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>cscript</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>1</TextualContent>
-            <Name>cscript</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>checksum64file</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>{url64}</TextualContent>
-            <Name>checksum64file</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>workDir</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>F:\Users\latch\Downloads\Media\picture</TextualContent>
-            <Name>workDir</Name>
+            <Regex>[^ "'&lt;&gt;\*]+[64]\.exe</Regex>
+            <Url>http://www.xnview.com/en/xnviewmp/</Url>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -165,8 +100,8 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-08-29T19:19:44.7174081+02:00</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <LastUpdated xsi:nil="true" />
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>xnviewmp.install</Name>
   </ApplicationJob>

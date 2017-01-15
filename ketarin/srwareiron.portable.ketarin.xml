@@ -1,16 +1,16 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="188c0ba8-ff2e-4b29-a94e-27fd27e6c827">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="92a24047-a75c-42b8-9b2d-cf47e7eea488">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>71321025</LastFileSize>
-    <LastFileDate>2016-08-08T22:32:48.1076055</LastFileDate>
+    <LastFileSize>71549227</LastFileSize>
+    <LastFileDate>2017-01-15T22:12:27.2910808</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator>version</VariableChangeIndicator>
+    <VariableChangeIndicator />
     <HashVariable />
     <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
@@ -29,8 +29,6 @@
             <VariableType>RegularExpression</VariableType>
             <Regex>[\d\.]+(?= Stable for Windows)</Regex>
             <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
-            <StartText>New Iron-Version: </StartText>
-            <EndText> Stable for Windows</EndText>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -44,8 +42,23 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://www.srware.net/downloads/IronPortable.zip</TextualContent>
+            <TextualContent>{getUrl}</TextualContent>
             <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <TextualContent>http://www.srware.net/downloads/IronPortable.zip</TextualContent>
+            <Name>getUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -58,22 +71,23 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://www.srware.net/downloads/IronPortable64.zip</TextualContent>
+            <TextualContent>{getUrl64}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
+          <string>getUrl64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent />
-            <Name>nopush</Name>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <TextualContent>http://www.srware.net/downloads/IronPortable64.zip</TextualContent>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -84,12 +98,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation />
+    <PreviousLocation>D:\ChocoDownloads\srwareiron.portable_55.0.2900.1.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-08-08T22:32:48.1076055</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <LastUpdated>2017-01-15T22:12:27.2910808</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>srwareiron.portable</Name>
   </ApplicationJob>

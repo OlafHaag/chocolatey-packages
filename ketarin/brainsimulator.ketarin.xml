@@ -1,13 +1,13 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7fe4391a-b054-4331-9dde-75ce41bd0bc5">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="fdd03501-4e5b-4da4-8493-440a324b50d3">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>182714368</LastFileSize>
-    <LastFileDate>2016-05-14T00:35:21.3706477</LastFileDate>
+    <LastFileSize>234975232</LastFileSize>
+    <LastFileDate>2017-01-15T19:32:31.1724395</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Avoid</DownloadBeta>
+    <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
@@ -27,11 +27,9 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <Url />
-            <StartText />
-            <EndText />
-            <TextualContent>{versionreplace:replace:-:.}</TextualContent>
+            <Regex>id=.*?Brain Simulator.?([\d\.]+)</Regex>
+            <Url>http://docs.goodai.com/brainsimulator/changelog/</Url>
+            <TextualContent>0.6.0</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -43,41 +41,25 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(http://mirror.goodai.com/download/brainsimulator/BrainSimulatorInstaller[^']*\.msi)</Regex>
-            <Url>http://www.goodai.com/?_escaped_fragment_=brain-simulator/c81c</Url>
-            <StartText />
-            <EndText />
-            <TextualContent />
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{getUrl64}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>nopush</string>
+          <string>getUrl64</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent />
-            <Name>nopush</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>versionreplace</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>BrainSimulatorInstaller-v([0-9.]*-[0-9]{2})</Regex>
-            <Url>http://www.goodai.com/?_escaped_fragment_=brain-simulator/c81c</Url>
-            <Name>versionreplace</Name>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>http://docs.goodai.com/brainsimulator/changelog/</Url>
+            <TextualContent>http://mirror.goodai.com/download/brainsimulator/BrainSimulatorInstaller-v0.6.0-03.msi</TextualContent>
+            <Name>getUrl64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -88,12 +70,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation />
+    <PreviousLocation>D:\ChocoDownloads\brainsimulator_0.6.0.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2016-05-14T00:35:21.3706477</LastUpdated>
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}\</TargetPath>
+    <LastUpdated>2017-01-15T19:32:31.1724395</LastUpdated>
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url64}</FixedDownloadUrl>
     <Name>brainsimulator</Name>
   </ApplicationJob>
