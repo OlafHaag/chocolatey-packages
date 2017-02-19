@@ -23,3 +23,7 @@ try {
   } else {
     Remove-Item "${Env:ProgramFiles}\$unfolder" -recurse -Force
   }
+}
+catch {
+  Write-Warning "Unable to uninstall package."
+}
