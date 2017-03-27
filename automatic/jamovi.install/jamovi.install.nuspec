@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>{{PackageName}}</id>
+    <title>jamovi (install)</title>
+    <version>{{PackageVersion}}</version>
+    <authors>https://github.com/jamovi/jamovi/graphs/contributors</authors>
+    <owners>Vaquero</owners>
+    <summary>jamovi is a new "3rd generation" statistical spreadsheet. designed from the ground up to be easy to use, jamovi is a compelling alternative to costly statistical products such as SPSS and SAS.</summary>
+    <description>
+## R INTEGRATION:
+
+jamovi is built on top of the R statistical language, giving you access to the best the statistics community has to offer. would you like the R code for your analyses? jamovi can provide that too.
+
+## FREE AND OPEN:
+
+jamovi will always be free and open - that's one of our core values - because jamovi is made by the scientific community, for the scientific community.
+    </description>
+    <projectUrl>https://www.jamovi.org/</projectUrl>
+    <projectSourceUrl>https://github.com/jamovi/jamovi</projectSourceUrl>
+    <tags>data analysis analytics statistics R data-mining admin</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/jamovi/jamovi/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl></iconUrl>
+    <releaseNotes>https://github.com/jamovi/jamovi/releases</releaseNotes>
+    <docsUrl>https://www.jamovi.org/user-manual.html</docsUrl>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/jamovi</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/jamovi/jamovi/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
