@@ -73,8 +73,8 @@
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated xsi:nil="true" />
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
-    <FixedDownloadUrl>{url}</FixedDownloadUrl>
+    <TargetPath>{saveDir}\{appname}_{version}.{url64:ext}</TargetPath>
+    <FixedDownloadUrl>{url64}</FixedDownloadUrl>
     <Name>jamovi.install</Name>
   </ApplicationJob>
 </Jobs>
