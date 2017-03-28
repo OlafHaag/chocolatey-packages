@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>{{PackageName}}</id>
-    <title>jamovi</title>
+    <title>jamovi Statistical Analysis</title>
     <version>{{PackageVersion}}</version>
     <authors>https://github.com/jamovi/jamovi/graphs/contributors</authors>
     <owners>Vaquero</owners>
