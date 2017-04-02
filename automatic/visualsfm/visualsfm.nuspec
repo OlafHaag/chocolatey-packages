@@ -28,6 +28,7 @@ This package already installs the dependencies for PMVS/CMVS. Included binaries 
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <!--<iconUrl></iconUrl>-->
     <dependencies>
+      <dependency id="chocolatey" version="0.10.4"/>
       <dependency id="vcredist2010" version="10.0.40219.1"/>
     </dependencies>
     <releaseNotes>http://ccwu.me/vsfm/changelist.html</releaseNotes>

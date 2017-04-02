@@ -17,26 +17,18 @@ Install-ChocolateyZipPackage -PackageName $packageName `
 
 $is64bit = Get-ProcessorBits 64
 if ($is64bit) {
-  $zipFolder = "Win64"
   $destFolder = "VisualSFM_windows_cuda_64bit"
 }
 else {
-  $zipFolder = "Win32"
   $destFolder = "VisualSFM_windows_cuda_32bit"
 }
+$zipFile64 = "CMVS-PMVS_Win64.zip"
+$zipFile = "CMVS-PMVS_Win32.zip"
 
 try {
-  #Get-ChocolateyUnzip -FileFullPath "$installDir\CMVS-PMVS.zip" -Destination "$installDir\$destFolder\" -SpecificFolder $zipFolder -PackageName $packageName
-  # option -SpecificFolder in Get-ChocolateyUnzip is broken. There's no -SpecificFiles option either.
-  cmd /c 7z e -aoa -bd -bb1 -o"$installDir\$destFolder\" -y "$installDir\CMVS-PMVS.zip" "$zipFolder\*"
-  # Add extracted files to log for automatic uninstall script to work properly.
-  $pkgLibFolder = (get-item $installDir ).parent.FullName
-  $instLogFile = "$pkgLibFolder\$destFolder.zip.txt"
-  Add-Content $instLogFile "$installDir\$destFolder\cmvs.exe"
-  Add-Content $instLogFile "$installDir\$destFolder\pmvs2.exe"
-  Add-Content $instLogFile "$installDir\$destFolder\genoptions.exe"
+  Get-ChocolateyUnzip -File "$installDir\$zipFile" -File64 "$installDir\$zipFile64" -Destination "$installDir\$destFolder" -PackageName $packageName
 } catch {
-  Write-Warning "Unable to unzip internal ressources (CMVS-PMVS) to package folder."
+  Write-Warning "Unable to unzip internal ressources (CMVS-PMVS) to package installation folder."
   throw
 }
 
