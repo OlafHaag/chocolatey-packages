@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>0</LastFileSize>
-    <LastFileDate xsi:nil="true" />
+    <LastFileSize>207598057</LastFileSize>
+    <LastFileDate>2017-03-28T00:27:54.640238</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,9 +26,10 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex>version.*?([\d\.]+)</Regex>
             <Url>https://www.jamovi.org/download.html</Url>
+            <TextualContent>{getVersion}00</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -61,6 +62,20 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>getVersion</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>version.*?([\d\.]+)</Regex>
+            <Url>https://www.jamovi.org/download.html</Url>
+            <Name>getVersion</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
@@ -72,7 +87,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated xsi:nil="true" />
+    <LastUpdated />
     <TargetPath>{saveDir}\{appname}_{version}.{url64:ext}</TargetPath>
     <FixedDownloadUrl>{url64}</FixedDownloadUrl>
     <Name>jamovi.install</Name>

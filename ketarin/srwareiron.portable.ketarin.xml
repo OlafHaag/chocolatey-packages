@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>71549227</LastFileSize>
-    <LastFileDate>2017-01-15T22:12:27.2910808</LastFileDate>
+    <LastFileSize>70838861</LastFileSize>
+    <LastFileDate>2017-03-27T22:38:06.0931381</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,9 +26,10 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex>[\d\.]+(?= Stable for Windows)</Regex>
             <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <TextualContent>[getVersion}00</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -91,6 +92,20 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>getVersion</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>[\d\.]+(?= Stable for Windows)</Regex>
+            <Url>https://www.srware.net/forum/viewforum.php?f=18</Url>
+            <Name>getVersion</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
@@ -98,11 +113,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>D:\ChocoDownloads\srwareiron.portable_55.0.2900.1.zip</PreviousLocation>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2017-01-15T22:12:27.2910808</LastUpdated>
+    <LastUpdated />
     <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>srwareiron.portable</Name>

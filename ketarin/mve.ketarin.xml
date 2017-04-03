@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="555d05bc-09fa-429c-ba1b-a4fe3ccdabd0">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="c3bc17f9-ede1-476e-b508-fc109b2b0206">
     <WebsiteUrl />
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>14624396</LastFileSize>
-    <LastFileDate>2017-03-27T22:37:13.6357275</LastFileDate>
+    <LastFileSize>12121212</LastFileSize>
+    <LastFileDate>2017-04-03T04:55:50.2280118</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -27,52 +27,10 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex>([0-9.]*)-setup.exe</Regex>
-            <Url>http://drawpile.net/download/</Url>
-            <TextualContent>{getVersion}00</TextualContent>
+            <Regex>mve-([\d\.]+)-win64.zip</Regex>
+            <Url>http://www.gcc.tu-darmstadt.de/home/proj/mve/</Url>
+            <TextualContent> {getVersion:regexreplace:(\d{4\})(\d{2\})(\d{2\}):$1.$2.$3.00}</TextualContent>
             <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>https://drawpile.net{getUrl}</TextualContent>
-            <Name>url</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>getUrl</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>[^ "'&lt;&gt;\*]+\-w32.exe</Regex>
-            <Url>https://drawpile.net/download/</Url>
-            <Name>getUrl</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>getVersion</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>([0-9.]*)-setup.exe</Regex>
-            <Url>http://drawpile.net/download/</Url>
-            <Name>getVersion</Name>
           </UrlVariable>
         </value>
       </item>
@@ -85,7 +43,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>https://drawpile.net{getUrl64}</TextualContent>
+            <TextualContent>http://www.gcc.tu-darmstadt.de{getUrl64}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -98,9 +56,23 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
-            <Url>https://drawpile.net/download/</Url>
+            <Regex>[^ "'&lt;&gt;\*]+\win64.zip</Regex>
+            <Url>http://www.gcc.tu-darmstadt.de/home/proj/mve/</Url>
             <Name>getUrl64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getVersion</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>mve-([\d\.]+)-win64.zip</Regex>
+            <Url>http://www.gcc.tu-darmstadt.de/home/proj/mve/</Url>
+            <Name>getVersion</Name>
           </UrlVariable>
         </value>
       </item>
@@ -116,8 +88,8 @@
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated />
-    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
-    <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>drawpile</Name>
+    <TargetPath>{saveDir}\{appname}_{version}.{url64:ext}</TargetPath>
+    <FixedDownloadUrl>{url64}</FixedDownloadUrl>
+    <Name>mve</Name>
   </ApplicationJob>
 </Jobs>
