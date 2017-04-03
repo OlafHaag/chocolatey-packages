@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>{{PackageName}}</id>
+    <title>Regard3D</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Roman Hiestand</authors>
+    <owners>Vaquero</owners>
+    <summary>Regard3D is a free and open source structure-from-motion program. It converts photos of an object, taken from different angles, into a 3D model of this object.</summary>
+    <description>
+Regard3D is a structure-from-motion program (see also this [Wikipedia article](http://en.wikipedia.org/wiki/Structure_from_motion)). That means, it can create 3D models from objects using a series of photographs taken of this object from different viewpoints.
+##Features:
+* Based on powerful third-party tools and libraries
+* Completely free and open sourced
+
+##Requirements:
+* Regard3D is a 64-bit-only program. It only runs on 64 bit versions of Windows
+* Windows 7 or newer (does not run on Windows XP, Vista not tested)
+* OpenGL capable graphics card/chip
+* Larger projects (many high resolution pictures) require a fast computer with lots of RAM (4 GB minimum, recommended 8 GB or more)
+    </description>
+    <projectUrl>http://www.regard3d.org/</projectUrl>
+    <tags>sfm reconstruction 3d models photogrammetry texture admin</tags>
+    <copyright />
+    <licenseUrl>http://www.regard3d.org/index.php/documentation/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.regard3d.org/index.php/documentation</docsUrl>
+    <projectSourceUrl>https://sourceforge.net/projects/regard3d/files/Regard3D/{{PackageVersion}}/Regard3D_src_0.9.1.7z/download</projectSourceUrl>
+    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
+    <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/e019aa03/icons/regard3d.png</iconUrl>
+    <dependencies />
+    <releaseNotes>https://sourceforge.net/projects/regard3d/files/Regard3D/{{PackageVersion}}/</releaseNotes>
+    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/regard3d</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
