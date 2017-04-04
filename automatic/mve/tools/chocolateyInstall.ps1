@@ -14,5 +14,9 @@ $files = get-childitem $installDir -include *.exe -recurse
 foreach ($file in $files) {
   if ($file.Name.Contains("umve.exe")) {
     New-Item "$file.gui" -type file -force | Out-Null
+    #$target = Join-Path $installDir "$($packageName).exe"
+    $DesktopPath = [Environment]::GetFolderPath("Desktop")
+    $WorkingDir = $(Split-Path $file)
+    Install-ChocolateyShortcut -shortcutFilePath "$DesktopPath\umve.lnk" -targetPath "$file" -WorkingDirectory "$WorkingDir"
   }
 }
