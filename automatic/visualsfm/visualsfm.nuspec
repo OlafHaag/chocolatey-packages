@@ -24,7 +24,7 @@ This package already installs the dependencies for PMVS/CMVS. Included binaries 
     <tags>3d reconstruction photogrammetry</tags>
     <copyright>Copyright 2006-2012 Changchang Wu ( wucc1130-at-gmail.com )</copyright>
     <licenseUrl>http://ccwu.me/vsfm/README</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <!--<iconUrl></iconUrl>-->
     <dependencies>

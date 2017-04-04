@@ -32,7 +32,7 @@ This project: Licensed under the Apache License, Version 2.0.
     <tags>osvr-core osvr open source virtual reality vr hmd vrpn sdk hdk server tracker gaming</tags>
     <copyright></copyright>
     <licenseUrl>https://github.com/OSVR/OSVR-Core/blob/master/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://github.com/OSVR/OSVR-Core/blob/master/assets/osvr_server_icon_256.png</iconUrl>
   </metadata>
   <files>

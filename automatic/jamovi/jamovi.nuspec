@@ -26,7 +26,7 @@ jamovi will always be free and open - that's one of our core values - because ja
     <tags>data analysis analytics statistics R data-mining admin</tags>
     <copyright></copyright>
     <licenseUrl>https://github.com/jamovi/jamovi/blob/master/LICENSE.md</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <!--<iconUrl></iconUrl>-->
     <dependencies>

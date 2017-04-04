@@ -46,7 +46,7 @@ The following package parameter can be set:
     <tags>xnviewmp XnView image picture photo graphics viewer convert nconvert organizer admin</tags>
     <copyright>© XnSoft</copyright>
     <licenseUrl>http://www.xnview.com/en/xnviewmp/#downloads</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://www.xnview.com/assets/img/app-xnviewmp-512.png</iconUrl>
     <releaseNotes></releaseNotes>
     <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/xnviewmp.install</packageSourceUrl>

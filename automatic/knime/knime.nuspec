@@ -49,7 +49,7 @@ KNIME is released under a dual licensing scheme. The open source license (GPL) a
     <tags>knime data analysis analytics statistics data-mining admin</tags>
     <copyright>KNIME.COM AG</copyright>
     <licenseUrl>http://www.knime.org/downloads/full-license</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/Knime-logo-120px.png</iconUrl>
     <dependencies>

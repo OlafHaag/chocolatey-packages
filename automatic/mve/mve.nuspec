@@ -61,7 +61,7 @@ In: Proceedings of European Conference on Computer Vision 2014, Zurich, Switzerl
     <tags>3d reconstruction photogrammetry multi-view surface sfm</tags>
     <copyright />
     <licenseUrl>https://github.com/simonfuhrmann/mve/blob/master/LICENSE.txt</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/5bf5e4fa/icons/umve.png</iconUrl>
     <dependencies />

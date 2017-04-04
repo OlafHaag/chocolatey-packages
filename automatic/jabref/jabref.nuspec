@@ -20,7 +20,7 @@ To set the installation directory, use: `choco install jabref -ia "-dir ""d:\mya
     <tags>jabref bibtex latex bibliography reference database admin</tags>
     <copyright></copyright>
     <licenseUrl>https://github.com/JabRef/jabref/blob/master/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <docsUrl>https://help.jabref.org/</docsUrl>
     <projectSourceUrl>https://github.com/JabRef/jabref/</projectSourceUrl>

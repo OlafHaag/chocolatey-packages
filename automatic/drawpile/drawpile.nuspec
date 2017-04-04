@@ -39,7 +39,7 @@ The following package parameter can be set:
     <tags>drawpile drawing collaboration collaborative paint graphics admin</tags>
     <copyright>Calle Laakkonen</copyright>
     <licenseUrl>https://github.com/callaa/Drawpile/blob/master/COPYING</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/callaa/Drawpile/master/desktop/drawpile-64x64.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="{{PackageVersion}}" />

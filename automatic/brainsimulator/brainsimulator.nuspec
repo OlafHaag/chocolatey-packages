@@ -32,7 +32,7 @@ Please keep in mind that Brain Simulator is still in the PROTOTYPE STAGE OF DEVE
     <copyright>GoodAI Brain Simulator
 Copyright © 2014–2016, Keen Software House a. s.</copyright>
     <licenseUrl>http://www.goodai.com/brain-simulator-eula</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>http://docs.goodai.com/brainsimulator/index.html</docsUrl>
     <projectSourceUrl>https://github.com/GoodAI/BrainSimulator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/GoodAI/BrainSimulator/issues</bugTrackerUrl>
