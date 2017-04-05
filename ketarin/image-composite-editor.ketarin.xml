@@ -1,0 +1,110 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="4c1226af-8944-4159-9f24-b7ef8997d648">
+    <WebsiteUrl />
+    <UserAgent>chocolatey command line</UserAgent>
+    <UserNotes />
+    <LastFileSize>7440896</LastFileSize>
+    <LastFileDate>2015-02-26T05:53:54+01:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>Version ([\d\.]+)</Regex>
+            <Url>https://social.microsoft.com/Forums/en-US/72d099a5-34d3-4d46-b43c-fb00cbcab159/release-notes-for-image-composite-editor?forum=ice</Url>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{getUrl}</TextualContent>
+            <Name>url</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://social.microsoft.com/Forums/en-US/806bf0c5-af8f-4526-9b90-6d28096441d2/faq-frequently-asked-questions-for-image-composite-editor?forum=ice</Url>
+            <TextualContent>https://download.microsoft.com/download/A/7/8/A7804C73-ECDB-4459-BB3E-A7F13C4C5382/ICE-{version}-for-32-bit-Windows.msi</TextualContent>
+            <Name>getUrl</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{getUrl64}</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>getUrl64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex>[^ "'&lt;&gt;\*]+\.exe</Regex>
+            <Url>https://social.microsoft.com/Forums/en-US/806bf0c5-af8f-4526-9b90-6d28096441d2/faq-frequently-asked-questions-for-image-composite-editor?forum=ice</Url>
+            <TextualContent>https://download.microsoft.com/download/7/3/9/73918E0B-C146-40FA-B18C-EADF03FEC4BA/ICE-{version}-for-64-bit-Windows.msi</TextualContent>
+            <Name>getUrl64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation />
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated />
+    <TargetPath>{saveDir}\{appname}_{version}.{url:ext}</TargetPath>
+    <FixedDownloadUrl>{url}</FixedDownloadUrl>
+    <Name>image-composite-editor</Name>
+  </ApplicationJob>
+</Jobs>
