@@ -18,4 +18,5 @@ foreach ($file in $files) {
   }
   else{
     New-Item "$file.gui" -type file -force | Out-Null
+  }
 }
