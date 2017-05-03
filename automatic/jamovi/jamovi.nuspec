@@ -27,8 +27,7 @@ jamovi will always be free and open - that's one of our core values - because ja
     <copyright></copyright>
     <licenseUrl>https://github.com/jamovi/jamovi/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <!--<iconUrl></iconUrl>-->
+    <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/63874406/icons/jamovi.png</iconUrl>
     <dependencies>
       <dependency id="{{PackageName}}.install" version="[{{PackageVersion}}]" />
     </dependencies>
