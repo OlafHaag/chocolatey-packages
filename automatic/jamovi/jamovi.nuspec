@@ -23,7 +23,7 @@ jamovi will always be free and open - that's one of our core values - because ja
     </description>
     <projectUrl>https://www.jamovi.org/</projectUrl>
     <projectSourceUrl>https://github.com/jamovi/jamovi</projectSourceUrl>
-    <tags>data analysis analytics statistics R data-mining admin</tags>
+    <tags>data analysis analytics statistics R data-mining</tags>
     <copyright></copyright>
     <licenseUrl>https://github.com/jamovi/jamovi/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
