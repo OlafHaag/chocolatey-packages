@@ -7,40 +7,10 @@
     <version>{{PackageVersion}}</version>
     <authors>Autodesk, Inc.</authors>
     <owners>Vaquero</owners>
-    <summary>Meshmixer is the ultimate tool for 3D mashups and remixes. Mash, mix, sculpt, stamp or paint your own 3D designs, or start from over 10,000 models in the Gallery. Now includes direct 3D print support.</summary>
+    <summary>Meshmixer is Autodesk's state-of-the-art software for working with triangle meshes.</summary>
     <description>
-##Mesh and Mix
-
-Design your own creations by combining two or more models with a few simple steps. It’s as easy as “cut-and-paste”.
-
-##Pattern
-
-Create beautiful overlay textures using a variety of simple grid and pattern options.
-
-##Sculpt
-
-Mold and refine surfaces real-time like virtual clay.
-
-#3D printing with Meshmixer
-Printing your 3D model has never been easier with the latest release of Meshmixer.
-
-##Seamless digital-to-physical experience
-Starting from any 123D software, 3D model in the Gallery, or any major 3D model file Format*, you can preview, refine and prepare your models to print with confidence.
-
-*.stl, .obj, .amf, .ply, .wrl
-
-##Supports any desktop 3D printer
-Print directly from Meshmixer to your  [Makerbot](http://www.makerbot.com/)
-** or [Type A Machines](http://www.typeamachines.com/). Meshmixer is also compatible with Stratasys, and has the option to configure your own desktop printer.
-
-** Windows 8.1 only
-
-##Hassle-free 3D printing services
-You don’t need to own a 3D printer to create amazing 3D-printed objects. Leave the 3D printing to our trusted partners: [i.materialise](http://i.materialise.com/), [Sculpteo](http://www.sculpteo.com/) and [Shapeways](http://www.shapeways.com/). Pick from dozens of different materials, colors and finishes, and preview your shopping cart right in Meshmixer.
-
-Tune in to [Meshmixer 101](https://tinyurl.com/nkfm84a), a series of YouTube instructional videos, to learn the basics.
-
-Autodesk Meshmixer is licenced under the 2016 Platform and Design Suites License and Services Agreement (including Autodesk Android Mobile Apps) (Platform and Design Suites LSA).
+Meshmixer is a handy tool for 3D mashups and working with triangle meshes. Mash, mix, sculpt, stamp or paint your own 3D designs, or start from any existing 3D file. With meshmixer you can prepare your meshes for 3D printing.
+For more information and feature overview visit Meshmixer's website: [http://www.meshmixer.com/](http://www.meshmixer.com/)
 
 Meshmixer will install to its default installation folder (e.g. C:\Program Files\Autodesk\Meshmixer).
 
@@ -51,13 +21,14 @@ The following package parameter can be set:
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
-    <projectUrl>http://www.123dapp.com/meshmixer</projectUrl>
-    <tags>123D meshmixer autodesk modeling 3d surface solid print admin</tags>
+    <projectUrl>http://www.meshmixer.com/</projectUrl>
+    <tags>meshmixer autodesk modeling 3d surface solid print admin</tags>
     <copyright>© Autodesk, Inc. All Rights Reserved.</copyright>
-    <licenseUrl>http://download.autodesk.com/us/FY16/Suites/LSA/en-US/lsa.html</licenseUrl>
+    <licenseUrl>http://download.autodesk.com/us/FY18/Suites/LSA/en-US/lsa.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://www.mmmanual.com/</docsUrl>
     <iconUrl>https://cdn.rawgit.com/TomOne/various/05103fe90f844ffe2349b108382c886d715d8ab7/meshmixer.png</iconUrl>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>http://www.meshmixer.com/download.html</releaseNotes>
     <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/autodesk-meshmixer</packageSourceUrl>
   </metadata>
   <files>
