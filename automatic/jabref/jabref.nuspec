@@ -28,7 +28,7 @@ To set the installation directory, use: `choco install jabref -ia "-dir ""d:\mya
     <mailingListUrl>http://discourse.jabref.org/</mailingListUrl>
     <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/33bb65bf/icons/JabRef-48px.png</iconUrl>
     <dependencies>
-      <dependency id="javaruntime" version="8.0.73" />
+      <dependency id="jre8" version="8.0.141" />
     </dependencies>
     <releaseNotes>https://github.com/JabRef/jabref/blob/v{{PackageVersion}}/CHANGELOG.md</releaseNotes>
     <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/jabref</packageSourceUrl>
