@@ -52,7 +52,7 @@ The following package parameter can be set:
       <dependency id="{{PackageName}}.install" version="[{{PackageVersion}}]" />
     </dependencies>
     <releaseNotes></releaseNotes>
-    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/xnviewmp</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/xnviewmp</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

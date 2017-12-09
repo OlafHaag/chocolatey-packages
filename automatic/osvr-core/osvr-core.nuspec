@@ -24,7 +24,7 @@ This project: Licensed under the Apache License, Version 2.0.
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
     </description>
     <projectUrl>http://www.osvr.com/</projectUrl>
-    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/osvr-core</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/osvr-core</packageSourceUrl>
     <projectSourceUrl>https://github.com/OSVR/OSVR-Core</projectSourceUrl>
     <docsUrl>https://github.com/OSVR/OSVR-JSON-Schemas/blob/master/README.md</docsUrl>
     <mailingListUrl>http://osvr.github.io/mailing-lists/</mailingListUrl>

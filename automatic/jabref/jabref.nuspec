@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
@@ -26,12 +26,12 @@ To set the installation directory, use: `choco install jabref -ia "-dir ""d:\mya
     <projectSourceUrl>https://github.com/JabRef/jabref/</projectSourceUrl>
     <bugTrackerUrl>https://github.com/JabRef/jabref/issues</bugTrackerUrl>
     <mailingListUrl>http://discourse.jabref.org/</mailingListUrl>
-    <iconUrl>https://cdn.rawgit.com/Vaquero84/chocolatey-packages/33bb65bf/icons/JabRef-48px.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/OlafHaag/chocolatey-packages/33bb65bf/icons/JabRef-48px.png</iconUrl>
     <dependencies>
       <dependency id="jre8" version="8.0.141" />
     </dependencies>
     <releaseNotes>https://github.com/JabRef/jabref/blob/v{{PackageVersion}}/CHANGELOG.md</releaseNotes>
-    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/jabref</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jabref</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

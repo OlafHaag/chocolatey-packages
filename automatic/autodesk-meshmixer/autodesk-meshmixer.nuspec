@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
@@ -29,7 +29,7 @@ The following package parameter can be set:
     <docsUrl>http://www.mmmanual.com/</docsUrl>
     <iconUrl>https://cdn.rawgit.com/TomOne/various/05103fe90f844ffe2349b108382c886d715d8ab7/meshmixer.png</iconUrl>
     <releaseNotes>http://www.meshmixer.com/download.html</releaseNotes>
-    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/autodesk-meshmixer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/autodesk-meshmixer</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -8,7 +8,7 @@
     <authors>Rick Gutierrez, Sing Bing Kang, Neel Joshi</authors>
     <owners>Vaquero</owners>
     <projectUrl>https://www.microsoft.com/en-us/research/project/image-composite-editor/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/Vaquero84/chocolatey-packages/master/icons/image-composite-editor.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/OlafHaag/chocolatey-packages/master/icons/image-composite-editor.png</iconUrl>
     <copyright>© Microsoft 2017</copyright>
     <bugTrackerUrl>https://social.microsoft.com/Forums/en-US/973b5e3c-fcba-4cf9-b925-a8f7efc2b80d/known-issues-for-image-composite-editor?forum=ice</bugTrackerUrl>
     <tags>image-composite-editor panorama stitching photo editing admin</tags>
@@ -21,7 +21,7 @@ Image Composite Editor (ICE) is an advanced panoramic image stitcher created by 
 Image Composite Editor is provided free of charge and without official support. However, if you have questions or issues with Image Composite Editor, you may find help at the [Image Composite Editor Forum](http://social.microsoft.com/Forums/en-US/ice/threads), which is monitored by the developers and provides community-based support.
     </description>
     <releaseNotes>https://social.microsoft.com/Forums/en-US/72d099a5-34d3-4d46-b43c-fb00cbcab159/release-notes-for-image-composite-editor?forum=ice</releaseNotes>
-    <packageSourceUrl>https://github.com/Vaquero84/chocolatey-packages/tree/master/automatic/image-composite-editor</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/image-composite-editor</packageSourceUrl>
     <dependencies>
       <dependency id="vcredist2013" version="12.0.0.20140222" />
       <dependency id="dotnet4.5" version="4.5" />
