@@ -28,7 +28,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Regex>KNIME ([\d\.]+)</Regex>
-            <Url>http://www.knime.org/download-knime-analytics-platform-sdk</Url>
+            <Url>https://www.knime.com/downloads/download-knime</Url>
             <Name>version</Name>
           </UrlVariable>
         </value>
