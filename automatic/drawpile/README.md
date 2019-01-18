@@ -1,15 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>drawpile</id>
-    <title>Drawpile</title>
-    <version>2.0.1100</version>
-    <authors>Calle Laakkonen</authors>
-    <owners>Vaquero</owners>
-    <summary>Drawpile is a Free software collaborative drawing program that allows multiple users to sketch on the same canvas simultaneously.</summary>
-    <description>
+# <img src="https://raw.githubusercontent.com/callaa/Drawpile/master/desktop/drawpile-64x64.png" width="48" height="48"/> [drawpile](https://chocolatey.org/packages/drawpile)
+
+
 Drawpile is a networked drawing program that allows multiple people to sketch on the same image simultaneously. It is developed as a Free/Libre Open Source project and is available at no cost.
 
 The goal of the project is to produce a simple, easy to use multiplatform collaboration tool. Drawpile supports the OpenRaster file format and thus works well with other Free painting applications such as Mypaint, Krita and GIMP.
@@ -34,20 +25,3 @@ The following package parameter can be set:
 * `-ia /DIR="x:\dirname"` - Overrides the default install directory. A fully qualified pathname must be specified.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-    </description>
-    <projectUrl>http://drawpile.net/</projectUrl>
-    <tags>drawpile drawing collaboration collaborative paint graphics admin</tags>
-    <copyright>Calle Laakkonen</copyright>
-    <licenseUrl>https://github.com/callaa/Drawpile/blob/master/COPYING</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/callaa/Drawpile/master/desktop/drawpile-64x64.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="{{PackageVersion}}" />
-    </dependencies>-->
-    <releaseNotes>http://drawpile.net/news/</releaseNotes>
-    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/drawpile</packageSourceUrl>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
