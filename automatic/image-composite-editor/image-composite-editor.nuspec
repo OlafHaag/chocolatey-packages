@@ -2,13 +2,13 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
-    <version>{{PackageVersion}}</version>
+    <id>image-composite-editor</id>
+    <version>2.0.3</version>
     <title>Image Composite Editor</title>
     <authors>Rick Gutierrez, Sing Bing Kang, Neel Joshi</authors>
     <owners>Vaquero</owners>
     <projectUrl>https://www.microsoft.com/en-us/research/project/image-composite-editor/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/OlafHaag/chocolatey-packages/master/icons/image-composite-editor.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/image-composite-editor/image-composite-editor.png</iconUrl>
     <copyright>© Microsoft 2017</copyright>
     <bugTrackerUrl>https://social.microsoft.com/Forums/en-US/973b5e3c-fcba-4cf9-b925-a8f7efc2b80d/known-issues-for-image-composite-editor?forum=ice</bugTrackerUrl>
     <tags>image-composite-editor panorama stitching photo editing admin</tags>

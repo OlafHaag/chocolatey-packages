@@ -1,0 +1,7 @@
+# <img src="https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/image-composite-editor/image-composite-editor.png" width="48" height="48"/> [image-composite-editor](https://chocolatey.org/packages/image-composite-editor)
+
+##What is Image Composite Editor?
+Image Composite Editor (ICE) is an advanced panoramic image stitcher created by the Microsoft Research [Interactive Visual Media Group](https://www.microsoft.com/en-us/research/group/interactive-visual-media/). Given a set of overlapping photographs of a scene shot from a single camera location, the app creates a high-resolution panorama that seamlessly combines the original images. ICE can also create a panorama from a panning video, including stop-motion action overlaid on the background. Finished panoramas can be shared with friends and viewed in 3D by uploading them to the [Photosynth](http://photosynth.net/) web site. Panoramas can also be saved in a wide variety of image formats, including JPEG, TIFF, and Photoshop’s PSD/PSB format, as well as the multiresolution tiled format used by HD View and [Deep Zoom](https://msdn.microsoft.com/en-us/library/cc645050(VS.95).aspx).
+
+##Support
+Image Composite Editor is provided free of charge and without official support. However, if you have questions or issues with Image Composite Editor, you may find help at the [Image Composite Editor Forum](http://social.microsoft.com/Forums/en-US/ice/threads), which is monitored by the developers and provides community-based support.
