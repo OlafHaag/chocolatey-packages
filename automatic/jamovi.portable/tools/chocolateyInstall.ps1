@@ -1,13 +1,14 @@
-$packageName = '{{PackageName}}'
-$url64 = '{{DownloadUrlx64}}'
-$installDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$checksum64 = '{{Checksumx64}}'
-$checksumType64 = 'sha256'
-Install-ChocolateyZipPackage -PackageName $packageName `
-                             -UnzipLocation $installDir `
-                             -Url64bit $url64 `
-                             -Checksum64 $checksum64 `
-                             -ChecksumType64 $checksumType64
+$packageArgs = @{
+  packageName    = 'jamovi.portable'
+  fileType       = 'zip'
+  unzipLocation  = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+  url64bit       = 'https://www.jamovi.org/downloads/jamovi-0.9.2.8-win64.zip'
+  checksum64     = 'aaab2b32a0b7e13e5d77e18767dbb49110d1a85ce55d7057b5bbabd0f1c80241'
+  checksumType64 = 'sha256'
+}
+
+
+Install-ChocolateyZipPackage @packageArgs
 
 $files = get-childitem $installDir -include *.exe -recurse
 
