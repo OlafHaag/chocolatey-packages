@@ -29,7 +29,7 @@ jamovi will always be free and open - that's one of our core values - because ja
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jamovi/jamovi.png</iconUrl>
     <dependencies>
-      <dependency id="{{PackageName}}.install" version="[{{PackageVersion}}]" />
+      <dependency id="jamovi.install" version="[0.9.2.800]" />
     </dependencies>
     <releaseNotes>https://www.jamovi.org/release-notes.html</releaseNotes>
     <docsUrl>https://www.jamovi.org/user-manual.html</docsUrl>
