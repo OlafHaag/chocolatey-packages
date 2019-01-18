@@ -3,9 +3,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>{{PackageName}}</id>
+    <id>jabref</id>
     <title>JabRef</title>
-    <version>{{PackageVersion}}</version>
+    <version>4.3.1</version>
     <authors>https://github.com/JabRef/jabref/blob/master/AUTHORS</authors>
     <owners>Vaquero</owners>
     <summary>JabRef is an open source bibliography reference manager. The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format. JabRef runs on the Java VM (version 1.8 or newer).</summary>
@@ -26,7 +26,7 @@ To set the installation directory, use: `choco install jabref -ia "-dir ""d:\mya
     <projectSourceUrl>https://github.com/JabRef/jabref/</projectSourceUrl>
     <bugTrackerUrl>https://github.com/JabRef/jabref/issues</bugTrackerUrl>
     <mailingListUrl>http://discourse.jabref.org/</mailingListUrl>
-    <iconUrl>https://cdn.rawgit.com/OlafHaag/chocolatey-packages/33bb65bf/icons/JabRef-48px.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jabref/JabRef-48px.png</iconUrl>
     <dependencies>
       <dependency id="jre8" version="8.0.141" />
     </dependencies>
