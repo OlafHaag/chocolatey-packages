@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/olafhaag/choco-au-packages@master/airdroid/airdroid.png" width="48" height="48"/> [airdroid](https://chocolatey.org/packages/airdroid)
+# <img src="https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/airdroid/airdroid.png" width="48" height="48"/> [airdroid](https://chocolatey.org/packages/airdroid)
 
 AirDroid is a free and fast Android device manager app that allows you to access Android phone/tablet from computer remotely and securely. Manage SMS, files, photos and videos, WhatsApp, Line, WeChat and more on computer.
 
