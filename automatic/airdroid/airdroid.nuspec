@@ -41,9 +41,9 @@ The following package parameter can be set:
     <copyright>© 2015-2019 Sand Studio</copyright>
     <licenseUrl>https://www.airdroid.com/en/legal/eula.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/choco-au-packages@master/airdroid/airdroid.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/airdroid/airdroid.png</iconUrl>
     <releaseNotes>https://www.airdroid.com/en/download.html</releaseNotes>
-    <packageSourceUrl>https://github.com/OlafHaag/choco-au-packages/tree/master/airdroid</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/airdroid</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
