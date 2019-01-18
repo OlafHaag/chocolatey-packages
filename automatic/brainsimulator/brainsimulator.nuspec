@@ -2,30 +2,30 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>brainsimulator</id>
     <title>Brain Simulator</title>
-    <version>{{PackageVersion}}</version>
+    <version>0.6.0</version>
     <authors>Keen Software House</authors>
     <owners>Vaquero</owners>
     <summary>Brain Simulator is a collaborative platform for researchers, developers, and high-tech companies to prototype and simulate artificial brain architecture, share knowledge, and exchange feedback.</summary>
     <description>
-###Create your own AI Brain
+##Create your own AI Brain
 The platform is designed to simplify collaboration, testing, and the implementation of new theories, and to easily visualize experiments and data. No mathematical or programming background is required to experiment with Brain Simulator modules. GoodAI will continuously improve the platform based on its own research development and user feedback.
 
 The ability to rapidly prototype architectures of artificial brains and instantly test different hypotheses is paramount to keeping our research dynamically moving forward. This is why we created Brain Simulator.
 
-On this platform, a researcher can experiment with existing AI modules (e.g. image recognition, working memory, prediction, motion behavior generator, etc.), modify them, create new ones and link them together. The resulting AI agent can observe, interact, and modify the simulated environment. No mathematical or programming background is required to experiment with Brain Simulator. We replaced AI programming with AI designing.
+On this platform, a researcher can experiment with existing AI modules (e.g. image recognition, working memory, prediction, motion behavior generator, etc.), modify them, create new ones and link them together. The resulting AI agent can observe, interact, and modify the simulated environment. No mathematical or programming background is required to experiment with Brain Simulator.
 
 AI agents designed in Brain Simulator operate on sensory input in a simulated world, interpret and change their environment, and can communicate with each other.
 
-###Open-Source
+##Open-Source
 GoodAI Brain Simulator, its source code, binaries, assets, modules and project files are licensed under the Apache License, Version 2.0, and may be used only for non-evil purposes.
 
-###Technical Parameters
-Brain Simulator is currently being developed in C# with AI modules and architectures simulated on CUDA. We plan to make the project multi-platform (Windows, Linux, Mac, etc.), cloud-based, and cluster-based (multi-GPU/CPU).
+##Technical Parameters
+Brain Simulator is currently being developed in C# with AI modules and architectures simulated on CUDA.
 
 **Using Brain Simulator currently requires 64-bit Windows 7, 8, 8.1 or 10, .NET 4.5, and an nVIDIA graphics card with CUDA support (compute capability of 2.0 or higher).**
-Please keep in mind that Brain Simulator is still in the PROTOTYPE STAGE OF DEVELOPMENT. GoodAI will continuously improve the platform based on its own research advancement and user feedback.
+Please keep in mind that Brain Simulator is still in the PROTOTYPE STAGE OF DEVELOPMENT.
     </description>
     <projectUrl>http://www.goodai.com/brain-simulator</projectUrl>
     <tags>brainsimulator brain simulator GoodAI AI neurosience machine learning admin</tags>
@@ -36,7 +36,7 @@ Copyright © 2014–2016, Keen Software House a. s.</copyright>
     <docsUrl>http://docs.goodai.com/brainsimulator/index.html</docsUrl>
     <projectSourceUrl>https://github.com/GoodAI/BrainSimulator</projectSourceUrl>
     <bugTrackerUrl>https://github.com/GoodAI/BrainSimulator/issues</bugTrackerUrl>
-    <iconUrl>https://cdn.rawgit.com/GoodAI/BrainSimulator/2bd87b62/Sources/Platform/BrainSimulator/res/brainSim.ico</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/GoodAI/BrainSimulator@master/Sources/Platform/BrainSimulator/res/brainSim.ico</iconUrl>
     <!--<dependencies>
       <dependency id="" version="{{PackageVersion}}" />
     </dependencies>-->

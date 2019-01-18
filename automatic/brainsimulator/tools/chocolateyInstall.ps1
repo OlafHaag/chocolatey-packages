@@ -1,8 +1,8 @@
-$packageName = '{{PackageName}}'
+$packageName = 'brainsimulator'
 $installerType = 'msi'
 $silentArgs = '/quiet /norestart'
-$url64 = '{{DownloadUrlx64}}'
-$checksum64 = '{{Checksumx64}}'
+$url64 = 'http://mirror.goodai.com/download/brainsimulator/BrainSimulatorInstaller-v0.6.0-03.msi'
+$checksum64 = '14632c8df4fb54ee797f4ba3e51581dda721df1c26d38cbd4fbad8223708ca28'
 $checksumType64 = 'sha256'
 $validExitCodes = @(0)
 Install-ChocolateyPackage -PackageName $packageName `
