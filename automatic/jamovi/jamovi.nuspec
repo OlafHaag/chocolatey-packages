@@ -4,12 +4,11 @@
   <metadata>
     <id>jamovi</id>
     <title>jamovi Statistical Analysis</title>
-    <version>0.9.2.800</version>
+    <version>0.9.5.1200</version>
     <authors>https://github.com/jamovi/jamovi/graphs/contributors</authors>
     <owners>Vaquero</owners>
     <summary>jamovi is a new "3rd generation" statistical spreadsheet. designed from the ground up to be easy to use, jamovi is a compelling alternative to costly statistical products such as SPSS and SAS.</summary>
-    <description>
-## STATS MADE SIMPLE
+    <description><![CDATA[## STATS MADE SIMPLE
 
 jamovi is a new "3rd generation" statistical spreadsheet. designed from the ground up to be easy to use, jamovi is a compelling alternative to costly statistical products such as SPSS and SAS.
 
@@ -20,7 +19,7 @@ jamovi is built on top of the R statistical language, giving you access to the b
 ## FREE AND OPEN:
 
 jamovi will always be free and open - that's one of our core values - because jamovi is made by the scientific community, for the scientific community.
-    </description>
+]]></description>
     <projectUrl>https://www.jamovi.org/</projectUrl>
     <projectSourceUrl>https://github.com/jamovi/jamovi</projectSourceUrl>
     <tags>data analysis analytics statistics R data-mining</tags>
@@ -29,7 +28,7 @@ jamovi will always be free and open - that's one of our core values - because ja
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jamovi/jamovi.png</iconUrl>
     <dependencies>
-      <dependency id="jamovi.install" version="[0.9.2.800]" />
+      <dependency id="jamovi.install" version="[0.9.5.1200]" />
     </dependencies>
     <releaseNotes>https://www.jamovi.org/release-notes.html</releaseNotes>
     <docsUrl>https://www.jamovi.org/user-manual.html</docsUrl>
