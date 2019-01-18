@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $root          = (Split-Path $releases -Parent).Replace(":\\", "://")
     $download_page = Invoke-WebRequest $releases -UseBasicParsing
     $url_i         = $download_page.Links | ? href -match '.exe$' | % href | select -First 1
-    $url_p         = url_i -replace '.exe', '.zip'
+    $url_p         = $url_i -replace '.exe', '.zip'
     $version       = $url_i -split '-|.exe' | select -Last 1 -Skip 2
 
     @{
