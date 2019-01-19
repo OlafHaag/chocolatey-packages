@@ -62,4 +62,4 @@ __Exercise the power__ ​of in-database processing or distributed computing on 
 
 ### KNIME License Terms and Conditions
 
-Please see the [General Public License (GPL), Version 3, and the Additional Permissions according to Sec. 7 applying to the files in KNIME plug-in folders.](http://www.knime.org/downloads/full-license)
+Please see the [GPL v3, and the Additional Permissions according to Sec. 7](http://www.knime.org/downloads/full-license)
