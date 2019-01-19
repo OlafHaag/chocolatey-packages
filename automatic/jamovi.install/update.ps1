@@ -5,4 +5,4 @@ function global:au_BeforeUpdate {
   $Latest.FileType = 'exe'
 }
 
-update -ChecksumFor none
+update

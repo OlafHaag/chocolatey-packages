@@ -25,4 +25,6 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') {
+  update -ChecksumFor none
+}
