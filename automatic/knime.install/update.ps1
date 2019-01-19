@@ -1,4 +1,4 @@
-. $PSScriptRoot\..\jamovi\update.ps1
+. $PSScriptRoot\..\knime\update.ps1
 
 function global:au_SearchReplace {
   @{
