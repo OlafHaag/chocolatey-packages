@@ -1,0 +1,65 @@
+# <img src="https://avatars1.githubusercontent.com/u/5486329" width="48" height="48"/> [knime.install](https://chocolatey.org/packages/knime.install)
+
+## KNIME Analytics Platform
+
+KNIME Analytics Platform is the open source software for creating data science applications and services. Intuitive, open, and continuously integrating new developments, KNIME makes understanding data and designing data science workflows and reusable components accessible to everyone.
+
+### Build end to end data science workflows
+
+__Create visual workflows__ with an intuitive, drag and drop style graphical interface, without the need for coding.
+
+__Blend tools from different domains__ with KNIME native nodes in a single workflow, including scripting in R & Python, machine learning, or connectors to Apache Spark.
+
+__Choose from over 2000 modules ("nodes")__ to build your workflow. Model each step of your analysis, control the flow of data, and ensure your work is always current.
+
+__Get up and running quickly.__ Select one of the hundreds of publicly available example workflows, or use the integrated workflow coach to guide you through building your workflow.
+
+### Blend data from any source
+
+__Open and combine__ simple text formats (CSV, PDF, XLS, JSON, XML, etc), unstructured data types (images, documents, networks, molecules, etc), or time series data.
+
+__Connect__ to a host of databases and data warehouses to integrate data from Oracle, Microsoft SQL, Apache Hive, and more. Load Avro, Parquet, or ORC files from HDFS, S3, or Azure.
+
+__Access and retrieve__ data from sources such as Twitter, AWS S3, Google Sheets, and Azure.
+
+### Shape your data
+
+__Derive statistics__, including mean, quantiles, and standard deviation, or apply statistical tests to validate a hypothesis. Integrate dimension reduction, correlation analysis, and more into your workflows.
+
+__Aggregate, sort, filter, and join data__ either on your local machine, in-database, or in distributed big data environments.
+
+__Clean data through normalization__, data type conversion, and missing value handling. Detect out of range values with outlier and anomaly detection algorithms.
+
+__Extract and select features__ (or construct new ones) to prepare your dataset for machine learning. Manipulate text, apply formulas on numerical data, and apply rules to filter out or mark samples.
+
+### Leverage Machine Learning and AI
+
+__Build machine learning models__ for classification, regression, dimension reduction, or clustering, using advanced algorithms including deep learning, tree-based methods, and logistic regression.
+
+__Optimize model performance__ with hyperparameter optimization, boosting, bagging, stacking, or building complex ensembles.
+
+__Validate models__ by applying performance metrics including Accuracy, R², AUC, and ROC. Perform cross validation to guarantee model stability.
+
+__Make predictions__ using validated models directly, or with industry leading PMML, including on Apache Spark.
+
+### Discover and share insights
+
+__Visualize data__ with classic (bar chart, scatter plot) as well as advanced charts (parallel coordinates, sunburst, network graph) and customize them to your needs.
+
+__Display summary statistics__ about columns in a KNIME table and filter out anything that’s irrelevant.
+
+__Export reports__ as PDF, Powerpoint, or other formats for presenting results to stakeholders.
+
+__Store processed data__ or analytics results in many common file formats or databases.
+
+### Scale execution with demands
+
+__Build workflow prototypes__ to ​explore various analysis approaches. Inspect and save intermediate results to ensure fast feedback and efficient discovery of new, creative solutions.
+
+__Scale workflow performance__ through in-memory streaming and multi threaded data processing.
+
+__Exercise the power__ ​of in-database processing or distributed computing on Apache Spark to further increase computation performance.
+
+### KNIME License Terms and Conditions
+
+Please see the [General Public License (GPL), Version 3, and the Additional Permissions according to Sec. 7 applying to the files in KNIME plug-in folders.](http://www.knime.org/downloads/full-license)

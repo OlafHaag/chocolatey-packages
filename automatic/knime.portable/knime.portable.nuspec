@@ -2,9 +2,9 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>knime.portable</id>
     <title>KNIME (Portable)</title>
-    <version>{{PackageVersion}}</version>
+    <version>3.6.2</version>
     <authors>KNIME.COM AG</authors>
     <owners>Vaquero</owners>
     <summary>KNIME® Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures.</summary>
@@ -51,9 +51,9 @@ KNIME is released under a dual licensing scheme. The open source license (GPL) a
     <licenseUrl>http://www.knime.org/downloads/full-license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>https://cdn.rawgit.com/OlafHaag/chocolatey-packages/master/icons/Knime-logo-120px.png</iconUrl>
-    <releaseNotes></releaseNotes>
-    <docsUrl>http://tech.knime.org/documentation</docsUrl>
+    <iconUrl>https://avatars1.githubusercontent.com/u/5486329</iconUrl>
+    <releaseNotes>https://www.knime.com/whats-new-in-knime-36</releaseNotes>
+    <docsUrl>https://docs.knime.com/</docsUrl>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/knime.portable</packageSourceUrl>
   </metadata>
   <files>
