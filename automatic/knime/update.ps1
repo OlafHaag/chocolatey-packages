@@ -17,8 +17,8 @@ function global:au_GetLatest {
     $re = 'KNIME [\d\.]+'
     $version = ($download_page.ParsedHtml.getElementsByTagName("h2") | Where{ $_.innerText -match $re}).innerText -split ' ' | select -Last 1
     $root = 'https://download.knime.org/analytics-platform/win/'
-    $url32_i         = "KNIME ${version} Installer (32bit).exe"
-    $url64_i         = "KNIME ${version} Installer (64bit).exe"
+    $url32_i         = "KNIME%20${version}%20Installer%20%2832bit%29.exe"
+    $url64_i         = "KNIME%20${version}%20Installer%20%2864bit%29.exe"
     $url32_p         = "knime_${version}.win32.win32.x86.zip"
     $url64_p         = "knime_${version}.win32.win32.x86_64.zip"
 
