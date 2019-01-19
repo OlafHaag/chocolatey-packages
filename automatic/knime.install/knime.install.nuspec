@@ -1,52 +1,77 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>knime.install</id>
     <title>KNIME (Install)</title>
-    <version>3.6.2</version>
+    <version>3.7.0</version>
     <authors>KNIME.COM AG</authors>
     <owners>Vaquero</owners>
     <summary>KNIME® Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures.</summary>
-    <description>
-If you want to install with all the free extensions available, use [KNIME (Full Install)](https://chocolatey.org/packages/knime-full.install/).
+    <description><![CDATA[## KNIME Analytics Platform
 
-## Powerful Analytics:
+KNIME Analytics Platform is the open source software for creating data science applications and services. Intuitive, open, and continuously integrating new developments, KNIME makes understanding data and designing data science workflows and reusable components accessible to everyone.
 
-- **Powerful**: A vast arsenal of native nodes, community contributions, and tool integrations makes KNIME Analytics Platform the perfect toolbox for any data scientist.
-- **Reliable and Trusted**: Hardened in the field since 2008 with 18 software releases and thousands of dedicated users.
-- **Scalable**: Toggle effortlessly between single computer, streaming, and big data execution. Integrate new capabilities on top of, alongside, or within your existing infrastructure.
-- **Room to Grow**: Extend the capabilities with our commercial extensions for collaboration, performance, and productivity when you’re ready to take your analytics to the next step.
+### Build end to end data science workflows
 
-## Data and Tool Blending:
+__Create visual workflows__ with an intuitive, drag and drop style graphical interface, without the need for coding.
 
-- **Data Blending**: Simple text files, databases, documents, images, networks, and even Hadoop-based data can all be combined within the same visual workflow.
-- **Tool Blending**: Integration of more than a dozen tools, including legacy scripting/code, allows expertise to be reused, graphically documented, and shared among data scientists.
-- **Visual**: Easy-to-learn graphical interface means that coding is optional and work is visually documented.
+__Blend tools from different domains__ with KNIME native nodes in a single workflow, including scripting in R & Python, machine learning, or connectors to Apache Spark.
 
-## Open Platform:
+__Choose from over 2000 modules ("nodes")__ to build your workflow. Model each step of your analysis, control the flow of data, and ensure your work is always current.
 
-- **Unrestricted Open Source**: We release our latest, complete code base under the GPLv3 license, with support for major operating systems. The only restriction is your creativity.
-- **Open Platform**: Your innovation is amplified by bringing our massive world-wide community of data scientists to your most difficult analytics problems.
-- **Portable and Durable**: Backwards compatibility ensures that existing workflows continue to function with new versions, future-proofing your work. Industry-leading PMML support allows effortless model portability and deployment.
+__Get up and running quickly.__ Select one of the hundreds of publicly available example workflows, or use the integrated workflow coach to guide you through building your workflow.
 
-## Over 1000 Modules and Growing
+### Blend data from any source
 
--Connectors for all major file formats and databases
--Support for a wealth of data types: XML, JSON, images, documents, and many more
--Native and in-database data blending and transformation
--Math and statistical functions
--Advanced predictive and machine learning algorithms Workflow control
--Tool blending for Python, R, SQL, Java, Weka, and many more
--Interactive data views and reporting
--Many more, including time series, image, text, and network analysis
+__Open and combine__ simple text formats (CSV, PDF, XLS, JSON, XML, etc), unstructured data types (images, documents, networks, molecules, etc), or time series data.
 
-The KNIME Analytics Platform incorporates hundreds of processing nodes for data I/O, preprocessing and cleansing, modeling, analysis and data mining as well as various interactive views, such as scatter plots, parallel coordinates and others. It integrates all of the analysis modules of the well known [Weka](http://www.cs.waikato.ac.nz/ml/weka/) data mining environment and additional plugins allow R-scripts to be run, offering access to a vast library of statistical routines.
+__Connect__ to a host of databases and data warehouses to integrate data from Oracle, Microsoft SQL, Apache Hive, and more. Load Avro, Parquet, or ORC files from HDFS, S3, or Azure.
 
-KNIME is based on the [Eclipse](http://www.eclipse.org/) platform and, through its modular API, easily extensible. When desired, custom nodes and types can be implemented in KNIME within hours thus extending KNIME to comprehend and provide first-tier support for highly domain-specific data. This modularity and extensibility enables KNIME to be employed in commercial production environments as well as teaching and research prototyping settings.
+__Access and retrieve__ data from sources such as Twitter, AWS S3, Google Sheets, and Azure.
 
-KNIME is released under a dual licensing scheme. The open source license (GPL) allows KNIME to be downloaded, distributed, and used freely. See [license arrangements](http://www.knime.org/downloads/full-license) for complete details.
-    </description>
+### Shape your data
+
+__Derive statistics__, including mean, quantiles, and standard deviation, or apply statistical tests to validate a hypothesis. Integrate dimension reduction, correlation analysis, and more into your workflows.
+
+__Aggregate, sort, filter, and join data__ either on your local machine, in-database, or in distributed big data environments.
+
+__Clean data through normalization__, data type conversion, and missing value handling. Detect out of range values with outlier and anomaly detection algorithms.
+
+__Extract and select features__ (or construct new ones) to prepare your dataset for machine learning. Manipulate text, apply formulas on numerical data, and apply rules to filter out or mark samples.
+
+### Leverage Machine Learning and AI
+
+__Build machine learning models__ for classification, regression, dimension reduction, or clustering, using advanced algorithms including deep learning, tree-based methods, and logistic regression.
+
+__Optimize model performance__ with hyperparameter optimization, boosting, bagging, stacking, or building complex ensembles.
+
+__Validate models__ by applying performance metrics including Accuracy, R², AUC, and ROC. Perform cross validation to guarantee model stability.
+
+__Make predictions__ using validated models directly, or with industry leading PMML, including on Apache Spark.
+
+### Discover and share insights
+
+__Visualize data__ with classic (bar chart, scatter plot) as well as advanced charts (parallel coordinates, sunburst, network graph) and customize them to your needs.
+
+__Display summary statistics__ about columns in a KNIME table and filter out anything that’s irrelevant.
+
+__Export reports__ as PDF, Powerpoint, or other formats for presenting results to stakeholders.
+
+__Store processed data__ or analytics results in many common file formats or databases.
+
+### Scale execution with demands
+
+__Build workflow prototypes__ to ​explore various analysis approaches. Inspect and save intermediate results to ensure fast feedback and efficient discovery of new, creative solutions.
+
+__Scale workflow performance__ through in-memory streaming and multi threaded data processing.
+
+__Exercise the power__ ​of in-database processing or distributed computing on Apache Spark to further increase computation performance.
+
+### KNIME License Terms and Conditions
+
+Please see the [GPL v3, and the Additional Permissions according to Sec. 7](http://www.knime.org/downloads/full-license)
+]]></description>
     <projectUrl>http://www.knime.org/knime</projectUrl>
     <tags>knime data analysis analytics statistics data-mining admin</tags>
     <copyright>KNIME.COM AG</copyright>
@@ -54,7 +79,7 @@ KNIME is released under a dual licensing scheme. The open source license (GPL) a
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>https://avatars1.githubusercontent.com/u/5486329</iconUrl>
-    <releaseNotes>https://www.knime.com/whats-new-in-knime-36</releaseNotes>
+    <releaseNotes>https://www.knime.com/whats-new-in-knime-37</releaseNotes>
     <docsUrl>https://docs.knime.com/</docsUrl>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/knime.install</packageSourceUrl>
   </metadata>
