@@ -1,15 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
-    <id>mve</id>
-    <title>Multi-View Environment</title>
-    <version>2016.05.17.00</version>
-    <authors>https://github.com/simonfuhrmann/mve/graphs/contributors</authors>
-    <owners>Vaquero</owners>
-    <summary>The Multi-View Environment is an effort to ease the work with multi-view datasets and to support the development of algorithms based on multiple views. It features Structure from Motion, Multi-View Stereo and Surface Reconstruction. MVE is developed at the TU Darmstadt.</summary>
-    <description>
-The Multi-View Environment, MVE, is an implementation of a complete end-to-end pipeline for image-based geometry reconstruction. It features **Structure-from-Motion**, **Multi-View Stereo** and **Surface Reconstruction**. The individual steps of the pipeline are available as command line applications, but most features are also available from our user interface UMVE. The project is developed at TU-Darmstadt by Michael Goesele's research group.
+# <img src="https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/mve/umve.png" width="48" height="48"/> [mve](https://chocolatey.org/packages/mve)
+
+The __Multi-View Environment__, MVE, is an implementation of a complete end-to-end pipeline for image-based geometry reconstruction. It features **Structure-from-Motion**, **Multi-View Stereo** and **Surface Reconstruction**. The individual steps of the pipeline are available as command line applications, but most features are also available from our user interface UMVE. The project is developed at TU-Darmstadt by Michael Goesele's research group.
 If you use their system and want to mention MVE in your publications, please cite the following paper:
 
 **MVE – A Multi-View Reconstruction Environment** [[Paper, 10MB]](http://www.gcc.tu-darmstadt.de/media/gcc/papers/Fuhrmann-2014-MVE.pdf)
@@ -54,22 +45,3 @@ A high-quality texture from the input images for the final mesh model can be gen
 **Let There Be Color! – Large-Scale Texturing of 3D Reconstructions** [Website with code](http://www.gcc.tu-darmstadt.de/home/proj/texrecon/index.en.jsp)
 *Michael Waechter, Nils Moehrle and Michael Goesele*
 In: Proceedings of European Conference on Computer Vision 2014, Zurich, Switzerland, 2014.
-    </description>
-    <projectUrl>http://www.gcc.tu-darmstadt.de/home/proj/mve/</projectUrl>
-    <projectSourceUrl>https://github.com/simonfuhrmann/mve</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/simonfuhrmann/mve/issues</bugTrackerUrl>
-    <tags>3d reconstruction photogrammetry multi-view surface sfm</tags>
-    <copyright />
-    <licenseUrl>https://github.com/simonfuhrmann/mve/blob/master/LICENSE.txt</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/mve/umve.png</iconUrl>
-    <dependencies />
-    <releaseNotes />
-    <docsUrl>https://github.com/simonfuhrmann/mve/wiki/MVE-Users-Guide</docsUrl>
-    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/mve</packageSourceUrl>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

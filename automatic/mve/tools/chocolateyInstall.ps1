@@ -1,14 +1,16 @@
-$packageName = '{{PackageName}}'
-$installDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$url64 = '{{DownloadUrlx64}}'
-$checksum64 = '{{Checksumx64}}'
-$checksumType64 = 'sha256'
-Install-ChocolateyZipPackage -PackageName $packageName `
-                             -UnzipLocation $installDir `
-                             -Url64bit $url64 `
-                             -Checksum64 $checksum64 `
-                             -ChecksumType64 $checksumType64
+$ErrorActionPreference = 'Stop'
 
+$packageArgs = @{
+  packageName    = 'mve'
+  UnzipLocation  = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+  url64bit       = 'http://www.gcc.tu-darmstadt.de/media/gcc/code/mve-20160517-win64.zip'
+  checksum64     = '7a4ed90add561803e0abb86cccd943e0d247ed9710c0c5da430e66ed0536e14f'
+  checksumType64 = 'sha256'
+}
+
+Install-ChocolateyZipPackage @packageArgs
+
+$installDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $files = get-childitem $installDir -include *.exe -recurse
 
 foreach ($file in $files) {
