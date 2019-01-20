@@ -3,7 +3,7 @@
 $packageArgs = @{
   packageName    = 'knime.install'
   fileType       = 'exe'
-  url           = 'https://download.knime.org/analytics-platform/win/KNIME%203.7.0%20Installer%20%2832bit%29.exe'
+  url            = 'https://download.knime.org/analytics-platform/win/KNIME%203.7.0%20Installer%20%2832bit%29.exe'
   url64bit       = 'https://download.knime.org/analytics-platform/win/KNIME%203.7.0%20Installer%20%2864bit%29.exe'
   checksum       = '88114c1fc564d4d6442798847e58e83ddf7cf98627c89f4a2762ed2d995a93d6'
   checksumType   = 'sha256'
