@@ -7,6 +7,4 @@
 This repository contains a selection of [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages) for the [Chocolatey Community Package Repository](https://chocolatey.org/packages/).  
 The repository is setup so that packages are managed entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
 
-The repo is currently undergoing the migration from the deprecated Ketarin-Setup to the AU method.
-
 The AU scripts originated from the [template repository for Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au-packages-template).
