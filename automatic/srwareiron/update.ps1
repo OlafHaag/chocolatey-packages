@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest $forum_url
+    $forum_page = Invoke-WebRequest $forum_url
     $re = 'New Iron-Version: [\d\.]+ Stable for Windows'
     $latest_anouncement = ($forum_page.ParsedHtml.getElementsByTagName("A") | Where{ $_.innerText -match $re}) | select -First 1
     $version = $($latest_anouncement.innerText) -split ' ' | select -First 1 -Skip 2
