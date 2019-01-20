@@ -1,14 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
-    <id>visualsfm</id>
-    <title>Visual SFM: A Visual Structure from Motion System</title>
-    <version>0.5.26</version>
-    <authors>Changchang Wu</authors>
-    <owners>Vaquero</owners>
-    <summary>VisualSFM is a GUI application for 3D reconstruction using structure from motion (SFM).</summary>
-    <description>
+# [visualsfm](https://chocolatey.org/packages/visualsfm)
+
 VisualSFM is a GUI application for 3D reconstruction using structure from motion (SFM).  The reconstruction system integrates several of Changchang Wu's previous projects: [SIFT on GPU(SiftGPU)](http://www.cs.unc.edu/~ccwu/siftgpu/), [Multicore Bundle Adjustment](http://grail.cs.washington.edu/projects/mcba/), and [Towards Linear-time Incremental Structure from Motion](http://ccwu.me/vsfm/vsfm.pdf). VisualSFM runs fast by exploiting multicore parallelism for feature detection, feature matching, and bundle adjustment.
 
 For dense reconstruction, this program integrates the execution of Yasutaka Furukawa's [PMVS/CMVS](http://grail.cs.washington.edu/software/cmvs/) tool chain. The SfM output of VisualSFM works with several additional tools, including [CMP-MVS](http://ptak.felk.cvut.cz/sfmservice/websfm.pl?menu=cmpmvs) by Michal Jancosek, [MVE](http://www.gris.informatik.tu-darmstadt.de/projects/multiview-environment/) by Michael Goesele's research group, [SURE](http://www.ifp.uni-stuttgart.de/publications/software/sure/index.en.html) by Mathias Rothermel and Konrad Wenzel, and [MeshRecon](http://www-scf.usc.edu/~zkang/software.html) by Zhuoliang Kang.
@@ -19,23 +10,3 @@ This package already installs the dependencies for PMVS/CMVS. Included binaries 
 * Please cite VisualSFM according to [README](http://ccwu.me/vsfm/README) in your publication.
 
 * Post questions about the software (not about this package) and see discussions and tutorials at the [Google Group](http://groups.google.com/group/vsfm) or write to wucc1130[at]gmail.com.
-    </description>
-    <projectUrl>http://ccwu.me/vsfm/</projectUrl>
-    <tags>3d reconstruction photogrammetry</tags>
-    <copyright>Copyright 2006-2012 Changchang Wu ( wucc1130-at-gmail.com )</copyright>
-    <licenseUrl>http://ccwu.me/vsfm/README</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <!--<iconUrl></iconUrl>-->
-    <dependencies>
-      <dependency id="chocolatey" version="0.10.4"/>
-      <dependency id="vcredist2010" version="10.0.40219.1"/>
-    </dependencies>
-    <releaseNotes>http://ccwu.me/vsfm/changelist.html</releaseNotes>
-    <docsUrl>http://ccwu.me/vsfm/doc.html</docsUrl>
-    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/visualsfm</packageSourceUrl>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>

@@ -1,10 +1,10 @@
-$packageName = '{{PackageName}}'
-$url = '{{DownloadUrl}}'
-$url64 = '{{DownloadUrlx64}}'
+$packageName = 'visualsfm'
+$url = 'http://ccwu.me/vsfm/download/VisualSFM_windows_cuda_32bit.zip'
+$url64 = 'http://ccwu.me/vsfm/download/VisualSFM_windows_cuda_64bit.zip'
 $installDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$checksum = '{{Checksum}}'
+$checksum = '8f03bfab81d08ed8efe14b9a7aa60191adeab52c357712f3e1ec17e7f79b15f4'
 $checksumType = 'sha256'
-$checksum64 = '{{Checksumx64}}'
+$checksum64 = '78280900f9aac1d16fe7935087b80d1592ff5e9670ef15d39655e5242ae6de3b'
 $checksumType64 = 'sha256'
 Install-ChocolateyZipPackage -PackageName $packageName `
                              -Url $url `
