@@ -1,4 +1,4 @@
-ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
   packageName    = 'regard3d'
