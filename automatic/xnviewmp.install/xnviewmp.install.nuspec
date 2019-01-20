@@ -2,9 +2,9 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>{{PackageName}}</id>
+    <id>xnviewmp.install</id>
     <title>XnViewMP (Install)</title>
-    <version>{{PackageVersion}}</version>
+    <version>0.92</version>
     <authors>Gougelet Pierre-Emmanuel</authors>
     <owners>Vaquero</owners>
     <summary>XnViewMP is the enhanced version to [XnView](https://chocolatey.org/packages/XnView). It is a powerful cross-platform media browser, viewer and converter. Compatible with more than [500 formats](http://www.xnview.com/en/xnviewmp/#formats).</summary>

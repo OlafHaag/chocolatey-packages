@@ -1,4 +1,4 @@
-$packageName = '{{PackageName}}'
+$packageName = 'xnviewmp.install'
 $installerType = 'exe'
 $silentArgs = '/VERYSILENT'
 $validExitCodes = @(0)
