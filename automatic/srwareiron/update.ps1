@@ -19,7 +19,8 @@ function global:au_GetLatest {
     $version = $($latest_anouncement.innerText) -split ' ' | select -First 1 -Skip 2
         
     $release_notes = "https://www.srware.net/forum" + $($latest_anouncement.href -replace 'about:.','')
-
+    $release_notes = Invoke-WebRequest -Uri "http://tinyurl.com/api-create.php?url=${release_notes}" | Select-Object -ExpandProperty Content  # CPack was throwing an error with acutal url!
+    
     return @{
         Version = Get-FixVersion $version
         URL32_i = "https://www.srware.net/downloads/srware_iron.exe"
