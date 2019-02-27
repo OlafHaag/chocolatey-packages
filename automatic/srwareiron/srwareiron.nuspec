@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>srwareiron</id>
-    <version>71.0.3700.000</version>
+    <version>72.0.3750.000</version>
     <title>SRWare Iron</title>
     <authors>SRWare</authors>
     <owners>Vaquero</owners>
@@ -16,9 +16,9 @@ Iron is issued by SRWare under an “all rights reserved” license, indicating 
 ]]></description>
     <summary>SRWare Iron is a freeware web browser implementation of the Chromium source code by SRWare of Germany.</summary>
     <dependencies>
-      <dependency id="srwareiron.install" version="[71.0.3700.000]" />
+      <dependency id="srwareiron.install" version="[72.0.3750.000]" />
     </dependencies>
-    <releaseNotes>http://tinyurl.com/y8vewwzq</releaseNotes>
+    <releaseNotes>http://tinyurl.com/y2ombecc</releaseNotes>
     <copyright>Copyright 2019 The Chromium Authors</copyright>
     <tags>SRWareIron browser privacy admin</tags>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/srwareiron</packageSourceUrl>
