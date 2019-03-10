@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/callaa/Drawpile/master/desktop/drawpile-64x64.png" width="48" height="48"/> [drawpile](https://chocolatey.org/packages/drawpile)
+# <img src="https://avatars3.githubusercontent.com/u/25749259?s=200&v=4" width="48" height="48"/> [drawpile](https://chocolatey.org/packages/drawpile)
 
 
 Drawpile is a networked drawing program that allows multiple people to sketch on the same image simultaneously. It is developed as a Free/Libre Open Source project and is available at no cost.
