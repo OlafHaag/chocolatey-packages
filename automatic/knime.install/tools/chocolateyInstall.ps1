@@ -3,11 +3,11 @@
 $packageArgs = @{
   packageName    = 'knime.install'
   fileType       = 'exe'
-  url            = 'https://download.knime.org/analytics-platform/win/KNIME%203.7.2%20Installer%20%2832bit%29.exe'
-  url64bit       = 'https://download.knime.org/analytics-platform/win/KNIME%203.7.2%20Installer%20%2864bit%29.exe'
-  checksum       = '6e0fba8b948150348925863c82e405e0a08136fa12cf8f1b894a764f131da428'
+  url            = 'https://download.knime.org/analytics-platform/win/KNIME%204.0.0%20Installer%20%2832bit%29.exe'
+  url64bit       = 'https://download.knime.org/analytics-platform/win/KNIME%204.0.0%20Installer%20%2864bit%29.exe'
+  checksum       = '6f6c4dace558edabf6bc94c0a3476daec3e6261868f6a5bd2d9f1749a53f44f1'
   checksumType   = 'sha256'
-  checksum64     = '207c3e7843663a0c74b63750f96d9e88598c34b2516b352d14a2d4b7c691bf2a'
+  checksum64     = '4f60246f91b3387d0f40d07ad0f864b9e2785a9672353aae2c38ac13b0019b28'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
