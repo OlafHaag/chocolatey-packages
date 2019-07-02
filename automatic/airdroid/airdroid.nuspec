@@ -1,17 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>airdroid</id>
     <title>Airdroid</title>
-    <version>3.6.4.01</version>
+    <version>3.6.5.000</version>
     <authors>Sand Studio</authors>
     <owners>Vaquero</owners>
     <summary>Access Android phone/tablet from computer remotely and securely. Manage SMS, files, photos and videos, WhatsApp, Line, WeChat and more on computer.</summary>
-    <description>
-AirDroid is a free and fast Android device manager app that allows you to access Android phone/tablet from computer remotely and securely. Manage SMS, files, photos and videos, WhatsApp, Line, WeChat and more on computer.
+    <description><![CDATA[AirDroid is a free and fast Android device manager app that allows you to access Android phone/tablet from computer remotely and securely. Manage SMS, files, photos and videos, WhatsApp, Line, WeChat and more on computer.
 
-### Features
+## Features
 - SMS: send and receive individual or group messages.
 - Files: transfer files between Android and computer from any network.
 - Notification Mirror: Mirror phone notifications from any allowed apps to computer.
@@ -27,14 +26,13 @@ AirDroid is a free and fast Android device manager app that allows you to access
 - URL: Push url to Android and open it with default web browser.
 - Clipboard: Share clipboard content between Android and computer.
 
-#### Package Parameters
+### Package Parameters
 The following package parameter can be set:
 
 * `-ia /D=` - this is for the installation path. (e.g. with cmd: `choco install airdroid -ia /D="E:\Some Directory\somebody\airdroid"`)
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
-
-    </description>
+]]></description>
     <projectUrl>https://www.airdroid.com/</projectUrl>
     <docsUrl>http://help.airdroid.com/</docsUrl>
     <tags>airdroid android phone remote admin</tags>
