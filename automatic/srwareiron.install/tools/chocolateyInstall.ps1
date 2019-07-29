@@ -5,9 +5,9 @@ $packageArgs = @{
   fileType       = 'exe'
   url            = 'https://www.srware.net/downloads/srware_iron.exe'
   url64bit       = 'https://www.srware.net/downloads/srware_iron64.exe'
-  checksum       = 'bd69136c0798ffa97e7ed87ed07e89fc4efb7c9912971c34302567860b4785a3'
+  checksum       = 'c0d2604dd7c8f90704ac7a7a791980ade4460758f406c4cf8d827d5799f3d4c7'
   checksumType   = 'sha256'
-  checksum64     = '698ca3957eed164c81fc09c7963df284a9d0e1101d3eb3cfac1d9f3f6fe2c7a2'
+  checksum64     = 'cd9ff0c6c86c8ab53d5ad4a455738188eef951f9b14efcd8094ea7b09cdc773e'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /Components=Iron'
   validExitCodes = @(0)
