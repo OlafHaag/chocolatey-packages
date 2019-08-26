@@ -10,7 +10,7 @@ function global:au_GetLatest {
     $url64 = $download_page.links | ? href -match $re | select -First 1 -expand href
     $url64 = 'https://github.com' + $url64
 
-    $url32 = $url64 -replace '-x64', ''
+    $url32 = $url64 -replace '-x64', '-x32'
 
     $version = $url64 -split 'x64_|.exe' | select -Last 1 -Skip 1
     $version = $version -replace '_', '.'
