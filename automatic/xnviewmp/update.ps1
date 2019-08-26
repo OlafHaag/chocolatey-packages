@@ -27,8 +27,8 @@ function global:au_GetLatest {
     $version_text = ($download_page.ParsedHtml.getElementsByTagName("p") | Where{ $_.className -eq "lead" -and $_.innerText -match "Version ([\d\.]+)"}).innerText
     $version = $Matches[1]
 
-    $release_notes = $download_page.Links | ? innerText -match 'Changelog' | % href| select -Last 1
-    $release_notes = Invoke-WebRequest -Uri "http://tinyurl.com/api-create.php?url=${release_notes}" | Select-Object -ExpandProperty Content  # CPack was throwing an error with actual url!
+    $release_notes = $download_page.Links | ? innerText -match 'Changelog' | % href| select -First 1 -Skip 1
+    $release_notes = $releases + $release_notes
 
     return @{
         Version = Get-FixVersion $version
