@@ -18,7 +18,7 @@ function global:au_GetLatest {
     return @{
         URL32        = $url32
         URL64        = $url64
-        Version      = Get-FixVersion $version
+        Version      = $version
         ReleaseNotes = "https://github.com/JabRef/jabref/blob/v${version}/CHANGELOG.md"
     }
 }
