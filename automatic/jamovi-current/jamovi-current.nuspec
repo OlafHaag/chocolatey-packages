@@ -32,7 +32,7 @@ jamovi will always be free and open - that's one of our core values - because ja
     </dependencies>
     <releaseNotes>https://www.jamovi.org/release-notes.html</releaseNotes>
     <docsUrl>https://www.jamovi.org/user-manual.html</docsUrl>
-    <packageSourceUrl>https://github.com/olafhaag/chocolatey-packages/tree/master/automatic/jamovi</packageSourceUrl>
+    <packageSourceUrl>https://github.com/olafhaag/chocolatey-packages/tree/master/automatic/jamovi-current</packageSourceUrl>
     <bugTrackerUrl>https://github.com/jamovi/jamovi/issues</bugTrackerUrl>
   </metadata>
   <files>
