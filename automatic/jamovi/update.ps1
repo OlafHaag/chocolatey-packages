@@ -12,41 +12,44 @@ function global:au_SearchReplace {
 }
 
 function GetStreams {
-    $streams = @{ }
+    $streams = [ordered]@{ }
 
     $root          = (Split-Path $releases -Parent).Replace(":\\", "://")
     $download_page = Invoke-WebRequest $releases -UseBasicParsing
     $urls         = $download_page.Links | ? href -match '.exe$' | % href
 
     $url_stable_i = $urls | select -First 1
-    $url_stable_version = $url_stable_i -split '-|.exe' | select -Last 1 -Skip 2
     $url_stable_p = $url_stable_i -replace '.exe', '.zip'
+    $version_stable = $url_stable_i -split '-|.exe' | select -Last 1 -Skip 2
 
     if (!$url_stable_i -or !$url_stable_p) {
-        throw "Either portable or installer was not found. Please check for changes."
+        throw "Either portable or installer for stable stream (v'$version_stable') was not found. Please check for changes."
     }
 
     $url_current_i = $urls | select -Last 1
-    $url_current_version = $url_current_i -split '-|.exe' | select -Last 1 -Skip 2
     $url_current_p = $url_current_i -replace '.exe', '.zip'
+    $version_current = $url_current_i -split '-|.exe' | select -Last 1 -Skip 2
 
     if (!$url_current_i -or !$url_current_p) {
-        throw "Either portable or installer was not found. Please check for changes."
+        throw "Either portable or installer for current stream (v'$version_current') was not found. Please check for changes."
     }
 
+    $version_current = Get-FixVersion ($version_current)
+    $version_current = $version_current  + '-current'
 
-    $streams.$url_stable_version = @{
-        Version = Get-Version $url_stable_version
-        URL64_i = $root + $url_stable_i
-        URL64_p = $root + $url_stable_p
-        }
+    $streams.Add('stable', @{
+        Version = Get-FixVersion $version_stable;
+        URL64_i = $root + $url_stable_i;
+        URL64_p = $root + $url_stable_p;
+        })
 
-    $streams.$url_current_version = @{
-        Version = Get-Version ($url_current_version + '-current')
-        URL64_i = $root + $url_current_i
-        URL64_p = $root + $url_current_p
-        }
+    $streams.Add('current', @{
+        Version = $version_current;
+        URL64_i = $root + $url_current_i;
+        URL64_p = $root + $url_current_p;
+        })
 
+    Write-Host $streams.Count "streams collected:" $streams.Keys
     $streams
 }
 
