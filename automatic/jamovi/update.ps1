@@ -11,21 +11,52 @@ function global:au_SearchReplace {
   }
 }
 
-function global:au_GetLatest {
+function GetStreams {
+    $streams = [ordered]@{ }
+
     $root          = (Split-Path $releases -Parent).Replace(":\\", "://")
     $download_page = Invoke-WebRequest $releases -UseBasicParsing
-    $url_i         = $download_page.Links | ? href -match '.exe$' | % href | select -First 1
-    $url_p         = $url_i -replace '.exe', '.zip'
-    $version       = $url_i -split '-|.exe' | select -Last 1 -Skip 2
+    $urls         = $download_page.Links | ? href -match '.exe$' | % href
 
-    if (!$url_i -or !$url_p) {
-        throw "Either portable or installer was not found. Please check for changes."
+    $url_stable_i = $urls | select -First 1
+    $url_stable_p = $url_stable_i -replace '.exe', '.zip'
+    $version_stable = $url_stable_i -split '-|.exe' | select -Last 1 -Skip 2
+
+    if (!$url_stable_i -or !$url_stable_p) {
+        throw "Either portable or installer for stable stream (v'$version_stable') was not found. Please check for changes."
     }
 
+    $url_current_i = $urls | select -Last 1
+    $url_current_p = $url_current_i -replace '.exe', '.zip'
+    $version_current = $url_current_i -split '-|.exe' | select -Last 1 -Skip 2
+
+    if (!$url_current_i -or !$url_current_p) {
+        throw "Either portable or installer for current stream (v'$version_current') was not found. Please check for changes."
+    }
+
+    $version_current = Get-FixVersion ($version_current)
+    $version_current = $version_current  + '-current'
+
+    $streams.Add('stable', @{
+        Version = Get-FixVersion $version_stable;
+        URL64_i = $root + $url_stable_i;
+        URL64_p = $root + $url_stable_p;
+        })
+
+    $streams.Add('current', @{
+        Version = $version_current;
+        URL64_i = $root + $url_current_i;
+        URL64_p = $root + $url_current_p;
+        })
+
+    Write-Host $streams.Count "streams collected:" $streams.Keys
+    $streams
+}
+
+function global:au_GetLatest {
+
     return @{
-        Version = Get-FixVersion $version
-        URL64_i = $root + $url_i
-        URL64_p = $root + $url_p
+        Streams = GetStreams
     }
 }
 
