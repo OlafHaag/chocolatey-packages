@@ -34,17 +34,14 @@ function GetStreams() {
         throw "Either portable or installer for current stream (v'$version_current') was not found. Please check for changes."
     }
 
-    $version_current = Get-FixVersion ($version_current)
-    $version_current = $version_current  + '-current'
-
     $streams.Add('solid', @{
-        Version = Get-FixVersion $version_solid;
+        Version = Get-Version $version_solid;
         URL64_i = $root + $url_solid_i;
         URL64_p = $root + $url_solid_p;
         })
 
     $streams.Add('current', @{
-        Version = $version_current;
+        Version = Get-Version ($version_current + '-current');
         URL64_i = $root + $url_current_i;
         URL64_p = $root + $url_current_p;
         })
