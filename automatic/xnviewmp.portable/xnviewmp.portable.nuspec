@@ -4,7 +4,7 @@
   <metadata>
     <id>xnviewmp.portable</id>
     <title>XnViewMP (Portable)</title>
-    <version>0.94</version>
+    <version>0.94.1</version>
     <authors>Gougelet Pierre-Emmanuel</authors>
     <owners>Vaquero</owners>
     <summary>XnViewMP is the enhanced version to [XnView](https://chocolatey.org/packages/XnView). It is a powerful cross-platform media browser, viewer and converter. Compatible with more than [500 formats](http://www.xnview.com/en/xnviewmp/#formats).</summary>
