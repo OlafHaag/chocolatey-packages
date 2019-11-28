@@ -4,7 +4,7 @@
   <metadata>
     <id>jamovi.install</id>
     <title>jamovi (install)</title>
-    <version>1.1.7.000-current</version>
+    <version>1.1.8.0-current</version>
     <authors>https://github.com/jamovi/jamovi/graphs/contributors</authors>
     <owners>Vaquero</owners>
     <summary>jamovi is a new "3rd generation" statistical spreadsheet. designed from the ground up to be easy to use, jamovi is a compelling alternative to costly statistical products such as SPSS and SAS.</summary>
@@ -19,6 +19,10 @@ jamovi is built on top of the R statistical language, giving you access to the b
 ## FREE AND OPEN:
 
 jamovi will always be free and open - that's one of our core values - because jamovi is made by the scientific community, for the scientific community.
+
+## SOLID vs CURRENT
+jamovi offers 2 streams: a solid version recommended for most users, and a current version which has the latest features, but might not be stable.
+The current versions are offered as pre-release packages on chocolatey. Get it by using `choco install jamovi.install --pre`
 ]]></description>
     <projectUrl>https://www.jamovi.org/</projectUrl>
     <projectSourceUrl>https://github.com/jamovi/jamovi</projectSourceUrl>
