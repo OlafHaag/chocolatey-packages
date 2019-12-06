@@ -4,7 +4,7 @@
   <metadata>
     <id>knime.portable</id>
     <title>KNIME (Portable)</title>
-    <version>4.0.2</version>
+    <version>4.1.0</version>
     <authors>KNIME.COM AG</authors>
     <owners>Vaquero</owners>
     <summary>KNIME® Analytics Platform is the leading open solution for data-driven innovation, helping you discover the potential hidden in your data, mine for fresh insights, or predict new futures.</summary>
@@ -79,7 +79,7 @@ Please see the [GPL v3, and the Additional Permissions according to Sec. 7](http
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <iconUrl>https://avatars1.githubusercontent.com/u/5486329</iconUrl>
-    <releaseNotes>https://www.knime.com/whats-new-in-knime-40</releaseNotes>
+    <releaseNotes>https://www.knime.com/whats-new-in-knime-41</releaseNotes>
     <docsUrl>https://docs.knime.com/</docsUrl>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/knime.portable</packageSourceUrl>
   </metadata>
