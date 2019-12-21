@@ -19,7 +19,7 @@ function global:au_GetLatest {
     $version = $Matches[1]
     $version_dl = $version.Replace(".", "")
 
-    $download_page = 'https://download.xnview.com/old_versions/'
+    $download_page = Invoke-WebRequest 'https://download.xnview.com/old_versions/'
     $url32_i         = $download_page.Links | ? href -match ($version_dl + '-win.exe$') | % href
     $url64_i         = $download_page.Links | ? href -match ($version_dl + '-win-x64.exe$') | % href
     $url32_p         = $download_page.Links | ? href -match ($version_dl + '-win.zip$') | % href
