@@ -1,7 +1,7 @@
 import-module au
 import-module Wormies-AU-Helpers
 
-$releases = 'https://www.xnview.com/en/xnviewmp/'
+$releases_url = 'https://www.xnview.com/en/xnviewmp/'
 
 function global:au_SearchReplace {
   @{
@@ -13,22 +13,25 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest $releases
-    
-    $url32_i         = $download_page.Links | ? href -match 'win.exe$' | % href
-    $url64_i         = $download_page.Links | ? href -match 'win-x64.exe$' | % href
-    $url32_p         = $download_page.Links | ? href -match 'win.zip$' | % href
-    $url64_p         = $download_page.Links | ? href -match 'win-x64.zip$' | % href
+    $releases_page = Invoke-WebRequest $releases_url
+
+    $version_text = ($releases_page.ParsedHtml.getElementsByTagName("p") | Where{ $_.className -eq "lead" -and $_.innerText -match "Version ([\d\.]+)"}).innerText
+    $version = $Matches[1]
+    $version_dl = $version.Replace(".", "")
+
+    $download_page = 'https://download.xnview.com/old_versions/'
+    $url32_i         = $download_page.Links | ? href -match ($version_dl + '-win.exe$') | % href
+    $url64_i         = $download_page.Links | ? href -match ($version_dl + '-win-x64.exe$') | % href
+    $url32_p         = $download_page.Links | ? href -match ($version_dl + '-win.zip$') | % href
+    $url64_p         = $download_page.Links | ? href -match ($version_dl + '-win-x64.zip$') | % href
 
     if (!$url32_i -or !$url64_i -or !$url32_p -or !$url64_p) {
         throw "Either 32bit or 64bit installer/portable was not found. Please check if naming has changed."
     }
 
-    $version_text = ($download_page.ParsedHtml.getElementsByTagName("p") | Where{ $_.className -eq "lead" -and $_.innerText -match "Version ([\d\.]+)"}).innerText
-    $version = $Matches[1]
 
     $release_notes = $download_page.Links | ? innerText -match 'Changelog' | % href| select -First 1 -Skip 1
-    $release_notes = $releases + $release_notes
+    $release_notes = $releases_url + $release_notes
 
     return @{
         Version = Get-FixVersion $version
