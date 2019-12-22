@@ -31,7 +31,7 @@ function global:au_GetLatest {
     }
 
 
-    $release_notes = $download_page.Links | ? innerText -match 'Changelog' | % href| select -First 1 -Skip 1
+    $release_notes = $releases_page.Links | ? innerText -match 'Changelog' | % href| select -First 1 -Skip 1
     $release_notes = $releases_url + $release_notes
 
     return @{
