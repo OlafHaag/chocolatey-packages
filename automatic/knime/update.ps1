@@ -15,7 +15,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest $release
     $re = 'KNIME [\d\.]+'
-    $version = ($download_page.ParsedHtml.getElementsByTagName("h2") | Where{ $_.innerText -match $re}).innerText -split ' ' | select -Last 1
+    $download_page.Content -match $re
+    $version = $Matches[0] -split ' ' | select -Last 1
     $root = 'https://download.knime.org/analytics-platform/win/'
     $url32_i         = "KNIME%20${version}%20Installer%20%2832bit%29.exe"
     $url64_i         = "KNIME%20${version}%20Installer%20%2864bit%29.exe"
@@ -27,7 +28,7 @@ function global:au_GetLatest {
         throw "Either 32bit or 64bit installer/portable was not found. Please check if naming has changed."
     }
     #>
-    
+
     $release_notes_ver = ($version -split '[.]' | select -First 2 ) -join ''
 
     return @{
