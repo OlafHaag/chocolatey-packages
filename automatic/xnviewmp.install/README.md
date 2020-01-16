@@ -24,7 +24,7 @@ XnViewMP finally offers **Unicode** support. **Enhanced translations** for many 
 ## Licence
 XnViewMP is provided as FREEWARE (NO Adware, NO Spyware) for private or educational use (including non-profit organizations). If you enjoy using XnviewMP, feel free to help the developer with a small donation.
 
-If you intend to use XnView in a company, you must purchase a [license.](http://www.kolor.com/store/stiching/logiciels/image-processing-software/xnview.html?___store=eng)
+If you intend to use XnView in a company, you must purchase a **license**.
 
 ## Package Parameters
 The following package parameter can be set:
