@@ -21,10 +21,10 @@ function global:au_GetLatest {
 
     $download_url = 'https://download.xnview.com/old_versions/'
     $download_page = Invoke-WebRequest $download_url
-    $url32_i         = $download_url + ($download_page.Links | ? href -match ($version_dl + '-win.exe$') | % href)
-    $url64_i         = $download_url + ($download_page.Links | ? href -match ($version_dl + '-win-x64.exe$') | % href)
-    $url32_p         = $download_url + ($download_page.Links | ? href -match ($version_dl + '-win.zip$') | % href)
-    $url64_p         = $download_url + ($download_page.Links | ? href -match ($version_dl + '-win-x64.zip$') | % href)
+    $url32_i         = $download_url + ($download_page.Links | ? href -match ("XnViewMP(.*?)" + $version_dl + '-win.exe$') | % href)
+    $url64_i         = $download_url + ($download_page.Links | ? href -match ("XnViewMP(.*?)" + $version_dl + '-win-x64.exe$') | % href)
+    $url32_p         = $download_url + ($download_page.Links | ? href -match ("XnViewMP(.*?)" + $version_dl + '-win.zip$') | % href)
+    $url64_p         = $download_url + ($download_page.Links | ? href -match ("XnViewMP(.*?)" + $version_dl + '-win-x64.zip$') | % href)
 
     if (!$url32_i -or !$url64_i -or !$url32_p -or !$url64_p) {
         throw "Either 32bit or 64bit installer/portable was not found. Please check if naming has changed."
