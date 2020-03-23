@@ -48,7 +48,7 @@ function GetStreams() {
     $streams.Add('dev', @{
         Version = Get-Version ($version_dev + '-dev');
         URL64_i = $dev_root + $url_dev_i;
-        URL64_p = $dev_root + $url_dev_p;
+        URL64_p = $dev_releases + $url_dev_p;
         ReleaseNotes = "development snapshot"
         })
 
