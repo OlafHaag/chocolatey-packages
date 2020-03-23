@@ -3,9 +3,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>jabref</id>
+    <id>jabref.portable</id>
     <title>JabRef (portable)</title>
-    <version>5.0-alpha-20190828</version>
+    <version>5.0</version>
     <authors>https://github.com/JabRef/jabref/blob/master/AUTHORS</authors>
     <owners>Vaquero</owners>
     <summary>JabRef is an open source bibliography reference manager. The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format. JabRef runs on the Java VM (version 1.8 or newer).</summary>
@@ -13,8 +13,6 @@
 JabRef is a graphical Java application for editing BibTeX and Biblatex databases. JabRef lets you organize your entries into overlapping logical groups, and with a single click limit your view to a single group or an intersection or union of several groups. You can customize the entry information shown in the main window, and sort by any of the standard BibTeX fields. JabRef can autogenerate BibTeX keys for your entries. JabRef also lets you easily link to PDF or web sources for your reference entries.
 
 JabRef can import from and export to several formats, and you can customize export filters. JabRef can be run as a command line application to convert from any import format to any export format.
-
-To set the installation directory, use: `choco install jabref -ia "-dir ""d:\myapps\JabRef"""`
 ]]></description>
     <projectUrl>https://www.jabref.org/</projectUrl>
     <tags>jabref bibtex latex bibliography reference database admin</tags>
@@ -27,7 +25,7 @@ To set the installation directory, use: `choco install jabref -ia "-dir ""d:\mya
     <bugTrackerUrl>https://github.com/JabRef/jabref/issues</bugTrackerUrl>
     <mailingListUrl>http://discourse.jabref.org/</mailingListUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jabref/JabRef-icon-64.png</iconUrl>
-    <releaseNotes>https://github.com/JabRef/jabref/blob/v5.0-alpha/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://github.com/JabRef/jabref/blob/v5.0/CHANGELOG.md</releaseNotes>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jabref.portable</packageSourceUrl>
   </metadata>
   <files>
