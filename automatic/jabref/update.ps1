@@ -2,42 +2,66 @@ import-module au
 import-module Wormies-AU-Helpers
 
 $releases = 'https://github.com/JabRef/jabref/releases'
-
-function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-    $re  = "JabRef_windows-x64.*.exe"
-    $url64 = $download_page.links | ? href -match $re | select -First 1 -expand href
-    $url64 = 'https://github.com' + $url64
-
-    $url32 = $url64 -replace '-x64', '-x32'
-
-    $version = $url64 -split 'x64_|.exe' | select -Last 1 -Skip 1
-    $version = $version -replace '_', '.'
-
-    return @{
-        URL32        = $url32
-        URL64        = $url64
-        Version      = $version
-        ReleaseNotes = "https://github.com/JabRef/jabref/blob/v${version}/CHANGELOG.md"
-    }
-}
+$dev_releases = 'https://builds.jabref.org/master/'
 
 function global:au_SearchReplace {
-    @{
-        "tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*packageName\s*=\s*)('.*')" = "`$1'$($Latest.PackageName)'"
-            "(?i)(^\s*fileType\s*=\s*)('.*')" = "`$1'$($Latest.FileType)'"
-            "(?i)(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*url64bit\s*=\s*)('.*')"   = "`$1'$($Latest.URL64)'"
-            "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-        }
+  @{
+    "$($Latest.PackageName).nuspec" = @{
+      "(\<dependency .+?`"$($Latest.PackageName).install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
+    }
+  }
+}
 
-        "$($Latest.PackageName).nuspec" = @{
-            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
-        }
+function GetStreams() {
+    $streams = [ordered]@{ }
+
+    $root          = 'https://github.com'
+
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $re  = ".*.msi"
+    $url_i = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $version = $url_i -split 'JabRef-|.msi' | select -Last 1 -Skip 1
+    $url_p = "JabRef-${version}-portable_windows.zip"
+
+    if (!$url_i -or !$url_p) {
+        throw "Either portable or installer for stream (v'$version') was not found. Please check for changes."
+    }
+
+    $download_page = Invoke-WebRequest -Uri $dev_releases -UseBasicParsing
+    $re  = ".*.msi"
+    $url_dev_i = $download_page.links | ? href -match $re | select -Last 1 -expand href
+    $version_dev = $url_dev_i -split '-|.msi' | select -Last 1 -Skip 1
+    $url_dev_p = "JabRef-${version_dev}-portable_windows.zip"
+
+    if (!$url_dev_i -or !$url_dev_p) {
+        throw "Either portable or installer for dev stream (v'$version_dev') was not found. Please check for changes."
+    }
+
+    $streams.Add('release', @{
+        Version = Get-Version $version;
+        URL64_i = $root + $url_i;
+        URL64_p = $root + $url_p;
+        ReleaseNotes = "https://github.com/JabRef/jabref/blob/v${version}/CHANGELOG.md"
+        })
+
+    $streams.Add('dev', @{
+        Version = Get-Version ($version_dev + '-dev');
+        URL64_i = $dev_releases + $url_dev_i;
+        URL64_p = $dev_releases + $url_dev_p;
+        ReleaseNotes = "development snapshot"
+        })
+
+    Write-Host $streams.Count "streams collected:" $streams.Keys
+    $streams
+}
+
+function global:au_GetLatest {
+
+    return @{
+        Streams = GetStreams
     }
 }
 
-update
+if ($MyInvocation.InvocationName -ne '.') {
+  update -ChecksumFor none
+}

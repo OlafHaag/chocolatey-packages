@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>jabref</id>
-    <title>JabRef</title>
+    <id>jabref.install</id>
+    <title>JabRef (install)</title>
     <version>5.0-alpha-20190828</version>
     <authors>https://github.com/JabRef/jabref/blob/master/AUTHORS</authors>
     <owners>Vaquero</owners>
@@ -27,11 +27,8 @@ To set the installation directory, use: `choco install jabref -ia "-dir ""d:\mya
     <bugTrackerUrl>https://github.com/JabRef/jabref/issues</bugTrackerUrl>
     <mailingListUrl>http://discourse.jabref.org/</mailingListUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jabref/JabRef-icon-64.png</iconUrl>
-    <dependencies>
-      <dependency id="jabref.install" version="[5.0]" />
-    </dependencies>
     <releaseNotes>https://github.com/JabRef/jabref/blob/v5.0-alpha/CHANGELOG.md</releaseNotes>
-    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jabref</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jabref.install</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
