@@ -32,6 +32,7 @@ function GetStreams() {
     $url_dev_i = $download_page.links | ? href -match $re | select -Last 1 -expand href
     $version_dev = $url_dev_i -split '-|.msi' | select -Last 1 -Skip 1
     $url_dev_p = "JabRef-${version_dev}-portable_windows.zip"
+    $dev_root = (Split-Path $dev_releases -Parent).Replace(":\\", "://")
 
     if (!$url_dev_i -or !$url_dev_p) {
         throw "Either portable or installer for dev stream (v'$version_dev') was not found. Please check for changes."
@@ -46,8 +47,8 @@ function GetStreams() {
 
     $streams.Add('dev', @{
         Version = Get-Version ($version_dev + '-dev');
-        URL64_i = $dev_releases + $url_dev_i;
-        URL64_p = $dev_releases + $url_dev_p;
+        URL64_i = $dev_root + $url_dev_i;
+        URL64_p = $dev_root + $url_dev_p;
         ReleaseNotes = "development snapshot"
         })
 
