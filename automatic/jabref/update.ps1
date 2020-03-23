@@ -15,13 +15,11 @@ function global:au_SearchReplace {
 function GetStreams() {
     $streams = [ordered]@{ }
 
-    $root          = 'https://github.com'
-
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $re  = ".*.msi"
     $url_i = $download_page.links | ? href -match $re | select -First 1 -expand href
     $version = $url_i -split 'JabRef-|.msi' | select -Last 1 -Skip 1
-    $url_p = "JabRef-${version}-portable_windows.zip"
+    $url_p = (Split-Path $url_i -Parent).Replace(":\\", "://").Replace("\", "/") + "/JabRef-${version}-portable_windows.zip"
 
     if (!$url_i -or !$url_p) {
         throw "Either portable or installer for stream (v'$version') was not found. Please check for changes."
@@ -31,12 +29,14 @@ function GetStreams() {
     $re  = ".*.msi"
     $url_dev_i = $download_page.links | ? href -match $re | select -Last 1 -expand href
     $version_dev = $url_dev_i -split '-|.msi' | select -Last 1 -Skip 1
-    $url_dev_p = "JabRef-${version_dev}-portable_windows.zip"
-    $dev_root = (Split-Path $dev_releases -Parent).Replace(":\\", "://")
+    $url_dev_p = (Split-Path $url_dev_i -Parent).Replace(":\\", "://").Replace("\", "/") + "/JabRef-${version_dev}-portable_windows.zip"
 
     if (!$url_dev_i -or !$url_dev_p) {
         throw "Either portable or installer for dev stream (v'$version_dev') was not found. Please check for changes."
     }
+
+    $root     = 'https://github.com' + (Split-Path $url_i -Parent).Replace(":\\", "://").Replace("\", "/")
+    $dev_root = (Split-Path $dev_releases -Parent).Replace(":\\", "://")
 
     $streams.Add('release', @{
         Version = Get-Version $version;
@@ -48,7 +48,7 @@ function GetStreams() {
     $streams.Add('dev', @{
         Version = Get-Version ($version_dev + '-dev');
         URL64_i = $dev_root + $url_dev_i;
-        URL64_p = $dev_releases + $url_dev_p;
+        URL64_p = $dev_root + $url_dev_p;
         ReleaseNotes = "development snapshot"
         })
 
