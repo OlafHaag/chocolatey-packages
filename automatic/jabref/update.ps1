@@ -35,7 +35,7 @@ function GetStreams() {
         throw "Either portable or installer for dev stream (v'$version_dev') was not found. Please check for changes."
     }
 
-    $root     = 'https://github.com' + (Split-Path $url_i -Parent).Replace(":\\", "://").Replace("\", "/")
+    $root     = 'https://github.com'
     $dev_root = (Split-Path $dev_releases -Parent).Replace(":\\", "://")
 
     $streams.Add('release', @{
