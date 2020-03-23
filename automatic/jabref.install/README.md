@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jabref/JabRef-icon-64.png" width="64" height="64"/> [jabref](https://chocolatey.org/packages/jabref)
+# <img src="https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jabref/JabRef-icon-64.png" width="64" height="64"/> [jabref](https://chocolatey.org/packages/jabref.install)
 
 
 JabRef is a graphical Java application for editing BibTeX and Biblatex databases. JabRef lets you organize your entries into overlapping logical groups, and with a single click limit your view to a single group or an intersection or union of several groups. You can customize the entry information shown in the main window, and sort by any of the standard BibTeX fields. JabRef can autogenerate BibTeX keys for your entries. JabRef also lets you easily link to PDF or web sources for your reference entries.
