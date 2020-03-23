@@ -30,7 +30,7 @@ To set the installation directory, use: `choco install jabref -ia "-dir ""d:\mya
     <dependencies>
       <dependency id="jabref.install" version="[5.0]" />
     </dependencies>
-    <releaseNotes>https://github.com/JabRef/jabref/blob/v5.0-alpha/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://github.com/JabRef/jabref/blob/v5.0/CHANGELOG.md</releaseNotes>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jabref</packageSourceUrl>
   </metadata>
   <files>
