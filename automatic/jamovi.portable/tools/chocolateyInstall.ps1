@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = 'jamovi.portable'
   UnzipLocation  = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  url64bit       = 'https://www.jamovi.org/downloads/jamovi-1.2.12.0-win64.zip'
-  checksum64     = '20ac088fa859e48aaa3b854c8df1a1020a7f292e9861b01875f7eff7f8eb2158'
+  url64bit       = 'https://www.jamovi.org/downloads/jamovi-1.2.17.0-win64.zip'
+  checksum64     = 'ddcd5593656c7da30bcc9e4e858fe1314bad8b7fdcd62d65cb995575ccd60df1'
   checksumType64 = 'sha256'
 }
 
