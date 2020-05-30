@@ -4,7 +4,7 @@
   <metadata>
     <id>jamovi.install</id>
     <title>jamovi (install)</title>
-    <version>1.2.22.0</version>
+    <version>1.2.22.20200530-current</version>
     <authors>https://github.com/jamovi/jamovi/graphs/contributors</authors>
     <owners>Vaquero</owners>
     <summary>jamovi is a new "3rd generation" statistical spreadsheet. designed from the ground up to be easy to use, jamovi is a compelling alternative to costly statistical products such as SPSS and SAS.</summary>
