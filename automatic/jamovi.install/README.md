@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jamovi/jamovi.png" width="48" height="48"/> [jamovi](https://chocolatey.org/packages/jamovi)
+# <img src="https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jamovi/jamovi.png" width="48" height="48"/> [jamovi.install](https://chocolatey.org/packages/jamovi,install)
 
 ## STATS MADE SIMPLE
 
