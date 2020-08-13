@@ -18,9 +18,7 @@ function global:au_GetLatest {
     $download_page.Content -match $re
     $version = $Matches[0] -split ' ' | select -Last 1
     $root = 'https://download.knime.org/analytics-platform/win/'
-    $url32_i         = "KNIME%20${version}%20Installer%20%2832bit%29.exe"
     $url64_i         = "KNIME%20${version}%20Installer%20%2864bit%29.exe"
-    $url32_p         = "knime_${version}.win32.win32.x86.zip"
     $url64_p         = "knime_${version}.win32.win32.x86_64.zip"
 
     <#
@@ -33,9 +31,7 @@ function global:au_GetLatest {
 
     return @{
         Version = Get-FixVersion $version
-        URL32_i = $root + $url32_i
         URL64_i = $root + $url64_i
-        URL32_p = $root + $url32_p
         URL64_p = $root + $url64_p
         ReleaseNotes = "https://www.knime.com/whats-new-in-knime-$release_notes_ver"
     }
