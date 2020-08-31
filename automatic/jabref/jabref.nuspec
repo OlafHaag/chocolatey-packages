@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jabref</id>
     <title>JabRef</title>
-    <version>5.1</version>
+    <version>5.2-dev</version>
     <authors>https://github.com/JabRef/jabref/blob/master/AUTHORS</authors>
     <owners>Vaquero</owners>
     <summary>JabRef is an open source bibliography reference manager. The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format.</summary>
@@ -26,9 +26,9 @@ JabRef can import from and export to several formats, and you can customize expo
     <mailingListUrl>http://discourse.jabref.org/</mailingListUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jabref/JabRef-icon-64.png</iconUrl>
     <dependencies>
-      <dependency id="jabref.install" version="[5.1]" />
+      <dependency id="jabref.install" version="[5.2-dev]" />
     </dependencies>
-    <releaseNotes>https://github.com/JabRef/jabref/blob/v5.1/CHANGELOG.md</releaseNotes>
+    <releaseNotes>development snapshot</releaseNotes>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jabref</packageSourceUrl>
   </metadata>
   <files>
