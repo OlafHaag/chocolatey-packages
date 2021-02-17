@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = 'jamovi.install'
   fileType       = 'exe'
-  url64bit       = 'https://www.jamovi.org/downloads/jamovi-1.6.14.0-win64.exe'
-  checksum64     = '01c008eb806d7a4a4bc4c8193aecfcd483d61ea29d452e16abedcd55b3b4eaa8'
+  url64bit       = 'https://www.jamovi.org/downloads/jamovi-1.6.15.0-win64.exe'
+  checksum64     = 'ece58a12b584c63f6e5c21fa6aad4fca237850e6ae6b1a829777b3b20ab4c89a'
   checksumType64 = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
