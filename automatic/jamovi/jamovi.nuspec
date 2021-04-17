@@ -4,7 +4,7 @@
   <metadata>
     <id>jamovi</id>
     <title>jamovi Statistical Analysis</title>
-    <version>1.8.0.0-current</version>
+    <version>1.6.23.0</version>
     <authors>https://github.com/jamovi/jamovi/graphs/contributors</authors>
     <owners>Vaquero</owners>
     <summary>jamovi is a new "3rd generation" statistical spreadsheet. designed from the ground up to be easy to use, jamovi is a compelling alternative to costly statistical products such as SPSS and SAS.</summary>
@@ -32,7 +32,7 @@ The current versions are offered as pre-release packages on chocolatey. Get it b
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jamovi/jamovi.png</iconUrl>
     <dependencies>
-      <dependency id="jamovi.install" version="[1.8.0.0-current]" />
+      <dependency id="jamovi.install" version="[1.6.23.0]" />
     </dependencies>
     <releaseNotes>https://www.jamovi.org/release-notes.html</releaseNotes>
     <docsUrl>https://www.jamovi.org/user-manual.html</docsUrl>
