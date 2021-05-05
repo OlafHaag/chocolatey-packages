@@ -33,7 +33,7 @@ The current versions are offered as pre-release packages on chocolatey. Get it b
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jamovi/jamovi.png</iconUrl>
     <releaseNotes>https://www.jamovi.org/release-notes.html</releaseNotes>
     <docsUrl>https://www.jamovi.org/user-manual.html</docsUrl>
-    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jamovi</packageSourceUrl>
+    <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/jamovi.portable</packageSourceUrl>
     <bugTrackerUrl>https://github.com/jamovi/jamovi/issues</bugTrackerUrl>
   </metadata>
   <files>
