@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>a2.portable</id>
+    <title>a2 (portable)</title>
+    <version>0.0.0-alpha</version>
+    <authors>Eric Werner, Oliver Lipkau</authors>
+    <owners>Vaquero</owners>
+    <summary>Script managing and developing framework for Autohotkey. Autohotkey is an awesome little scripting language to automate and simplify all things Windows. a2 helps getting Autohotkey scripts, updating them, and developing your own.</summary>
+    <description>
+    </description>
+    <projectUrl>https://github.com/ewerybody/a2/</projectUrl>
+    <projectSourceUrl>https://github.com/ewerybody/a2</projectSourceUrl>
+    <tags>windows autohotkey scripts automation shortcuts hotkeys</tags>
+    <copyright></copyright>
+    <licenseUrl>https://github.com/ewerybody/a2/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/a2/a2.png</iconUrl>
+    <releaseNotes>https://github.com/ewerybody/a2/releases/tag/0.0.11</releaseNotes>
+    <wikiUrl>https://github.com/ewerybody/a2/wiki/</wikiUrl>
+    <packageSourceUrl>https://github.com/olafhaag/chocolatey-packages/tree/master/automatic/a2</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/ewerybody/a2/issues</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
