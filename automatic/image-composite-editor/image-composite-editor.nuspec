@@ -7,7 +7,7 @@
     <title>Image Composite Editor</title>
     <authors>Rick Gutierrez, Sing Bing Kang, Neel Joshi</authors>
     <owners>Vaquero</owners>
-    <projectUrl>https://www.microsoft.com/en-us/research/project/image-composite-editor/</projectUrl>
+    <projectUrl>https://www.microsoft.com/en-us/research/product/computational-photography-applications/image-composite-editor/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/image-composite-editor/image-composite-editor.png</iconUrl>
     <copyright>© Microsoft 2017</copyright>
     <bugTrackerUrl>https://social.microsoft.com/Forums/en-US/973b5e3c-fcba-4cf9-b925-a8f7efc2b80d/known-issues-for-image-composite-editor?forum=ice</bugTrackerUrl>
