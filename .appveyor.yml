@@ -23,14 +23,14 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: OlafHaag/chocolatey-packages
   github_api_key:
-    secure: IPWMrh+5Ts0CHT6iKMTugoClYI0sqFMjdhrVv02kXr9ZiQ40Q5r7gk954p54LZvJ #https://ci.appveyor.com/tools/encrypt
+    secure: nlNWsOmCJz49EfJvpDlstRCia1Ui9vqeo2qmWjcxVAwVNQaBpD8L+/4VWThTgBLZ #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
   mail_user:
     secure: uaTAcXx1yAjBKU5SMQ0D1vOjM57ozw+xL7RDIsiU6Dw= #https://ci.appveyor.com/tools/encrypt
   mail_pass:
-    secure: youQEBI/0HGhWbhEQCrhRtn0uS1NRHwJwkXGyTOY2uM= #https://ci.appveyor.com/tools/encrypt
+    secure: wUhnotVtMwa2vIFvbcBRMy5+3OiDf9RxayW/SKqDnlw= #https://ci.appveyor.com/tools/encrypt
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
