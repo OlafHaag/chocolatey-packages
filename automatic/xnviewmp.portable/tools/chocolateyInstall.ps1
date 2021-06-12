@@ -2,11 +2,11 @@
 
 $packageArgs = @{
   packageName    = 'xnviewmp.portable'
-  url            = 'https://download.xnview.com/old_versions/XnViewMP-0982-win.zip'
-  url64bit       = 'https://download.xnview.com/old_versions/XnViewMP-0982-win-x64.zip'
-  checksum       = 'd3c9da0fefec6e00011f35de8e655d36db24824435165fb30b8b2720be932b4f'
+  url            = 'https://download.xnview.com/old_versions/XnViewMP-0984-win.zip'
+  url64bit       = 'https://download.xnview.com/old_versions/XnViewMP-0984-win-x64.zip'
+  checksum       = '9ebecb5ecda999dd342840966c4b604df4eacc63862c00860f1d1fe40fc9f5f5'
   checksumType   = 'sha256'
-  checksum64     = '82554a5742b203493356aa5d5363a06892da492d7edf9bf95cdd75acfaaf4fcd'
+  checksum64     = '6200c8eb5a974aaad78e09f3248c2fdf3ea7274184a42b4b3bd81e5e81b87646'
   checksumType64 = 'sha256'
   UnzipLocation  = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
   validExitCodes = @(0)
