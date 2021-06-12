@@ -13,9 +13,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $releases_page = Invoke-WebRequest $releases_url
+    $releases_page = Invoke-WebRequest -Uri $releases_url
 
-    $version_text = ($releases_page.ParsedHtml.getElementsByTagName("p") | Where{ $_.className -eq "lead" -and $_.innerText -match "Version ([\d\.]+)"}).innerText
+    $version_text = ($releases_page.ParsedHtml.getElementsByTagName("strong") | $_.innerText -match "XnView MP ([\d\.]+)"}).innerText
     $version = $Matches[1]
     $version_dl = $version.Replace(".", "")
 
