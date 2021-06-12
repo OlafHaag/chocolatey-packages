@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest $release
-    $version = ($releases_page.ParsedHtml.getElementsByTagName("strong") | Where{ $_.innerText -match "([\d\.]+)"} ).innerText
+    $version = ($download_page.ParsedHtml.getElementsByTagName("strong") | Where{ $_.innerText -match "([\d\.]+)"} ).innerText
     $root = 'https://download.knime.org/analytics-platform/win/'
     $url64_i         = "KNIME%20${version}%20Installer%20%2864bit%29.exe"
     $url64_p         = "knime_${version}.win32.win32.x86_64.zip"
