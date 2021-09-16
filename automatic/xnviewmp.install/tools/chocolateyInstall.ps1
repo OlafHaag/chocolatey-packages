@@ -3,11 +3,11 @@
 $packageArgs = @{
   packageName    = 'xnviewmp.install'
   fileType       = 'exe'
-  url            = 'https://download.xnview.com/old_versions/XnViewMP-0984-win.exe'
-  url64bit       = 'https://download.xnview.com/old_versions/XnViewMP-0984-win-x64.exe'
-  checksum       = '693a31bdb5fbd70a4164027ec0f108fad429420667f5cf4719d4ba79c39eb380'
+  url            = 'https://download.xnview.com/old_versions/XnViewMP-0990-win.exe'
+  url64bit       = 'https://download.xnview.com/old_versions/XnViewMP-0990-win-x64.exe'
+  checksum       = '80f488049760b99519ffa0a01142326786da05e6238ff0ebca2fc7bf0c1f09b8'
   checksumType   = 'sha256'
-  checksum64     = '7dc7ac56b7b1ef1bf1190c958f3d822a617fe77211cc32555fa377f0b165ed33'
+  checksum64     = '0b90b65b17d94c0206c572e05859bc8bbf499ecc19e1164576e926f68794a868'
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
