@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jabref.portable</id>
     <title>JabRef (portable)</title>
-    <version>5.4-dev</version>
+    <version>5.4.0.20211227</version>
     <authors>https://github.com/JabRef/jabref/blob/main/MAINTAINERS</authors>
     <owners>Vaquero</owners>
     <summary>JabRef is an open source bibliography reference manager. The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format. JabRef runs on the Java VM (version 1.8 or newer).</summary>
