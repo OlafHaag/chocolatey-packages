@@ -5,8 +5,8 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>jabref.install</id>
     <title>JabRef (install)</title>
-    <version>5.4</version>
-    <authors>https://github.com/JabRef/jabref/blob/master/AUTHORS</authors>
+    <version>5.4-dev</version>
+    <authors>https://github.com/JabRef/jabref/blob/main/MAINTAINERS</authors>
     <owners>Vaquero</owners>
     <summary>JabRef is an open source bibliography reference manager. The native file format used by JabRef is BibTeX, the standard LaTeX bibliography format.</summary>
     <description><![CDATA[
@@ -17,7 +17,7 @@ JabRef can import from and export to several formats, and you can customize expo
     <projectUrl>https://www.jabref.org/</projectUrl>
     <tags>jabref bibtex latex bibliography reference database admin</tags>
     <copyright></copyright>
-    <licenseUrl>https://github.com/JabRef/jabref/blob/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/JabRef/jabref/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <docsUrl>https://docs.jabref.org/</docsUrl>
