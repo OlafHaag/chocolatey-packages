@@ -4,7 +4,7 @@
   <metadata>
     <id>xnviewmp</id>
     <title>XnViewMP</title>
-    <version>0.99.6</version>
+    <version>0.99.7</version>
     <authors>Gougelet Pierre-Emmanuel</authors>
     <owners>Vaquero</owners>
     <summary>XnViewMP is the enhanced version to [XnView](https://chocolatey.org/packages/XnView). It is a powerful cross-platform media browser, viewer and converter. Compatible with more than [500 formats](http://www.xnview.com/en/xnviewmp/#formats).</summary>
@@ -48,7 +48,7 @@ The following package parameter can be set:
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://www.xnview.com/assets/img/app-xnviewmp-512.png</iconUrl>
     <dependencies>
-      <dependency id="xnviewmp.install" version="[0.99.6]" />
+      <dependency id="xnviewmp.install" version="[0.99.7]" />
     </dependencies>
     <releaseNotes>https://www.xnview.com/en/xnviewmp/</releaseNotes>
     <packageSourceUrl>https://github.com/OlafHaag/chocolatey-packages/tree/master/automatic/xnviewmp</packageSourceUrl>
