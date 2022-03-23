@@ -2,8 +2,8 @@
 
 $packageArgs = @{
   packageName    = 'knime.portable'
-  url64bit       = 'https://download.knime.org/analytics-platform/win/knime_4.5.1.win32.win32.x86_64.zip'
-  checksum64     = 'b50b4fe31deeab8ecf4c92fdfb772ee3d90e42e9dfa3d2a377af72ce42d41659'
+  url64bit       = 'https://download.knime.org/analytics-platform/win/knime_4.5.2.win32.win32.x86_64.zip'
+  checksum64     = 'f8ac7c0ba5970cfab3776e2f7436c87ad1bb11a140bbb34981c5e3bc6e855613'
   checksumType64 = 'sha256'
   UnzipLocation  = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
   validExitCodes = @(0)
