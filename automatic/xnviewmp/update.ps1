@@ -18,7 +18,7 @@ function global:au_GetLatest {
     $version_text = ($releases_page.ParsedHtml.getElementsByTagName("strong") | Where{ $_.innerText -match "XnView MP ([\d\.]+)"} ).innerText
     $versionParts = $Matches[1].Split(".")
     # Split the "x.y.z" version string into three parts, so we can zero-pad the "y" portion for the download link
-    $version = $versionParts[0] + $versionParts[1].PadLeft(2, "0") + $versionParts[2]
+    $version = $versionParts[0] + "." + $versionParts[1].PadLeft(2, "0") + "." + $versionParts[2]
 
     $download_url = 'https://download.xnview.com/old_versions/XnView_MP/'
     $download_page = Invoke-WebRequest $download_url
