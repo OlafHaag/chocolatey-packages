@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = 'airdroid'
   fileType       = 'exe'
-  url            = 'https://dl.airdroid.com/AirDroid_Desktop_Client_3.7.2.0.exe'
-  checksum       = '25fab58448ac041b9b54b600f841d3481a945a42ff2bf35bf33a80f8c2ffb59e'
+  url            = 'https://dl.airdroid.com/AirDroid_Desktop_Client_3.7.2.1.exe'
+  checksum       = 'f786f0fcc11f6f690503c379b0c1423a9f6443ebf5229c5038754c17bfd51216'
   checksumType   = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
