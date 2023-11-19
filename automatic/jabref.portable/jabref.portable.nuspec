@@ -17,7 +17,7 @@ JabRef can import from and export to several formats, and you can customize expo
     <projectUrl>https://www.jabref.org/</projectUrl>
     <tags>jabref bibtex latex bibliography reference database</tags>
     <copyright></copyright>
-    <licenseUrl>https://github.com/JabRef/jabref/blob/main/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/JabRef/jabref/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
     <docsUrl>https://docs.jabref.org/</docsUrl>
