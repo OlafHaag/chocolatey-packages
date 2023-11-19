@@ -28,7 +28,7 @@ The current versions are offered as pre-release packages on chocolatey. Get it b
     <projectSourceUrl>https://github.com/jamovi/jamovi</projectSourceUrl>
     <tags>data analysis analytics statistics R data-mining</tags>
     <copyright></copyright>
-    <licenseUrl>https://github.com/jamovi/jamovi/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/jamovi/jamovi/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.jsdelivr.net/gh/olafhaag/chocolatey-packages@master/automatic/jamovi/jamovi.png</iconUrl>
     <releaseNotes>https://www.jamovi.org/release-notes.html</releaseNotes>
