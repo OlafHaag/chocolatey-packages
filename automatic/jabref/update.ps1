@@ -93,7 +93,7 @@ function GetStreams() {
       Version      = Get-Version $version;
       URL64_i      = $latest_release.MSIDownloadUrl;
       URL64_p      = $latest_release.PortableDownloadUrl;
-      ReleaseNotes = "https://github.com/JabRef/jabref/blob/v${version}/CHANGELOG.md";
+      ReleaseNotes = $latest_release.ChangelogLink;
     })
 
   $dev_root = (Split-Path $dev_releases -Parent).Replace(":\\", "://")
