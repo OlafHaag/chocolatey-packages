@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = 'jabref.portable'
   UnzipLocation  = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  url64bit       = 'https://github.com/JabRef/jabref/releases/download/v5.8/JabRef-5.8-portable_windows.zip'
-  checksum64     = '4bb4506d9180873d8888bcc0000a1936a8e738a437eea5be67fb4a20160de44c'
+  url64bit       = 'https://github.com/JabRef/jabref/releases/download/v5.11/JabRef-5.11-portable_windows.zip'
+  checksum64     = '92e2ba8ada6dd01b8863092b43a93ef9718028d26e8be27921ae449f6cf675d8'
   checksumType64 = 'sha256'
 }
 
