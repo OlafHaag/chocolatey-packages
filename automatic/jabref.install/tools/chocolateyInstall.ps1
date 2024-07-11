@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = 'jabref.install'
   fileType       = 'msi'
-  url64bit       = 'https://github.com/JabRef/jabref/releases/download/v5.15/JabRef-5.15.msi'
-  checksum64     = 'e2c7de77141e32134b85ac804b0230a4172f904d3fb6d615c7d0dd027eb8c44d'
+  url64bit       = 'https://builds.jabref.org/main/JabRef-5.16.msi'
+  checksum64     = '3b5793d3bb2dd0284703f0201341a82c9fcb4932dbe0b5ed65c9714de18a2eb0'
   checksumType64 = 'sha256'
   silentArgs     = '/quiet /qn /norestart'
   validExitCodes = @(0)
