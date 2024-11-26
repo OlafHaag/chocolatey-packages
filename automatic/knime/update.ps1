@@ -1,7 +1,8 @@
 import-module au
 import-module Wormies-AU-Helpers
 
-$release = 'https://www.knime.com/downloads/download-knime'
+# Knime GitHub repository tags API
+$release = 'https://api.github.com/repos/knime/knime-core/tags'
 
 function global:au_SearchReplace {
   @{
@@ -13,11 +14,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest $release
-    $version = ($download_page.ParsedHtml.getElementsByTagName("strong") | Where{ $_.innerText -match "([\d\.]+)"} ).innerText
-    $root = 'https://download.knime.org/analytics-platform/win/'
-    $url64_i         = "KNIME%20${version}%20Installer%20%2864bit%29.exe"
-    $url64_p         = "knime_${version}.win32.win32.x86_64.zip"
+    # Fetch list of tags (releases)
+    $tags       = Invoke-RestMethod -Uri $release
+    # Identify latest tag (release)
+    $tag        = $tags.name | Select-String -Pattern "analytics-platform/.+" | Select-Object -First 1
+    # Parse version number
+    $version    = $tag -split "/" | Select-Object -Last 1
+    # Public download page
+    $root       = 'https://download.knime.org/analytics-platform/win/'
+    # Installers
+    $url64_i    = "KNIME%20${version}%20Installer%20%2864bit%29.exe"
+    $url64_p    = "knime_${version}.win32.win32.x86_64.zip"
 
     <#
     if (!$url32_i -or !$url64_i -or !$url32_p -or !$url64_p) {
@@ -25,7 +32,7 @@ function global:au_GetLatest {
     }
     #>
 
-    $release_notes_ver = ($version -split '[.]' | select -First 2 ) -join ''
+    $release_notes_ver = ($version -split '[.]' | Select-Object -First 2 ) -join ''
 
     return @{
         Version = Get-FixVersion $version
